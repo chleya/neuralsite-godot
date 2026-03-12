@@ -1,0 +1,57 @@
+{
+	"type": "FeatureCollection",
+	"features": [
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "LineString",
+				"coordinates": [
+					[116.0, 39.9, 10],
+					[116.01, 39.91, 12],
+					[116.02, 39.92, 15],
+					[116.03, 39.93, 18],
+					[116.04, 39.94, 20]
+				]
+			},
+			"properties": {
+				"id": "test_road_1",
+				"name": "测试道路1",
+				"highway": "primary",
+				"lanes": 4,
+				"surface": "asphalt",
+				"width": 14,
+				"phase": "earthwork",
+				"progress": 0.45,
+				"construction_status": "under_construction",
+				"start_date": "2025-01-01",
+				"planned_end": "2025-12-31",
+				"ai_risk_level": 0.3,
+				"environmental_impact_score": 75
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "LineString",
+				"coordinates": [
+					[116.01, 39.91, 12],
+					[116.015, 39.905, 11],
+					[116.02, 39.90, 10]
+				]
+			},
+			"properties": {
+				"id": "test_ramp_a",
+				"name": "A匝道",
+				"highway": "motorway_link",
+				"lanes": 2,
+				"surface": "asphalt",
+				"width": 7,
+				"phase": "clearing",
+				"progress": 0.2,
+				"construction_status": "under_construction",
+				"ai_risk_level": 0.5,
+				"environmental_impact_score": 60
+			}
+		}
+	]
+}

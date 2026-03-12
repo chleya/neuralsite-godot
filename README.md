@@ -1,68 +1,83 @@
-# NeuralSite Godot Project
+# NeuralSite-Godot 4D 施工模拟器
 
-4D Construction Simulator - Godot 4.3
+基于 Godot 4.3 的道路桥梁施工4D可视化系统
 
-## Quick Start
+## 快速开始
 
-1. Download Godot 4.3: https://godotengine.org/download
-2. Extract and run godot.exe
-3. Click "Import" and select this folder
-4. Press F5 to run
+1. 下载 Godot 4.3: https://godotengine.org/download
+2. 解压并运行 godot.exe
+3. 点击 "Import" 选择 `F:\NeuralSite-Godot` 文件夹
+4. 按 F5 运行
 
-## Project Structure
+## 项目结构
 
 ```
-neuralsite-godot/
-├── project.godot          # Project definition
+NeuralSite-Godot/
 ├── scenes/
-│   └── Main.tscn        # Main scene
+│   └── Main.tscn          # 主场景
 ├── scripts/
-│   ├── Main.gd         # Main controller
-│   ├── APIClient.gd    # Backend API client
-│   └── EventBus.gd    # Event-driven state
-└── resources/
+│   ├── Main.gd            # 主控制器
+│   ├── RoadData.gd       # 道路数据模型
+│   ├── RoadSegment.gd    # 道路渲染节点
+│   ├── TimelineManager.gd # 时间轴管理
+│   ├── MockAPIClient.gd  # 模拟API客户端
+│   ├── APIClient.gd      # 真实API客户端
+│   ├── EventBus.gd       # 事件总线
+│   └── TestRunner.gd     # 测试脚本
+├── resources/
+├── test_roads.geojson    # 测试数据
+└── project.godot         # 项目配置
 ```
 
-## Features
+## 核心功能
 
-- [x] Time slider controls construction progress
-- [x] Live/Simulate mode toggle
-- [x] Event-driven state management
-- [x] API client for backend integration
-- [x] Simple 3D road segments
+- [x] 道路3D渲染 (RoadSegment)
+- [x] 阶段可视化 (planning → clearing → earthwork → pavement → finishing → completed)
+- [x] 时间轴控制 (TimelineManager)
+- [x] 模拟数据 (MockAPIClient)
+- [x] GeoJSON导入/导出
 
-## Controls
+## 操作说明
 
-- **F5**: Run project
-- **Hold UI Accept (Space)**: Rotate camera around scene
-- **Slider**: Control timeline/progress
+| 按键 | 功能 |
+|------|------|
+| SPACE | 旋转相机 |
+| 拖动滑块 | 控制时间/进度 |
+| F1 | 打印统计摘要 |
+| F2 | 切换调试信息 |
+| R | 重置时间轴 |
 
-## Connecting to Backend
+## 数据模型
 
-Edit `scripts/APIClient.gd`:
-```gdscript
-var base_url: String = "http://localhost:8000"
-```
+### 阶段颜色
 
-## Next Steps
+- planning: 蓝色半透明
+- clearing: 橙色
+- earthwork: 棕色
+- pavement: 灰色
+- finishing: 浅绿色
+- completed: 深灰色
 
-1. Import road model from Blender (GLTF format)
-2. Add more road segments
-3. Connect to real backend API
-4. Add photo upload
-5. Web export
+### API 接口
 
-## Integration with NeuralSite Backend
+模拟数据包含:
+- 15个桩号 (K0+000 ~ K14+000)
+- 30个事件
+- 项目统计
 
-The project connects to your existing FastAPI backend:
+## 对接真实后端
 
-```
-Godot Client → HTTP → FastAPI → PostgreSQL/PostGIS
-                      ↑
-                 WebSocket
-```
+1. 修改 `project.godot` 中的 MockAPIClient autoload
+2. 或在 Main.gd 中设置 `use_mock_api = false`
+3. 配置 `backend_url` 指向真实API地址
 
-API endpoints used:
-- `GET /api/v1/spacetime/query?station={id}`
-- `POST /api/v1/spacetime/events`
-- `GET /api/v1/spatial/stations`
+## 技术栈
+
+- Godot 4.3
+- GDScript
+- RESTful API
+- GeoJSON
+
+## 版本
+
+v2.0 (2026-03-09) - 精简重构版

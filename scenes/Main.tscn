@@ -1,12 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://main_scene"]
+[gd_scene load_steps=4 format=3 uid="uid://main_scene"]
 
 [ext_resource type="Script" path="res://scripts/Main.gd" id="1_main"]
+[ext_resource type="Script" path="res://scripts/RoadData.gd" id="2_road"]
+[ext_resource type="Script" path="res://scripts/RoadSegment.gd" id="3_segment"]
 
 [node name="Main" type="Node3D"]
 script = ExtResource("1_main")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 20, 50)
+transform = Transform3D(1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 30, 60)
 current = true
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
@@ -32,26 +34,51 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -200.0
-offset_top = -80.0
-offset_right = 200.0
-offset_bottom = -40.0
+offset_left = -250.0
+offset_top = -100.0
+offset_right = 250.0
+offset_bottom = -50.0
 grow_horizontal = 2
 grow_vertical = 0
 min_value = 0.0
-max_value = 100.0
+max_value = 365.0
+value = 0.0
+
+[node name="DayLabel" type="Label" parent="CanvasLayer/UI"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -150.0
+offset_top = 70.0
+offset_right = -20.0
+offset_bottom = 96.0
+grow_horizontal = 0
+text = "Day: 0"
+
+[node name="PhaseLabel" type="Label" parent="CanvasLayer/UI"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -150.0
+offset_top = 100.0
+offset_right = -20.0
+offset_bottom = 126.0
+grow_horizontal = 0
+text = "Phases: planning"
 
 [node name="ProgressLabel" type="Label" parent="CanvasLayer/UI"]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -100.0
+offset_left = -150.0
 offset_top = 20.0
-offset_right = 100.0
-offset_bottom = 46.0
+offset_right = 150.0
+offset_bottom = 50.0
 grow_horizontal = 2
-text = "Progress: 0%"
+text = "Progress: 0% | Segments: 0"
 horizontal_alignment = 1
 
 [node name="ModeButton" type="Button" parent="CanvasLayer/UI"]
@@ -65,3 +92,48 @@ offset_right = -20.0
 offset_bottom = 56.0
 grow_horizontal = 0
 text = "Mode: LIVE"
+
+[node name="StatusLabel" type="Label" parent="CanvasLayer/UI"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = -80.0
+offset_right = 400.0
+offset_bottom = -50.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "System: Ready"
+
+[node name="EntityInfoLabel" type="Label" parent="CanvasLayer/UI"]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 20.0
+offset_top = 150.0
+offset_right = 250.0
+offset_bottom = 280.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "No entity selected"
+
+[node name="HelpLabel" type="Label" parent="CanvasLayer/UI"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = -40.0
+offset_right = 500.0
+offset_bottom = -10.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "SPACE:旋转 | 1-5:创建实体 | T:时间轴 | L:LOD | E:导出 | TAB:导入"
+
+[node name="RoadContainer" type="Node3D" parent="."]
+
+[node name="EntityContainer" type="Node3D" parent="."]
+
+[node name="Ground" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+size = Vector3(200, 1, 200)

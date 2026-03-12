@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>NeuralSite 数据验证</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 20px; background: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        h1 { color: #1a1a1a; text-align: center; }
+        
+        .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin-bottom: 20px; }
+        .stat-card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center; }
+        .stat-value { font-size: 2em; font-weight: bold; color: #2196F3; }
+        .stat-label { color: #666; margin-top: 5px; }
+        
+        .entity-list { display: grid; gap: 15px; }
+        .entity-card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .entity-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+        .entity-name { font-weight: bold; font-size: 1.1em; }
+        .entity-type { background: #e3f2fd; color: #1976D2; padding: 4px 8px; border-radius: 4px; font-size: 0.8em; }
+        
+        .phase { display: inline-block; padding: 4px 12px; border-radius: 12px; font-size: 0.85em; }
+        .phase-planning { background: #E3F2FD; color: #1565C0; }
+        .phase-clearing { background: #FFF3E0; color: #E65100; }
+        .phase-earthwork { background: #EFEBE9; color: #5D4037; }
+        .phase-structure { background: #FFEBEE; color: #C62828; }
+        .phase-pavement { background: #ECEFF1; color: #546E7A; }
+        .phase-finishing { background: #E8F5E9; color: #2E7D32; }
+        .phase-completed { background: #C8E6C9; color: #1B5E20; }
+        
+        .progress-container { margin-top: 15px; }
+        .progress-bar { background: #e0e0e0; height: 24px; border-radius: 12px; overflow: hidden; position: relative; }
+        .progress-fill { height: 100%; background: linear-gradient(90deg, #4CAF50, #8BC34A); transition: width 0.3s ease; border-radius: 12px; }
+        .progress-text { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size: 0.85em; font-weight: bold; color: #333; }
+        
+        input[type="range"] { width: 100%; margin-top: 10px; }
+        
+        .add-form { background: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .add-form select, .add-form button { padding: 10px 15px; border-radius: 6px; border: 1px solid #ddd; }
+        .add-form button { background: #2196F3; color: white; border: none; cursor: pointer; }
+        .add-form button:hover { background: #1976D2; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚧 NeuralSite 数据验证系统</h1>
+        
+        <div class="add-form">
+            <select id="newType">
+                <option value="road">道路</option>
+                <option value="bridge">桥梁</option>
+                <option value="pile">桩基</option>
+                <option value="pier">墩柱</option>
+                <option value="cap">承台</option>
+                <option value="vehicle">车辆</option>
+            </select>
+            <button onclick="addEntity()">➕ 添加实体</button>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-value" id="totalCount">0</div>
+                <div class="stat-label">实体总数</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="avgProgress">0%</div>
+                <div class="stat-label">平均进度</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="inProgress">0</div>
+                <div class="stat-label">施工中</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="completed">0</div>
+                <div class="stat-label">已完成</div>
+            </div>
+        </div>
+        
+        <div class="entity-list" id="entityList"></div>
+    </div>
+    
+    <script>
+        // 实体数据
+        let entities = [
+            {id: 1, name: "K1+000 路段", type: "road", phase: "earthwork", progress: 0.45},
+            {id: 2, name: "K2+000 路段", type: "road", phase: "pavement", progress: 0.75},
+            {id: 3, name: "K3+000 路段", type: "road", phase: "completed", progress: 1.0},
+            {id: 4, name: "1号桥", type: "bridge", phase: "structure", progress: 0.6},
+            {id: 5, name: "2号桥", type: "bridge", phase: "planning", progress: 0.1},
+            {id: 6, name: "桩基 1-1", type: "pile", phase: "completed", progress: 1.0},
+            {id: 7, name: "桩基 1-2", type: "pile", phase: "structure", progress: 0.8},
+            {id: 8, name: "墩柱 1", type: "pier", phase: "earthwork", progress: 0.35},
+            {id: 9, name: "墩柱 2", type: "pier", phase: "clearing", progress: 0.2},
+            {id: 10, name: "承台 1", type: "cap", phase: "completed", progress: 1.0}
+        ];
+        
+        function getPhaseLabel(phase) {
+            const map = {
+                "planning": "规划中",
+                "clearing": "清表",
+                "earthwork": "土方",
+                "structure": "结构",
+                "pavement": "路面",
+                "finishing": "收尾",
+                "completed": "完成"
+            };
+            return map[phase] || phase;
+        }
+        
+        function updatePhase(progress) {
+            if (progress >= 1.0) return "completed";
+            if (progress >= 0.9) return "finishing";
+            if (progress >= 0.7) return "pavement";
+            if (progress >= 0.3) return "earthwork";
+            if (progress >= 0.1) return "clearing";
+            return "planning";
+        }
+        
+        function render() {
+            const list = document.getElementById('entityList');
+            list.innerHTML = '';
+            
+            entities.forEach((e, i) => {
+                const div = document.createElement('div');
+                div.className = 'entity-card';
+                div.innerHTML = `
+                    <div class="entity-header">
+                        <span class="entity-name">${e.name}</span>
+                        <span class="entity-type">${e.type}</span>
+                    </div>
+                    <span class="phase phase-${e.phase}">${getPhaseLabel(e.phase)}</span>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: ${e.progress * 100}%"></div>
+                            <span class="progress-text">${Math.round(e.progress * 100)}%</span>
+                        </div>
+                        <input type="range" min="0" max="100" value="${e.progress * 100}" 
+                            onchange="updateProgress(${i}, this.value / 100)">
+                    </div>
+                `;
+                list.appendChild(div);
+            });
+            
+            updateStats();
+        }
+        
+        function updateProgress(index, value) {
+            entities[index].progress = value;
+            entities[index].phase = updatePhase(value);
+            render();
+        }
+        
+        function addEntity() {
+            const type = document.getElementById('newType').value;
+            const id = entities.length + 1;
+            const names = {
+                road: "K" + id + "+000 路段",
+                bridge: id + "号桥",
+                pile: "桩基 " + id,
+                pier: "墩柱 " + id,
+                cap: "承台 " + id,
+                vehicle: "车辆 " + id
+            };
+            entities.push({
+                id: id,
+                name: names[type],
+                type: type,
+                phase: "planning",
+                progress: 0
+            });
+            render();
+        }
+        
+        function updateStats() {
+            document.getElementById('totalCount').textContent = entities.length;
+            
+            const total = entities.reduce((sum, e) => sum + e.progress, 0);
+            document.getElementById('avgProgress').textContent = Math.round(total / entities.length * 100) + '%';
+            
+            const inProgress = entities.filter(e => e.progress > 0 && e.progress < 1).length;
+            document.getElementById('inProgress').textContent = inProgress;
+            
+            const completed = entities.filter(e => e.progress >= 1).length;
+            document.getElementById('completed').textContent = completed;
+        }
+        
+        // 初始化
+        render();
+    </script>
+</body>
+</html>
