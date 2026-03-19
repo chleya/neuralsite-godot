@@ -1,180 +1,207 @@
 # WebSocketClient.gd
-# Godot WebSocket客户端 - 与后端实时同步
-# 使用: 自动连接后端，接收/发送事件
+# WebSocket客户端 - 与后端实时同步
+# 支持: 自动重连、心跳、消息队列
 extends Node
 
-# ── 配置 ──
 @export_group("WebSocket设置", "ws_")
 @export var server_url: String = "ws://localhost:8000/api/v3/ws"
 @export var auto_connect: bool = true
 @export var reconnect_delay: float = 3.0
 @export var heartbeat_interval: float = 5.0
+@export var max_reconnect_attempts: int = 10
 
-# ── 信号 ──
 signal connected()
 signal disconnected()
 signal message_received(data: Dictionary)
 signal entity_updated(entity_id: String, data: Dictionary)
 signal sync_error(error: String)
+signal connection_status_changed(connected: bool)
 
-# ── 内部变量 ──
 var _websocket: WebSocketPeer
 var _is_connected: bool = false
 var _reconnect_timer: float = 0.0
 var _heartbeat_timer: float = 0.0
 var _pending_messages: Array = []
+var _reconnect_attempts: int = 0
+var _last_pong_time: float = 0.0
+var _connection_quality: String = "excellent"
+
+var _stats: Dictionary = {
+	"messages_sent": 0,
+	"messages_received": 0,
+	"reconnects": 0,
+	"last_error": ""
+}
 
 func _ready() -> void:
 	_websocket = WebSocketPeer.new()
-	
 	if auto_connect:
 		_connect_to_server()
-	
 	print("[WebSocketClient] Initialized")
 
 func _process(delta: float) -> void:
 	if not _is_connected:
 		_reconnect_timer -= delta
 		if _reconnect_timer <= 0:
-			_connect_to_server()
-			_reconnect_timer = reconnect_delay
+			if _reconnect_attempts < max_reconnect_attempts:
+				_connect_to_server()
+				_reconnect_attempts += 1
+			else:
+				_connection_quality = "disconnected"
+				connection_status_changed.emit(false)
+		reconnect_delay = min(reconnect_delay * 1.5, 30.0)
 	else:
-		# 心跳
+		reconnect_delay = 3.0
 		_heartbeat_timer -= delta
 		if _heartbeat_timer <= 0:
 			_send_heartbeat()
 			_heartbeat_timer = heartbeat_interval
 		
-		# 处理消息
+		if Time.get_unix_time_from_system() - _last_pong_time > heartbeat_interval * 3:
+			_connection_quality = "poor"
+		
 		_poll_messages()
 
 func _connect_to_server() -> void:
-	print("[WebSocketClient] Connecting to ", server_url)
+	print("[WebSocketClient] Connecting to %s (attempt %d)" % [server_url, _reconnect_attempts + 1])
 	var err = _websocket.connect_to_url(server_url)
 	if err != OK:
 		print("[WebSocketClient] Connection failed: ", err)
+		_stats["last_error"] = "Connection failed: %s" % str(err)
 		_reconnect_timer = reconnect_delay
 	else:
-		print("[WebSocketClient] Connection initiated")
+		_reconnect_timer = 0.5
 
 func _poll_messages() -> void:
 	_websocket.poll()
 	var state = _websocket.get_ready_state()
 	
-	if state == WebSocketPeer.STATE_OPEN:
-		if not _is_connected:
-			_is_connected = true
-			connected.emit()
-			print("[WebSocketClient] Connected!")
-			
-			# 发送待发送的消息
-			_flush_pending_messages()
+	match state:
+		WebSocketPeer.STATE_OPEN:
+			if not _is_connected:
+				_is_connected = true
+				_reconnect_attempts = 0
+				_connection_quality = "excellent"
+				connected.emit()
+				connection_status_changed.emit(true)
+				print("[WebSocketClient] Connected!")
+				_flush_pending_messages()
+		
+		WebSocketPeer.STATE_CLOSING:
+			pass
+		
+		WebSocketPeer.STATE_CLOSED:
+			if _is_connected:
+				_is_connected = false
+				_connection_quality = "disconnected"
+				disconnected.emit()
+				connection_status_changed.emit(false)
+				var close_code = _websocket.get_close_code()
+				var close_reason = _websocket.get_close_reason()
+				print("[WebSocketClient] Closed: %d - %s" % [close_code, close_reason])
+				_stats["last_error"] = "Closed: %d - %s" % [close_code, close_reason]
+				_reconnect_timer = reconnect_delay
 	
-	elif state == WebSocketPeer.STATE_CLOSED:
-		if _is_connected:
-			_is_connected = false
-			disconnected.emit()
-			print("[WebSocketClient] Disconnected: ", _websocket.get_close_code(), " ", _websocket.get_close_reason())
-			_reconnect_timer = reconnect_delay
-	
-	# 读取消息
 	while _websocket.get_available_packet_count() > 0:
-		var packet = _websocket.get_packet()
-		var data = _websocket.get_string()
-		_handle_message(data)
+		var data = _websocket.get_packet()
+		if data.size() > 0:
+			_handle_message(data.get_string_from_utf8())
 
 func _handle_message(json_string: String) -> void:
 	var json = JSON.new()
 	var parse_result = json.parse(json_string)
 	
 	if parse_result != OK:
-		sync_error.emit("JSON parse failed")
+		sync_error.emit("JSON parse failed: " + json_string)
 		return
 	
 	var data = json.get_data()
 	if typeof(data) != TYPE_DICTIONARY:
 		return
 	
+	_stats["messages_received"] += 1
 	message_received.emit(data)
 	
-	# 处理不同消息类型
 	var msg_type = data.get("type", "")
 	match msg_type:
 		"entity_updated":
-			var entity_id = data.get("entity_id", "")
-			var entity_data = data.get("data", {})
-			entity_updated.emit(entity_id, entity_data)
-			_apply_entity_update(entity_id, entity_data)
+			entity_updated.emit(data.get("entity_id", ""), data.get("data", {}))
+			_apply_entity_update(data.get("entity_id", ""), data.get("data", {}))
 		
 		"sync":
 			_apply_sync_data(data.get("data", {}))
 		
 		"subscribed":
-			print("[WebSocketClient] Subscribed to: ", data.get("entity_id"))
+			print("[WebSocketClient] Subscribed: ", data.get("entity_id"))
 		
 		"pong":
-			# 心跳响应
-			pass
+			_last_pong_time = Time.get_unix_time_from_system()
+			_connection_quality = "excellent"
+		
+		"error":
+			sync_error.emit(data.get("message", "Unknown error"))
+			_stats["last_error"] = data.get("message", "Unknown error")
 
 func _apply_entity_update(entity_id: String, data: Dictionary) -> void:
-	# 查找实体并更新
 	var entity = _find_entity_by_id(entity_id)
 	if entity:
-		# 更新属性
 		for key in data:
-			if entity.has(key):
+			if key in entity:
 				entity.set(key, data[key])
-		print("[WebSocketClient] Updated entity: ", entity_id)
+		print("[WebSocketClient] Updated: %s" % entity_id)
 
 func _apply_sync_data(data: Dictionary) -> void:
-	# 处理完整同步数据
-	print("[WebSocketClient] Received sync data: ", data.keys())
+	print("[WebSocketClient] Sync: %s" % str(data.keys()))
 
 func _find_entity_by_id(entity_id: String) -> Node:
-	# 从场景中查找实体
 	var root = get_tree().root
-	var main = root.get_node("Main")
+	var main = root.get_node_or_null("Main")
 	if not main:
 		return null
 	
-	# 查找EntityContainer
 	var container = main.get_node_or_null("EntityContainer")
 	if container:
 		for child in container.get_children():
-			if child.has("entity_id") and child.entity_id == entity_id:
+			if child.has("entity_id") and child.get("entity_id") == entity_id:
 				return child
 	
-	# 查找RoadContainer
 	var road_container = main.get_node_or_null("RoadContainer")
 	if road_container:
 		for child in road_container.get_children():
-			if child.has("entity_id") and child.entity_id == entity_id:
+			if child.has("entity_id") and child.get("entity_id") == entity_id:
 				return child
 	
 	return null
 
-# ── 发送消息 ──
 func send_message(data: Dictionary) -> void:
 	if not _is_connected:
 		_pending_messages.append(data)
 		return
 	
 	var json_string = JSON.stringify(data)
-	_websocket.send_text(json_string)
+	var err = _websocket.send_text(json_string)
+	if err == OK:
+		_stats["messages_sent"] += 1
+	else:
+		_pending_messages.append(data)
 
 func _flush_pending_messages() -> void:
-	for msg in _pending_messages:
-		send_message(msg)
+	var messages = _pending_messages.duplicate()
 	_pending_messages.clear()
+	for msg in messages:
+		send_message(msg)
 
-# ── 订阅实体 ──
 func subscribe_entity(entity_id: String) -> void:
 	send_message({
 		"type": "subscribe",
 		"entity_id": entity_id
 	})
 
-# ── 发送更新 ──
+func subscribe_all() -> void:
+	send_message({
+		"type": "subscribe_all"
+	})
+
 func send_entity_update(entity_id: String, entity_type: String, data: Dictionary) -> void:
 	send_message({
 		"type": "update",
@@ -183,34 +210,62 @@ func send_entity_update(entity_id: String, entity_type: String, data: Dictionary
 		"data": data
 	})
 
-# ── 发送进度更新 ──
 func send_progress_update(entity_id: String, old_progress: float, new_progress: float) -> void:
 	send_message({
 		"type": "progress_update",
 		"entity_id": entity_id,
 		"old_progress": old_progress,
-		"new_progress": new_progress
+		"new_progress": new_progress,
+		"timestamp": Time.get_unix_time_from_system()
 	})
 
-# ── 发送阶段变更 ──
 func send_phase_change(entity_id: String, old_phase: String, new_phase: String) -> void:
 	send_message({
 		"type": "phase_change",
 		"entity_id": entity_id,
 		"old_phase": old_phase,
-		"new_phase": new_phase
+		"new_phase": new_phase,
+		"timestamp": Time.get_unix_time_from_system()
 	})
 
-# ── 心跳 ──
+func send_entity_click(entity_id: String, entity_type: String, position: Vector3) -> void:
+	send_message({
+		"type": "entity_click",
+		"entity_id": entity_id,
+		"entity_type": entity_type,
+		"position": [position.x, position.y, position.z],
+		"timestamp": Time.get_unix_time_from_system()
+	})
+
 func _send_heartbeat() -> void:
 	send_message({
 		"type": "ping",
 		"timestamp": Time.get_unix_time_from_system()
 	})
 
-# ── 状态查询 ──
+func force_reconnect() -> void:
+	if _websocket:
+		_websocket.close()
+	_is_connected = false
+	_reconnect_attempts = 0
+	_connect_to_server()
+
 func is_connected() -> bool:
 	return _is_connected
 
 func get_pending_count() -> int:
 	return _pending_messages.size()
+
+func get_connection_quality() -> String:
+	return _connection_quality
+
+func get_stats() -> Dictionary:
+	return _stats.duplicate()
+
+func reset_stats() -> void:
+	_stats = {
+		"messages_sent": 0,
+		"messages_received": 0,
+		"reconnects": _stats["reconnects"],
+		"last_error": ""
+	}
