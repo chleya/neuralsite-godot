@@ -202,6 +202,10 @@ func _create_test_entities() -> void:
 	_create_test_vehicle("vehicle_001", "挖掘机1", Vector3(-30, 0, 5), road1)
 	_create_test_vehicle("vehicle_002", "卡车1", Vector3(20, 0, 10), road2)
 	
+	var bridge = _create_bridge_entity("bridge_001", "K5+000 跨河大桥", Vector3(0, 0, -50), 0.0)
+	if bridge:
+		print("[Main] Bridge construction animation ready")
+	
 	print("[Main] Created test entities")
 
 func _create_precision_road(id: String, name: String, pos: Vector3, phase: String, progress: float) -> void:
@@ -364,27 +368,29 @@ func _create_entity_dialog(type: String) -> void:
 			)
 
 # ── 桥梁实体创建 ──
-func _create_bridge_entity(id: String, name: String, pos: Vector3) -> void:
+func _create_bridge_entity(id: String, name: String, pos: Vector3, progress: float = 0.0) -> Node:
 	var bridge_script = load("res://scripts/BridgeEntity.gd")
 	if not bridge_script:
 		print("[Main] BridgeEntity.gd not found")
-		return
+		return null
 	
 	var bridge = bridge_script.new()
 	bridge.name = id
 	bridge.entity_id = id
 	bridge.entity_name = name
 	bridge.position = pos
-	bridge.bridge_type = 0  # BEAM_BRIDGE
+	bridge.bridge_type = BridgeEntity.BridgeType.BEAM_BRIDGE
 	bridge.bridge_width = 12.0
-	bridge.total_length = 30.0
-	bridge.span_count = 1
+	bridge.total_length = 40.0
+	bridge.span_count = 2
+	bridge.construction_progress = progress
 	
 	bridge.entity_clicked.connect(_on_entity_clicked)
 	
 	entity_container.add_child(bridge)
 	entities.append(bridge)
-	print("[Main] Created bridge: ", name)
+	print("[Main] Created bridge: ", name, " progress=", progress)
+	return bridge
 
 # ── 桩基实体创建 ──
 func _create_pile_entity(id: String, name: String, pos: Vector3) -> void:
@@ -511,14 +517,21 @@ func _on_mode_toggled() -> void:
 func _on_day_changed(day: int) -> void:
 	if day_label:
 		day_label.text = "Day: %d" % day
-	_update_vehicles_on_timeline(day)
+	_update_entities_on_timeline(day)
 
-func _update_vehicles_on_timeline(day: int) -> void:
+func _update_entities_on_timeline(day: int) -> void:
 	var total_days = 365
+	var timeline_progress = clamp(float(day) / float(total_days), 0.0, 1.0)
+	
 	for entity in entities:
 		if entity is VehicleEntity and entity.has_method("update_position_on_timeline"):
-			var vehicle_progress = clamp(float(day) / float(total_days), 0.0, 1.0)
-			entity.update_position_on_timeline(vehicle_progress)
+			entity.update_position_on_timeline(timeline_progress)
+		elif entity is BridgeEntity and entity.has_method("set_construction_progress"):
+			var bridge_progress = timeline_progress
+			entity.set_construction_progress(bridge_progress)
+			if day_label:
+				var stage_name = entity.get_construction_stage_name() if entity.has_method("get_construction_stage_name") else "unknown"
+				day_label.text = "Day: %d | Bridge: %s" % [day, stage_name]
 
 func _on_phase_changed(segment_id: String, old_phase: String, new_phase: String) -> void:
 	print("[Main] Phase changed: ", segment_id, " ", old_phase, "->", new_phase)
