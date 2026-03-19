@@ -24,6 +24,7 @@ var unified_timeline: Node  # UnifiedTimeline
 var road_container: Node3D
 var entity_container: Node3D  # 精确实体容器
 var terrain_generator: Node  # TerrainGenerator
+var day_night_cycle: Node  # DayNightCycle
 var api_client: Node
 
 # ── 数据通道 ──
@@ -68,6 +69,9 @@ func _ready() -> void:
 	
 	# 初始化地形
 	_init_terrain()
+	
+	# 初始化昼夜循环
+	_init_day_night()
 	
 	# 初始化UnifiedTimeline
 	_init_unified_timeline()
@@ -118,6 +122,16 @@ func _init_terrain() -> void:
 		print("[Main] TerrainGenerator initialized")
 	else:
 		print("[Main] Warning: TerrainGenerator not found")
+
+func _init_day_night() -> void:
+	var daynight_script = load("res://scripts/DayNightCycle.gd")
+	if daynight_script:
+		day_night_cycle = daynight_script.new()
+		day_night_cycle.name = "DayNightCycle"
+		add_child(day_night_cycle)
+		print("[Main] DayNightCycle initialized")
+	else:
+		print("[Main] Warning: DayNightCycle not found")
 
 func _setup_ui() -> void:
 	if time_slider:
