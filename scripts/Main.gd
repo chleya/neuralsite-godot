@@ -206,7 +206,38 @@ func _create_test_entities() -> void:
 	if bridge:
 		print("[Main] Bridge construction animation ready")
 	
+	_create_construction_safety()
+	
 	print("[Main] Created test entities")
+
+func _create_construction_safety() -> void:
+	var fence_script = load("res://scripts/ConstructionFence.gd")
+	var sign_script = load("res://scripts/SafetySign.gd")
+	
+	if fence_script:
+		var fence1 = fence_script.new()
+		fence1.name = "Fence_Road1"
+		fence1.fence_length = 20.0
+		fence1.fence_color = Color(1.0, 0.6, 0.0)
+		fence1.position = Vector3(-50, 0, 15)
+		fence1.rotation.y = 0
+		fence1.set_warning_light(true)
+		entity_container.add_child(fence1)
+	
+	if sign_script:
+		var sign1 = sign_script.new()
+		sign1.name = "Sign_Warning1"
+		sign1.sign_type = SafetySign.SignType.WARNING
+		sign1.position = Vector3(-40, 0, 15)
+		entity_container.add_child(sign1)
+		
+		var sign2 = sign_script.new()
+		sign2.name = "Sign_Danger1"
+		sign2.sign_type = SafetySign.SignType.DANGER
+		sign2.position = Vector3(-60, 0, 15)
+		entity_container.add_child(sign2)
+	
+	print("[Main] Created construction safety signs and fences")
 
 func _create_precision_road(id: String, name: String, pos: Vector3, phase: String, progress: float) -> void:
 	var road_script = load("res://scripts/RoadEntity.gd")
