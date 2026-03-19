@@ -26,6 +26,7 @@ var entity_container: Node3D  # 精确实体容器
 var terrain_generator: Node  # TerrainGenerator
 var day_night_cycle: Node  # DayNightCycle
 var weather_system: Node  # WeatherSystem
+var construction_animator: Node  # ConstructionAnimator
 var entity_factory: EntityFactory  # 实体工厂
 var api_client: Node
 
@@ -80,6 +81,9 @@ func _ready() -> void:
 	
 	# 初始化天气系统
 	_init_weather()
+	
+	# 初始化施工动画系统
+	_init_construction_animator()
 	
 	# 初始化UnifiedTimeline
 	_init_unified_timeline()
@@ -151,6 +155,16 @@ func _init_weather() -> void:
 		print("[Main] WeatherSystem initialized")
 	else:
 		print("[Main] Warning: WeatherSystem not found")
+
+func _init_construction_animator() -> void:
+	var animator_script = load("res://scripts/ConstructionAnimator.gd")
+	if animator_script:
+		construction_animator = animator_script.new()
+		construction_animator.name = "ConstructionAnimator"
+		add_child(construction_animator)
+		print("[Main] ConstructionAnimator initialized")
+	else:
+		print("[Main] Warning: ConstructionAnimator not found")
 
 func _setup_ui() -> void:
 	if time_slider:
