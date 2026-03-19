@@ -28,6 +28,8 @@ var day_night_cycle: Node  # DayNightCycle
 var weather_system: Node  # WeatherSystem
 var construction_animator: Node  # ConstructionAnimator
 var entity_factory: EntityFactory  # 实体工厂
+var ui_manager: Node  # UIManager
+var input_handler: Node  # InputHandler
 var api_client: Node
 
 # ── 数据通道 ──
@@ -84,6 +86,9 @@ func _ready() -> void:
 	
 	# 初始化施工动画系统
 	_init_construction_animator()
+	
+	# 初始化UI系统
+	_init_ui_system()
 	
 	# 初始化UnifiedTimeline
 	_init_unified_timeline()
@@ -165,6 +170,32 @@ func _init_construction_animator() -> void:
 		print("[Main] ConstructionAnimator initialized")
 	else:
 		print("[Main] Warning: ConstructionAnimator not found")
+
+func _init_ui_system() -> void:
+	var ui_script = load("res://scripts/UIManager.gd")
+	if ui_script:
+		ui_manager = ui_script.new()
+		ui_manager.name = "UIManager"
+		add_child(ui_manager)
+		ui_manager.weather_changed.connect(_on_weather_changed)
+		print("[Main] UIManager initialized")
+	else:
+		print("[Main] Warning: UIManager not found")
+	
+	var input_script = load("res://scripts/InputHandler.gd")
+	if input_script:
+		input_handler = input_script.new()
+		input_handler.name = "InputHandler"
+		add_child(input_handler)
+		input_handler.setup_camera(camera)
+		print("[Main] InputHandler initialized")
+	else:
+		print("[Main] Warning: InputHandler not found")
+
+func _on_weather_changed(weather_type: int) -> void:
+	if weather_system and weather_system.has_method("set_weather"):
+		weather_system.set_weather(weather_type)
+		print("[Main] Weather changed to: %s" % WeatherSystem.WeatherType.keys()[weather_type])
 
 func _setup_ui() -> void:
 	if time_slider:
@@ -280,8 +311,21 @@ func _update_entity_info_display() -> void:
 		info += "Phase: %s\n" % selected_entity.phase
 		info += "Progress: %.1f%%" % (selected_entity.progress * 100)
 		entity_info_label.text = info
+		
+		if ui_manager and ui_manager.has_method("update_entity_info"):
+			var details = {
+				"Phase": selected_entity.phase,
+				"Progress": "%.1f%%" % (selected_entity.progress * 100)
+			}
+			if selected_entity.has("lanes"):
+				details["Lanes"] = selected_entity.lanes
+			if selected_entity.has("width"):
+				details["Width"] = "%.1fm" % selected_entity.width
+			ui_manager.update_entity_info(selected_entity.entity_id, selected_entity.entity_type, details)
 	elif entity_info_label:
 		entity_info_label.text = "No entity selected"
+		if ui_manager and ui_manager.has_method("clear_entity_info"):
+			ui_manager.clear_entity_info()
 
 func _process(delta: float) -> void:
 	# 相机旋转控制
