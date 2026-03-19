@@ -25,6 +25,7 @@ var road_container: Node3D
 var entity_container: Node3D  # 精确实体容器
 var terrain_generator: Node  # TerrainGenerator
 var day_night_cycle: Node  # DayNightCycle
+var entity_factory: EntityFactory  # 实体工厂
 var api_client: Node
 
 # ── 数据通道 ──
@@ -66,6 +67,9 @@ func _ready() -> void:
 	entity_container = Node3D.new()
 	entity_container.name = "EntityContainer"
 	add_child(entity_container)
+	
+	# 初始化实体工厂
+	entity_factory = EntityFactory.new(entity_container)
 	
 	# 初始化地形
 	_init_terrain()
@@ -209,105 +213,30 @@ func _init_data_channels() -> void:
 
 # ── 创建测试实体 ──
 func _create_test_entities() -> void:
-	var road1 = _create_precision_road("road_001", "K1+000 示范段", Vector3(-50, 0, 0), "earthwork", 0.45)
-	var road2 = _create_precision_road("road_002", "K2+000 路段", Vector3(0, 0, 30), "pavement", 0.75)
-	var road3 = _create_precision_road("road_003", "K3+000 路段", Vector3(50, 0, -20), "completed", 1.0)
+	if not entity_factory:
+		return
 	
-	_create_test_vehicle("vehicle_001", "挖掘机1", Vector3(-30, 0, 5), road1)
-	_create_test_vehicle("vehicle_002", "卡车1", Vector3(20, 0, 10), road2)
+	var road1 = entity_factory.create_road("road_001", "K1+000 示范段", Vector3(-50, 0, 0), "earthwork", 0.45)
+	var road2 = entity_factory.create_road("road_002", "K2+000 路段", Vector3(0, 0, 30), "pavement", 0.75)
+	entity_factory.create_road("road_003", "K3+000 路段", Vector3(50, 0, -20), "completed", 1.0)
 	
-	var bridge = _create_bridge_entity("bridge_001", "K5+000 跨河大桥", Vector3(0, 0, -50), 0.0)
-	if bridge:
-		print("[Main] Bridge construction animation ready")
+	entity_factory.create_vehicle("vehicle_001", "挖掘机1", Vector3(-30, 0, 5), road1)
+	entity_factory.create_vehicle("vehicle_002", "卡车1", Vector3(20, 0, 10), road2)
+	
+	entity_factory.create_bridge("bridge_001", "K5+000 跨河大桥", Vector3(0, 0, -50), 0.0)
 	
 	_create_construction_safety()
 	
-	print("[Main] Created test entities")
+	entities = entity_factory.get_all_entities()
+	print("[Main] Created test entities via EntityFactory")
 
 func _create_construction_safety() -> void:
-	var fence_script = load("res://scripts/ConstructionFence.gd")
-	var sign_script = load("res://scripts/SafetySign.gd")
-	
-	if fence_script:
-		var fence1 = fence_script.new()
-		fence1.name = "Fence_Road1"
-		fence1.fence_length = 20.0
-		fence1.fence_color = Color(1.0, 0.6, 0.0)
-		fence1.position = Vector3(-50, 0, 15)
-		fence1.rotation.y = 0
-		fence1.set_warning_light(true)
-		entity_container.add_child(fence1)
-	
-	if sign_script:
-		var sign1 = sign_script.new()
-		sign1.name = "Sign_Warning1"
-		sign1.sign_type = SafetySign.SignType.WARNING
-		sign1.position = Vector3(-40, 0, 15)
-		entity_container.add_child(sign1)
-		
-		var sign2 = sign_script.new()
-		sign2.name = "Sign_Danger1"
-		sign2.sign_type = SafetySign.SignType.DANGER
-		sign2.position = Vector3(-60, 0, 15)
-		entity_container.add_child(sign2)
-	
-	print("[Main] Created construction safety signs and fences")
-
-func _create_precision_road(id: String, name: String, pos: Vector3, phase: String, progress: float) -> void:
-	var road_script = load("res://scripts/RoadEntity.gd")
-	if not road_script:
-		print("[Main] RoadEntity.gd not found")
+	if not entity_factory:
 		return
 	
-	var road = road_script.new()
-	road.name = id
-	road.entity_id = id
-	road.entity_name = name
-	road.position = pos
-	road.phase = phase
-	road.progress = progress
-	road.lanes = 4
-	road.width = 14.0
-	road.highway_type = "primary"
-	
-	# 设置中心线
-	var points = PackedVector3Array()
-	for i in range(6):
-		points.append(Vector3(i * 10.0, 0, 0))
-	road.centerline_points = points
-	
-	road.entity_clicked.connect(_on_entity_clicked)
-	
-	entity_container.add_child(road)
-	entities.append(road)
-	
-	# 注册到UnifiedTimeline
-	if unified_timeline and unified_timeline.has_method("register_entity"):
-		unified_timeline.register_entity(id, road)
-	
-	return road
-
-func _create_test_vehicle(id: String, name: String, pos: Vector3, bound_road: Node = null) -> void:
-	var vehicle_script = load("res://scripts/VehicleEntity.gd")
-	if not vehicle_script:
-		print("[Main] VehicleEntity.gd not found")
-		return
-	
-	var vehicle = vehicle_script.new()
-	vehicle.name = id
-	vehicle.entity_id = id
-	vehicle.entity_name = name
-	vehicle.position = pos
-	vehicle.vehicle_name = name
-	
-	if bound_road and bound_road.has("centerline_points"):
-		vehicle.bind_to_road_path(bound_road.centerline_points)
-		vehicle.attach_to_road(bound_road.name)
-	
-	vehicle.entity_clicked.connect(_on_entity_clicked)
-	
-	entity_container.add_child(vehicle)
-	entities.append(vehicle)
+	entity_factory.create_fence(Vector3(-50, 0, 15), 20.0)
+	entity_factory.create_sign(Vector3(-40, 0, 15), SafetySign.SignType.WARNING)
+	entity_factory.create_sign(Vector3(-60, 0, 15), SafetySign.SignType.DANGER)
 
 # ── 实体交互 ──
 func _on_entity_clicked(entity: Node) -> void:
