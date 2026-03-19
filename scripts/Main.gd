@@ -412,8 +412,7 @@ func _create_pier_entity(id: String, name: String, pos: Vector3) -> void:
 	
 	entity_container.add_child(pier)
 	entities.append(pier)
-	print("[Main] Created pier: ", name)
-	print("[Main] Created: ", type)
+	print("[Main] Created pier: ", name, " type=", pier.pier_type)
 
 # ── 时间轴控制 ──
 func _toggle_timeline() -> void:

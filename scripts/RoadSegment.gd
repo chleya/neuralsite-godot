@@ -63,8 +63,8 @@ func _create_child_nodes() -> void:
 	if not has_node("StaticBody3D"):
 		_static_body = StaticBody3D.new()
 		_static_body.name = "StaticBody3D"
-		 CollisionShape3D.new()
-		_collision_shape =_collision_shape.name = "CollisionShape3D"
+		_collision_shape = CollisionShape3D.new()
+		_collision_shape.name = "CollisionShape3D"
 		_static_body.add_child(_collision_shape)
 		add_child(_static_body)
 	else:

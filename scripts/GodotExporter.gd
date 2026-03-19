@@ -126,11 +126,46 @@ func sync_to_api(roads: Array) -> bool:
 	if use_local_file:
 		return export_modifications()
 	
-	# TODO: 实现HTTP API同步
-	# 对每个修改调用 API
+	var url = api_url + "/sync"
+	var success_count = 0
+	var fail_count = 0
 	
-	print("[GodotExporter] Sync to API not implemented yet")
-	return false
+	for mod in _modifications:
+		var result = await _http_post_json(url, mod)
+		if result.size() > 0:
+			success_count += 1
+		else:
+			fail_count += 1
+	
+	if fail_count == 0:
+		sync_completed.emit()
+		print("[GodotExporter] Synced ", success_count, " modifications to API")
+		return true
+	else:
+		sync_failed.emit("Failed to sync " + str(fail_count) + " items")
+		print("[GodotExporter] Sync partially failed: ", success_count, " ok, ", fail_count, " failed")
+		return false
+
+func _http_post_json(url: String, body: Dictionary) -> Dictionary:
+	var http = HTTPRequest.new()
+	add_child(http)
+	
+	var body_json = JSON.stringify(body)
+	var headers = ["Content-Type: application/json"]
+	
+	var request_result = await http.request(url, headers, HTTPClient.METHOD_POST, body_json)
+	if request_result != OK:
+		http.queue_free()
+		return {}
+	
+	var response = await http.request_completed
+	http.queue_free()
+	
+	if response[1] == 200:
+		var json = JSON.new()
+		json.parse(response[3].get_string_from_utf8())
+		return json.get_data()
+	return {}
 
 # ── 坐标转换 ──
 func _points_to_coords(points: PackedVector3Array) -> Array:
