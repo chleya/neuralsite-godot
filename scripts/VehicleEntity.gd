@@ -153,6 +153,51 @@ func detach_from_road() -> void:
 	attached_road = ""
 	print("[VehicleEntity] Detached from road")
 
+# ── 绑定到道路并沿路径移动 ──
+var _road_path_points: PackedVector3Array = PackedVector3Array()
+var _path_index: int = 0
+var _path_segment_progress: float = 0.0
+
+func bind_to_road_path(path_points: PackedVector3Array) -> void:
+	_road_path_points = path_points
+	_path_index = 0
+	_path_segment_progress = 0.0
+	print("[VehicleEntity] Bound to road path with ", path_points.size(), " points")
+
+func update_position_on_timeline(progress: float) -> void:
+	if _road_path_points.size() < 2:
+		return
+	
+	var total_length: float = 0.0
+	var segment_lengths: Array = []
+	
+	for i in range(_road_path_points.size() - 1):
+		var seg_len = _road_path_points[i].distance_to(_road_path_points[i + 1])
+		segment_lengths.append(seg_len)
+		total_length += seg_len
+	
+	if total_length <= 0.0:
+		return
+	
+	var target_distance = progress * total_length
+	var accumulated: float = 0.0
+	
+	for i in range(segment_lengths.size()):
+		if accumulated + segment_lengths[i] >= target_distance:
+			_path_index = i
+			_path_segment_progress = (target_distance - accumulated) / segment_lengths[i] if segment_lengths[i] > 0 else 0.0
+			break
+		accumulated += segment_lengths[i]
+	
+	var p0 = _road_path_points[_path_index]
+	var p1 = _road_path_points[_path_index + 1] if _path_index + 1 < _road_path_points.size() else p0
+	
+	global_position = p0.lerp(p1, _path_segment_progress)
+	
+	var direction = (p1 - p0).normalized()
+	if direction.length() > 0.1:
+		global_rotation.y = atan2(direction.x, direction.z)
+
 # ── 碰撞检测回调 ──
 func _on_collision(other_entity: Node) -> void:
 	if other_entity is ConstructionEntity:

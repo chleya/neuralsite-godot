@@ -23,6 +23,7 @@ var timeline_manager: TimelineManager
 var unified_timeline: Node  # UnifiedTimeline
 var road_container: Node3D
 var entity_container: Node3D  # 精确实体容器
+var terrain_generator: Node  # TerrainGenerator
 var api_client: Node
 
 # ── 数据通道 ──
@@ -65,6 +66,9 @@ func _ready() -> void:
 	entity_container.name = "EntityContainer"
 	add_child(entity_container)
 	
+	# 初始化地形
+	_init_terrain()
+	
 	# 初始化UnifiedTimeline
 	_init_unified_timeline()
 	
@@ -104,6 +108,16 @@ func _init_unified_timeline() -> void:
 		print("[Main] UnifiedTimeline initialized")
 	else:
 		print("[Main] Warning: UnifiedTimeline not found")
+
+func _init_terrain() -> void:
+	var terrain_script = load("res://scripts/TerrainGenerator.gd")
+	if terrain_script:
+		terrain_generator = terrain_script.new()
+		terrain_generator.name = "TerrainGenerator"
+		add_child(terrain_generator)
+		print("[Main] TerrainGenerator initialized")
+	else:
+		print("[Main] Warning: TerrainGenerator not found")
 
 func _setup_ui() -> void:
 	if time_slider:
@@ -181,14 +195,12 @@ func _init_data_channels() -> void:
 
 # ── 创建测试实体 ──
 func _create_test_entities() -> void:
-	# 使用RoadEntity创建测试道路
-	_create_precision_road("road_001", "K1+000 示范段", Vector3(-50, 0, 0), "earthwork", 0.45)
-	_create_precision_road("road_002", "K2+000 路段", Vector3(0, 0, 30), "pavement", 0.75)
-	_create_precision_road("road_003", "K3+000 路段", Vector3(50, 0, -20), "completed", 1.0)
+	var road1 = _create_precision_road("road_001", "K1+000 示范段", Vector3(-50, 0, 0), "earthwork", 0.45)
+	var road2 = _create_precision_road("road_002", "K2+000 路段", Vector3(0, 0, 30), "pavement", 0.75)
+	var road3 = _create_precision_road("road_003", "K3+000 路段", Vector3(50, 0, -20), "completed", 1.0)
 	
-	# 创建测试车辆
-	_create_test_vehicle("vehicle_001", "挖掘机1", Vector3(-30, 0, 5))
-	_create_test_vehicle("vehicle_002", "卡车1", Vector3(20, 0, 10))
+	_create_test_vehicle("vehicle_001", "挖掘机1", Vector3(-30, 0, 5), road1)
+	_create_test_vehicle("vehicle_002", "卡车1", Vector3(20, 0, 10), road2)
 	
 	print("[Main] Created test entities")
 
@@ -223,8 +235,10 @@ func _create_precision_road(id: String, name: String, pos: Vector3, phase: Strin
 	# 注册到UnifiedTimeline
 	if unified_timeline and unified_timeline.has_method("register_entity"):
 		unified_timeline.register_entity(id, road)
+	
+	return road
 
-func _create_test_vehicle(id: String, name: String, pos: Vector3) -> void:
+func _create_test_vehicle(id: String, name: String, pos: Vector3, bound_road: Node = null) -> void:
 	var vehicle_script = load("res://scripts/VehicleEntity.gd")
 	if not vehicle_script:
 		print("[Main] VehicleEntity.gd not found")
@@ -236,6 +250,10 @@ func _create_test_vehicle(id: String, name: String, pos: Vector3) -> void:
 	vehicle.entity_name = name
 	vehicle.position = pos
 	vehicle.vehicle_name = name
+	
+	if bound_road and bound_road.has("centerline_points"):
+		vehicle.bind_to_road_path(bound_road.centerline_points)
+		vehicle.attach_to_road(bound_road.name)
 	
 	vehicle.entity_clicked.connect(_on_entity_clicked)
 	
@@ -493,6 +511,14 @@ func _on_mode_toggled() -> void:
 func _on_day_changed(day: int) -> void:
 	if day_label:
 		day_label.text = "Day: %d" % day
+	_update_vehicles_on_timeline(day)
+
+func _update_vehicles_on_timeline(day: int) -> void:
+	var total_days = 365
+	for entity in entities:
+		if entity is VehicleEntity and entity.has_method("update_position_on_timeline"):
+			var vehicle_progress = clamp(float(day) / float(total_days), 0.0, 1.0)
+			entity.update_position_on_timeline(vehicle_progress)
 
 func _on_phase_changed(segment_id: String, old_phase: String, new_phase: String) -> void:
 	print("[Main] Phase changed: ", segment_id, " ", old_phase, "->", new_phase)
