@@ -25,6 +25,7 @@ var road_container: Node3D
 var entity_container: Node3D  # 精确实体容器
 var terrain_generator: Node  # TerrainGenerator
 var day_night_cycle: Node  # DayNightCycle
+var weather_system: Node  # WeatherSystem
 var entity_factory: EntityFactory  # 实体工厂
 var api_client: Node
 
@@ -76,6 +77,9 @@ func _ready() -> void:
 	
 	# 初始化昼夜循环
 	_init_day_night()
+	
+	# 初始化天气系统
+	_init_weather()
 	
 	# 初始化UnifiedTimeline
 	_init_unified_timeline()
@@ -136,6 +140,17 @@ func _init_day_night() -> void:
 		print("[Main] DayNightCycle initialized")
 	else:
 		print("[Main] Warning: DayNightCycle not found")
+
+func _init_weather() -> void:
+	var weather_script = load("res://scripts/WeatherSystem.gd")
+	if weather_script:
+		weather_system = weather_script.new()
+		weather_system.name = "WeatherSystem"
+		add_child(weather_system)
+		weather_system.set_weather(WeatherSystem.WeatherType.CLEAR)
+		print("[Main] WeatherSystem initialized")
+	else:
+		print("[Main] Warning: WeatherSystem not found")
 
 func _setup_ui() -> void:
 	if time_slider:
