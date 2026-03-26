@@ -1,0 +1,4 @@
+﻿id,work_area_id,resource_type,resource_name,quantity,unit,record_day,supplier,notes
+,wa_jtaq600,labor,施工班组,,person,,,starter_for=600章交通安全设施
+,wa_jtaq600,machine,主要机械,,set,,,starter_for=600章交通安全设施
+,wa_jtaq600,material,主要材料,,t,,,starter_for=600章交通安全设施

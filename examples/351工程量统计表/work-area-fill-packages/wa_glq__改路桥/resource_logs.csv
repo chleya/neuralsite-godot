@@ -1,0 +1,4 @@
+﻿id,work_area_id,resource_type,resource_name,quantity,unit,record_day,supplier,notes
+,wa_glq,labor,施工班组,,person,,,starter_for=改路桥
+,wa_glq,machine,主要机械,,set,,,starter_for=改路桥
+,wa_glq,material,主要材料,,t,,,starter_for=改路桥

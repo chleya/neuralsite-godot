@@ -1,0 +1,451 @@
+﻿id,work_area_id,resource_type,resource_name,quantity,unit,record_day,supplier,notes
+,wa_qqtq_r,machine,机械设备,9.0,set,303,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(1).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,303,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(1).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,303,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(1).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,303,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(1).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,303,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(1).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,26.0,person,303,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(1).xlsx
+,wa_lm300,machine,机械设备,21.0,set,303,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(1).xlsx; detail=炮头机3台 挖掘机4台 后八轮6辆 前四后八车8辆
+,wa_lm300,labor,班组人数,2.0,person,303,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(1).xlsx
+,wa_lm300,machine,机械设备,6.0,set,303,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(1).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,303,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(1).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,318,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(10)(1).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,318,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(10)(1).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,318,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(10)(1).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,318,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(10)(1).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,318,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(10)(1).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,26.0,person,318,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(10)(1).xlsx
+,wa_lm300,machine,机械设备,20.0,set,318,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(10)(1).xlsx; detail=炮头机1台 挖掘机4台 后八轮5辆 5方车10辆
+,wa_lm300,labor,班组人数,2.0,person,318,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(10)(1).xlsx
+,wa_lm300,machine,机械设备,6.0,set,318,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(10)(1).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,318,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(10)(1).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,221,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(10).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,221,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(10).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,221,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(10).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,221,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(10).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,221,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(10).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,26.0,person,221,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(10).xlsx
+,wa_lm300,machine,机械设备,12.0,set,221,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(10).xlsx; detail=炮头机3台 挖掘机3台 前四后八车6辆
+,wa_lm300,labor,班组人数,2.0,person,221,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(10).xlsx
+,wa_lm300,machine,机械设备,6.0,set,221,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(10).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,221,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(10).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,310,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(12).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,310,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(12).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,310,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(12).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,310,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(12).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,310,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(12).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,26.0,person,310,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(12).xlsx
+,wa_lm300,machine,机械设备,17.0,set,310,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(12).xlsx; detail=炮头机1台 挖掘机6台 后八轮7辆 10方车3辆
+,wa_lm300,labor,班组人数,2.0,person,310,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(12).xlsx
+,wa_lm300,machine,机械设备,6.0,set,310,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(12).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,310,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(12).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,319,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(15).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,319,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(15).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,319,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(15).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,319,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(15).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,319,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(15).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,26.0,person,319,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(15).xlsx
+,wa_lm300,machine,机械设备,27.0,set,319,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(15).xlsx; detail=炮头机1台 挖掘机5台 后八轮11辆 5方车10辆
+,wa_lm300,labor,班组人数,2.0,person,319,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(15).xlsx
+,wa_lm300,machine,机械设备,6.0,set,319,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(15).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,319,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(15).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,329,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(17).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,329,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(17).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,329,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(17).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,329,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(17).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,329,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(17).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,26.0,person,329,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(17).xlsx
+,wa_lm300,machine,机械设备,6.0,set,329,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(17).xlsx; detail=炮头机4台 挖掘机2台
+,wa_lm300,labor,班组人数,2.0,person,329,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(17).xlsx
+,wa_lm300,machine,机械设备,6.0,set,329,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(17).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,329,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(17).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,225,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(18).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,225,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(18).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,225,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(18).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,225,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(18).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,225,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(18).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,26.0,person,225,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(18).xlsx
+,wa_lm300,machine,机械设备,19.0,set,225,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(18).xlsx; detail=炮头机2台 挖掘机4台 后八轮3辆 前四后八车10辆
+,wa_lm300,labor,班组人数,2.0,person,225,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(18).xlsx
+,wa_lm300,machine,机械设备,6.0,set,225,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(18).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,225,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(18).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,322,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(19).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,322,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(19).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,322,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(19).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,322,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(19).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,322,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(19).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,26.0,person,322,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(19).xlsx
+,wa_lm300,machine,机械设备,27.0,set,322,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(19).xlsx; detail=炮头机1台 挖掘机5台 后八轮11辆 5方车10辆
+,wa_lm300,labor,班组人数,2.0,person,322,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(19).xlsx
+,wa_lm300,machine,机械设备,6.0,set,322,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(19).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,322,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(19).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,327,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(20).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,327,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(20).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,327,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(20).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,327,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(20).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,327,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(20).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,26.0,person,327,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(20).xlsx
+,wa_lm300,machine,机械设备,15.0,set,327,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(20).xlsx; detail=炮头机2台 挖掘机6台 后八轮7辆
+,wa_lm300,labor,班组人数,2.0,person,327,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(20).xlsx
+,wa_lm300,machine,机械设备,6.0,set,327,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(20).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,327,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(20).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,317,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(21).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,317,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(21).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,317,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(21).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,317,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(21).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,317,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(21).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,26.0,person,317,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(21).xlsx
+,wa_lm300,machine,机械设备,20.0,set,317,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(21).xlsx; detail=炮头机1台 挖掘机4台 后八轮5辆 5方车10辆
+,wa_lm300,labor,班组人数,2.0,person,317,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(21).xlsx
+,wa_lm300,machine,机械设备,6.0,set,317,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(21).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,317,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(21).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,216,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(23).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,216,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(23).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,216,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(23).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,216,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(23).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,216,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(23).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,16.0,person,216,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(23).xlsx
+,wa_lm300,machine,机械设备,10.0,set,216,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(23).xlsx; detail=炮头机2台 挖掘机3台 后八车5辆
+,wa_lm300,labor,班组人数,2.0,person,216,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(23).xlsx
+,wa_lm300,machine,机械设备,6.0,set,216,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(23).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,216,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(23).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,217,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(24).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,217,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(24).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,217,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(24).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,217,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(24).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,217,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(24).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,26.0,person,217,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(24).xlsx
+,wa_lm300,machine,机械设备,11.0,set,217,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(24).xlsx; detail=炮头机2台 挖掘机4台 后八车5辆
+,wa_lm300,labor,班组人数,2.0,person,217,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(24).xlsx
+,wa_lm300,machine,机械设备,6.0,set,217,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(24).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,217,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(24).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,224,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(28).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,224,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(28).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,224,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(28).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,224,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(28).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,224,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(28).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,30.0,person,224,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(28).xlsx
+,wa_lm300,machine,机械设备,19.0,set,224,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(28).xlsx; detail=炮头机2台 挖掘机4台 后八轮3辆 前四后八车10辆
+,wa_lm300,labor,班组人数,2.0,person,224,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(28).xlsx
+,wa_lm300,machine,机械设备,6.0,set,224,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(28).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,224,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(28).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,315,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(29).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,315,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(29).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,315,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(29).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,315,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(29).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,315,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(29).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,26.0,person,315,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(29).xlsx
+,wa_lm300,machine,机械设备,20.0,set,315,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(29).xlsx; detail=炮头机1台 挖掘机4台 后八轮5辆 5方车10辆
+,wa_lm300,labor,班组人数,2.0,person,315,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(29).xlsx
+,wa_lm300,machine,机械设备,6.0,set,315,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(29).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,315,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(29).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,309,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(3)(1).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,309,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(3)(1).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,309,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(3)(1).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,309,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(3)(1).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,309,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(3)(1).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,26.0,person,309,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(3)(1).xlsx
+,wa_lm300,machine,机械设备,28.0,set,309,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(3)(1).xlsx; detail=炮头机1台 挖掘机6台 后八轮5辆 前四后八车10辆 10方车6辆
+,wa_lm300,labor,班组人数,2.0,person,309,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(3)(1).xlsx
+,wa_lm300,machine,机械设备,6.0,set,309,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(3)(1).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,309,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(3)(1).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,220,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(3).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,220,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(3).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,220,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(3).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,220,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(3).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,220,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(3).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,16.0,person,220,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(3).xlsx
+,wa_lm300,machine,机械设备,4.0,set,220,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(3).xlsx; detail=炮头机3台 挖掘机1台
+,wa_lm300,labor,班组人数,2.0,person,220,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(3).xlsx
+,wa_lm300,machine,机械设备,6.0,set,220,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(3).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,220,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(3).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,324,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(33).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,324,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(33).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,324,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(33).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,324,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(33).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,324,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(33).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,26.0,person,324,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(33).xlsx
+,wa_lm300,machine,机械设备,27.0,set,324,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(33).xlsx; detail=炮头机1台 挖掘机5台 后八轮11辆 5方车10辆
+,wa_lm300,labor,班组人数,2.0,person,324,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(33).xlsx
+,wa_lm300,machine,机械设备,6.0,set,324,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(33).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,324,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(33).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,313,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(34).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,313,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(34).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,313,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(34).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,313,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(34).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,313,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(34).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,26.0,person,313,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(34).xlsx
+,wa_lm300,machine,机械设备,20.0,set,313,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(34).xlsx; detail=炮头机2台 挖掘机3台 后八轮5辆 5方车10辆
+,wa_lm300,labor,班组人数,2.0,person,313,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(34).xlsx
+,wa_lm300,machine,机械设备,6.0,set,313,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(34).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,313,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(34).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,301,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(35).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,301,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(35).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,301,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(35).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,301,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(35).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,301,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(35).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,26.0,person,301,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(35).xlsx
+,wa_lm300,machine,机械设备,22.0,set,301,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(35).xlsx; detail=炮头机3台 挖掘机4台 后八轮9辆 前四后八车6辆
+,wa_lm300,labor,班组人数,2.0,person,301,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(35).xlsx
+,wa_lm300,machine,机械设备,6.0,set,301,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(35).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,301,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(35).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,302,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(36).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,302,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(36).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,302,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(36).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,302,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(36).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,302,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(36).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,26.0,person,302,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(36).xlsx
+,wa_lm300,machine,机械设备,21.0,set,302,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(36).xlsx; detail=炮头机3台 挖掘机4台 后八轮6辆 前四后八车8辆
+,wa_lm300,labor,班组人数,2.0,person,302,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(36).xlsx
+,wa_lm300,machine,机械设备,6.0,set,302,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(36).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,302,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(36).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,331,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(37).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,331,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(37).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,331,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(37).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,331,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(37).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,331,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(37).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,26.0,person,331,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(37).xlsx
+,wa_lm300,machine,机械设备,14.0,set,331,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(37).xlsx; detail=炮头机2台 挖掘机4台 后八轮8辆
+,wa_lm300,labor,班组人数,2.0,person,331,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(37).xlsx
+,wa_lm300,machine,机械设备,6.0,set,331,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(37).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,331,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(37).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,307,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(38).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,307,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(38).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,307,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(38).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,307,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(38).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,307,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(38).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,26.0,person,307,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(38).xlsx
+,wa_lm300,machine,机械设备,18.0,set,307,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(38).xlsx; detail=炮头机3台 挖掘机4台 后八轮7辆 前四后八车4辆
+,wa_lm300,labor,班组人数,2.0,person,307,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(38).xlsx
+,wa_lm300,machine,机械设备,6.0,set,307,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(38).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,307,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(38).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,330,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(39).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,330,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(39).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,330,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(39).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,330,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(39).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,330,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(39).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,26.0,person,330,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(39).xlsx
+,wa_lm300,machine,机械设备,11.0,set,330,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(39).xlsx; detail=炮头机2台 挖掘机4台 后八轮5辆
+,wa_lm300,labor,班组人数,2.0,person,330,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(39).xlsx
+,wa_lm300,machine,机械设备,6.0,set,330,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(39).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,330,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(39).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,311,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(4).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,311,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(4).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,311,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(4).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,311,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(4).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,311,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(4).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,26.0,person,311,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(4).xlsx
+,wa_lm300,machine,机械设备,18.0,set,311,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(4).xlsx; detail=炮头机3台 挖掘机3台 后八轮2辆 5方车10辆
+,wa_lm300,labor,班组人数,2.0,person,311,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(4).xlsx
+,wa_lm300,machine,机械设备,6.0,set,311,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(4).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,311,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(4).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,328,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(40).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,328,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(40).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,328,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(40).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,328,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(40).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,328,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(40).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,26.0,person,328,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(40).xlsx
+,wa_lm300,machine,机械设备,15.0,set,328,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(40).xlsx; detail=炮头机2台 挖掘机6台 后八轮7辆
+,wa_lm300,labor,班组人数,2.0,person,328,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(40).xlsx
+,wa_lm300,machine,机械设备,6.0,set,328,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(40).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,328,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(40).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,326,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(41).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,326,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(41).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,326,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(41).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,326,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(41).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,326,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(41).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,26.0,person,326,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(41).xlsx
+,wa_lm300,machine,机械设备,15.0,set,326,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(41).xlsx; detail=炮头机2台 挖掘机6台 后八轮7辆
+,wa_lm300,labor,班组人数,2.0,person,326,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(41).xlsx
+,wa_lm300,machine,机械设备,6.0,set,326,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(41).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,326,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(41).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,325,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(42).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,325,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(42).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,325,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(42).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,325,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(42).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,325,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(42).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,26.0,person,325,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(42).xlsx
+,wa_lm300,machine,机械设备,15.0,set,325,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(42).xlsx; detail=炮头机2台 挖掘机6台 后八轮7辆
+,wa_lm300,labor,班组人数,2.0,person,325,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(42).xlsx
+,wa_lm300,machine,机械设备,6.0,set,325,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(42).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,325,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(42).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,306,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(43).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,306,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(43).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,306,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(43).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,306,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(43).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,306,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(43).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,26.0,person,306,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(43).xlsx
+,wa_lm300,machine,机械设备,19.0,set,306,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(43).xlsx; detail=炮头机3台 挖掘机4台 后八轮4辆 前四后八车8辆
+,wa_lm300,labor,班组人数,2.0,person,306,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(43).xlsx
+,wa_lm300,machine,机械设备,6.0,set,306,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(43).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,306,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(43).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,323,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(44).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,323,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(44).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,323,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(44).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,323,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(44).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,323,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(44).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,26.0,person,323,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(44).xlsx
+,wa_lm300,machine,机械设备,27.0,set,323,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(44).xlsx; detail=炮头机1台 挖掘机5台 后八轮11辆 5方车10辆
+,wa_lm300,labor,班组人数,2.0,person,323,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(44).xlsx
+,wa_lm300,machine,机械设备,6.0,set,323,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(44).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,323,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(44).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,321,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(45).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,321,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(45).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,321,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(45).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,321,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(45).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,321,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(45).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,26.0,person,321,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(45).xlsx
+,wa_lm300,machine,机械设备,27.0,set,321,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(45).xlsx; detail=炮头机1台 挖掘机5台 后八轮11辆 5方车10辆
+,wa_lm300,labor,班组人数,2.0,person,321,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(45).xlsx
+,wa_lm300,machine,机械设备,6.0,set,321,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(45).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,321,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(45).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,314,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(46).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,314,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(46).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,314,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(46).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,314,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(46).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,314,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(46).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,26.0,person,314,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(46).xlsx
+,wa_lm300,machine,机械设备,20.0,set,314,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(46).xlsx; detail=炮头机2台 挖掘机3台 后八轮5辆 5方车10辆
+,wa_lm300,labor,班组人数,2.0,person,314,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(46).xlsx
+,wa_lm300,machine,机械设备,6.0,set,314,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(46).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,314,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(46).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,308,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(47).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,308,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(47).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,308,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(47).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,308,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(47).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,308,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(47).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,26.0,person,308,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(47).xlsx
+,wa_lm300,machine,机械设备,25.0,set,308,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(47).xlsx; detail=炮头机1台 挖掘机6台 后八轮7辆 前四后八车3辆 10方车8辆
+,wa_lm300,labor,班组人数,2.0,person,308,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(47).xlsx
+,wa_lm300,machine,机械设备,6.0,set,308,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(47).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,308,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(47).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,304,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(48).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,304,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(48).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,304,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(48).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,304,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(48).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,304,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(48).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,26.0,person,304,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(48).xlsx
+,wa_lm300,machine,机械设备,21.0,set,304,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(48).xlsx; detail=炮头机3台 挖掘机4台 后八轮6辆 前四后八车8辆
+,wa_lm300,labor,班组人数,2.0,person,304,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(48).xlsx
+,wa_lm300,machine,机械设备,6.0,set,304,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(48).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,304,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(48).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,316,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(6)(1).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,316,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(6)(1).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,316,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(6)(1).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,316,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(6)(1).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,316,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(6)(1).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,26.0,person,316,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(6)(1).xlsx
+,wa_lm300,machine,机械设备,20.0,set,316,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(6)(1).xlsx; detail=炮头机1台 挖掘机4台 后八轮5辆 5方车10辆
+,wa_lm300,labor,班组人数,2.0,person,316,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(6)(1).xlsx
+,wa_lm300,machine,机械设备,6.0,set,316,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(6)(1).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,316,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(6)(1).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,223,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(6).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,223,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(6).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,223,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(6).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,223,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(6).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,223,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(6).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,30.0,person,223,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(6).xlsx
+,wa_lm300,machine,机械设备,22.0,set,223,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(6).xlsx; detail=炮头机2台 挖掘机4台 后八轮6辆 前四后八车10辆
+,wa_lm300,labor,班组人数,2.0,person,223,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(6).xlsx
+,wa_lm300,machine,机械设备,6.0,set,223,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(6).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,223,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(6).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,226,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(66).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,226,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(66).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,226,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(66).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,226,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(66).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,226,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(66).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,26.0,person,226,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(66).xlsx
+,wa_lm300,machine,机械设备,22.0,set,226,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(66).xlsx; detail=炮头机2台 挖掘机4台 后八轮6辆 前四后八车10辆
+,wa_lm300,labor,班组人数,2.0,person,226,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(66).xlsx
+,wa_lm300,machine,机械设备,6.0,set,226,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(66).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,226,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(66).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,222,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(67).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,222,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(67).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,222,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(67).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,222,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(67).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,222,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(67).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,20.0,person,222,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(67).xlsx
+,wa_lm300,machine,机械设备,6.0,set,222,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(67).xlsx; detail=炮头机2台 挖掘机2台 后八轮2辆
+,wa_lm300,labor,班组人数,2.0,person,222,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(67).xlsx
+,wa_lm300,machine,机械设备,6.0,set,222,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(67).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,222,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(67).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,228,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(68).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,228,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(68).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,228,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(68).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,228,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(68).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,228,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(68).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,26.0,person,228,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(68).xlsx
+,wa_lm300,machine,机械设备,16.0,set,228,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(68).xlsx; detail=炮头机3台 挖掘机4台 后八轮9辆
+,wa_lm300,labor,班组人数,2.0,person,228,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(68).xlsx
+,wa_lm300,machine,机械设备,6.0,set,228,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(68).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,228,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(68).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,227,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(69).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,227,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(69).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,227,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(69).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,227,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(69).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,227,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(69).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,26.0,person,227,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(69).xlsx
+,wa_lm300,machine,机械设备,22.0,set,227,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(69).xlsx; detail=炮头机2台 挖掘机4台 后八轮6辆 前四后八车10辆
+,wa_lm300,labor,班组人数,2.0,person,227,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(69).xlsx
+,wa_lm300,machine,机械设备,6.0,set,227,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(69).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,227,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(69).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,320,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(7).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,320,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(7).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,320,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(7).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,320,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(7).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,320,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(7).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,26.0,person,320,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(7).xlsx
+,wa_lm300,machine,机械设备,27.0,set,320,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(7).xlsx; detail=炮头机1台 挖掘机5台 后八轮11辆 5方车10辆
+,wa_lm300,labor,班组人数,2.0,person,320,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(7).xlsx
+,wa_lm300,machine,机械设备,6.0,set,320,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(7).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,320,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(7).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,218,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(70).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,218,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(70).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,218,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(70).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,218,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(70).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,218,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(70).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,26.0,person,218,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(70).xlsx
+,wa_lm300,machine,机械设备,11.0,set,218,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(70).xlsx; detail=炮头机2台 挖掘机4台 后八车5辆
+,wa_lm300,labor,班组人数,2.0,person,218,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(70).xlsx
+,wa_lm300,machine,机械设备,6.0,set,218,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(70).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,218,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(70).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,305,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(9).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,305,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(9).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,305,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(9).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,305,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(9).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,305,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(9).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,26.0,person,305,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(9).xlsx
+,wa_lm300,machine,机械设备,21.0,set,305,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(9).xlsx; detail=炮头机3台 挖掘机4台 后八轮6辆 前四后八车8辆
+,wa_lm300,labor,班组人数,2.0,person,305,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(9).xlsx
+,wa_lm300,machine,机械设备,6.0,set,305,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(9).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,305,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(9).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,401,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(90).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,401,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(90).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,401,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(90).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,401,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(90).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,401,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(90).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,26.0,person,401,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(90).xlsx
+,wa_lm300,machine,机械设备,26.0,set,401,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(90).xlsx; detail=炮头机2台 挖掘机6台 后八轮8辆 小4轮10辆
+,wa_lm300,labor,班组人数,2.0,person,401,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(90).xlsx
+,wa_lm300,machine,机械设备,6.0,set,401,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(90).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,401,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(90).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,402,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(93).xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,402,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(93).xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,402,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(93).xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,402,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(93).xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,402,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(93).xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,26.0,person,402,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(93).xlsx
+,wa_lm300,machine,机械设备,16.0,set,402,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(93).xlsx; detail=炮头机2台 挖掘机6台 后八轮8辆
+,wa_lm300,labor,班组人数,2.0,person,402,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(93).xlsx
+,wa_lm300,machine,机械设备,6.0,set,402,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(93).xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,402,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报(93).xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。
+,wa_qqtq_r,machine,机械设备,9.0,set,219,七秩塘桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报.xlsx; detail=旋挖机：1台 挖机：2台 吊车：4辆 洒水车：1辆 装载机：1台
+,wa_mzdq,machine,机械设备,2.0,set,219,马宅大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报.xlsx; detail=旋挖机：1台 吊车：1辆
+,wa_hlddq_r,machine,机械设备,3.0,set,219,横路店大桥,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报.xlsx; detail=旋挖机：1台 吊车：1辆 挖机1台
+,wa_mzdq,machine,机械设备,9.0,set,219,梁板预制场,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报.xlsx; detail=龙门吊：4台 水泥罐车：2辆 装载机：1辆 张拉机：1台 压浆机：1台
+,wa_lm300,machine,机械设备,10.0,set,219,七秩塘,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报.xlsx; detail=挖掘机: 2台。压路机：1台，后八轮加长车：7辆
+,wa_lm300,labor,班组人数,26.0,person,219,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报.xlsx
+,wa_lm300,machine,机械设备,11.0,set,219,路基2工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报.xlsx; detail=炮头机2台 挖掘机4台 后八车5辆
+,wa_lm300,labor,班组人数,2.0,person,219,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报.xlsx
+,wa_lm300,machine,机械设备,6.0,set,219,路基3工区,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报.xlsx; detail=挖机3台 装载机1台 后八轮2台
+,wa_lm300,machine,机械设备,2.0,set,219,1、K7+330~K7+450,from_daily_report=351国道磐安安文至东阳马宅段改建工程施工日报.xlsx; detail=200挖机2号台、349炮头机2台、铲车一台、压路机一台。

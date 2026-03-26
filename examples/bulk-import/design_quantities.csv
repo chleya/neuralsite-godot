@@ -1,0 +1,3 @@
+id,work_area_id,item_name,item_code,category,unit,target_quantity,design_version,notes
+dq_001,wa_road_001,Roadbed Fill,RB-FILL,earthwork,m3,1250,V2,Updated target quantity by import
+,wa_road_001,Asphalt Paving,ASP-001,paving,m2,6800,V1,New design target quantity

@@ -1,0 +1,5 @@
+id,work_area_id,item_name,item_code,category,unit,target_quantity,design_version,notes
+dq_002,wa_bridge_001,Pier Rebar,PIER-RB,bridge,t,92,V2,Updated bridge rebar target
+,wa_004,Pile Cap Concrete,PC-CON,bridge,m3,420,V1,Design target for pile cap concrete
+,wa_004,Pier Reinforcement,PIER-RB2,bridge,t,68,V1,Design target for pier reinforcement
+,wa_004,Pier Formwork,PIER-FW,bridge,m2,510,V1,Design target for pier formwork

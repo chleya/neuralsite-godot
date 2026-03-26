@@ -1,0 +1,236 @@
+{
+  "description": "NeuralSite测试数据 - 典型道路工程",
+  "version": "1.0",
+  "entities": [
+    {
+      "entity_type": "roadbed",
+      "name": "K0+000～K1+500路基",
+      "start_station": "K0+000",
+      "end_station": "K1+500",
+      "lateral_offset": 0,
+      "elevation_base": 100.0,
+      "width": 26.0,
+      "height": 2.5,
+      "properties": {
+        "设计等级": "一级公路",
+        "最大填方高度": "8.5m",
+        "最小填方高度": "0.5m",
+        "施工单位": "XX路桥公司"
+      }
+    },
+    {
+      "entity_type": "roadbed",
+      "name": "K1+500～K3+000路基",
+      "start_station": "K1+500",
+      "end_station": "K3+000",
+      "lateral_offset": 0,
+      "elevation_base": 105.0,
+      "width": 26.0,
+      "height": 3.0,
+      "properties": {
+        "设计等级": "一级公路",
+        "最大填方高度": "12.0m",
+        "施工单位": "XX路桥公司"
+      }
+    },
+    {
+      "entity_type": "bridge",
+      "name": "K1+200分离式立交桥",
+      "start_station": "K1+150",
+      "end_station": "K1+250",
+      "lateral_offset": 0,
+      "elevation_base": 108.0,
+      "width": 26.0,
+      "height": 8.0,
+      "properties": {
+        "桥梁类型": "装配式预应力箱梁",
+        "跨径组合": "3×25m",
+        "施工单位": "XX桥梁公司"
+      }
+    },
+    {
+      "entity_type": "culvert",
+      "name": "K0+500圆管涵",
+      "start_station": "K0+480",
+      "end_station": "K0+520",
+      "lateral_offset": -8.0,
+      "elevation_base": 98.0,
+      "width": 2.0,
+      "height": 2.0,
+      "properties": {
+        "涵洞类型": "圆管涵",
+        "直径": "1.5m",
+        "施工单位": "XX路桥公司"
+      }
+    },
+    {
+      "entity_type": "culvert",
+      "name": "K2+000盖板涵",
+      "start_station": "K1+980",
+      "end_station": "K2+020",
+      "lateral_offset": 8.0,
+      "elevation_base": 102.0,
+      "width": 4.0,
+      "height": 3.0,
+      "properties": {
+        "涵洞类型": "盖板涵",
+        "跨径": "4m",
+        "施工单位": "XX路桥公司"
+      }
+    },
+    {
+      "entity_type": "drainage",
+      "name": "K0+000～K3+000排水沟",
+      "start_station": "K0+000",
+      "end_station": "K3+000",
+      "lateral_offset": -15.0,
+      "elevation_base": 95.0,
+      "width": 2.0,
+      "height": 1.5,
+      "properties": {
+        "排水沟类型": "梯形土沟",
+        "底宽": "1.0m",
+        "边坡": "1:1.5"
+      }
+    },
+    {
+      "entity_type": "slope",
+      "name": "K1+800右侧边坡",
+      "start_station": "K1+700",
+      "end_station": "K1+900",
+      "lateral_offset": 15.0,
+      "elevation_base": 110.0,
+      "width": 20.0,
+      "height": 10.0,
+      "properties": {
+        "边坡类型": "锚杆框架梁",
+        "坡比": "1:1.25",
+        "防护面积": "4500㎡"
+      }
+    }
+  ],
+  "states": [
+    {
+      "entity_index": 0,
+      "timestamp": "2026-01-15T08:00:00Z",
+      "state_type": "planning",
+      "progress": 0,
+      "quality_status": "pending"
+    },
+    {
+      "entity_index": 0,
+      "timestamp": "2026-02-01T08:00:00Z",
+      "state_type": "clearing",
+      "progress": 30,
+      "quality_status": "qualified"
+    },
+    {
+      "entity_index": 0,
+      "timestamp": "2026-02-15T08:00:00Z",
+      "state_type": "earthwork",
+      "progress": 60,
+      "quality_status": "qualified"
+    },
+    {
+      "entity_index": 0,
+      "timestamp": "2026-03-10T08:00:00Z",
+      "state_type": "earthwork",
+      "progress": 85,
+      "quality_status": "qualified"
+    },
+    {
+      "entity_index": 1,
+      "timestamp": "2026-02-20T08:00:00Z",
+      "state_type": "planning",
+      "progress": 0,
+      "quality_status": "pending"
+    },
+    {
+      "entity_index": 1,
+      "timestamp": "2026-03-01T08:00:00Z",
+      "state_type": "clearing",
+      "progress": 20,
+      "quality_status": "qualified"
+    },
+    {
+      "entity_index": 2,
+      "timestamp": "2026-01-20T08:00:00Z",
+      "state_type": "planning",
+      "progress": 0,
+      "quality_status": "pending"
+    },
+    {
+      "entity_index": 2,
+      "timestamp": "2026-02-10T08:00:00Z",
+      "state_type": "foundation",
+      "progress": 40,
+      "quality_status": "qualified"
+    },
+    {
+      "entity_index": 2,
+      "timestamp": "2026-03-05T08:00:00Z",
+      "state_type": "structure",
+      "progress": 70,
+      "quality_status": "qualified"
+    }
+  ],
+  "events": [
+    {
+      "event_type": "weather",
+      "station_range": "K0+000～K3+000",
+      "start_station": "K0+000",
+      "end_station": "K3+000",
+      "start_time": "2026-02-05T00:00:00Z",
+      "end_time": "2026-02-07T23:59:59Z",
+      "description": "连续降雨，暂停土方施工",
+      "impact_level": "high"
+    },
+    {
+      "event_type": "inspection",
+      "station_range": "K0+000～K1+500",
+      "start_station": "K0+000",
+      "end_station": "K1+500",
+      "start_time": "2026-02-20T10:00:00Z",
+      "description": "业主代表现场检查路基施工质量",
+      "impact_level": "low"
+    },
+    {
+      "event_type": "stoppage",
+      "station_range": "K1+500～K2+000",
+      "start_station": "K1+500",
+      "end_station": "K2+000",
+      "start_time": "2026-03-08T00:00:00Z",
+      "end_time": "2026-03-10T23:59:59Z",
+      "description": "设备故障，暂停施工",
+      "impact_level": "medium"
+    },
+    {
+      "event_type": "design",
+      "station_range": "K2+000",
+      "start_station": "K2+000",
+      "end_station": "K2+020",
+      "start_time": "2026-02-25T14:00:00Z",
+      "description": "设计变更，涵洞位置调整",
+      "impact_level": "medium"
+    },
+    {
+      "event_type": "material",
+      "station_range": "K1+200",
+      "start_station": "K1+200",
+      "end_station": "K1+200",
+      "start_time": "2026-03-01T08:00:00Z",
+      "description": "桥梁钢筋进场验收",
+      "impact_level": "low"
+    }
+  ],
+  "station_markers": [
+    {"station": "K0+000", "name": "起点", "elevation": 100.0},
+    {"station": "K0+500", "name": "500m标", "elevation": 99.5},
+    {"station": "K1+000", "name": "1km标", "elevation": 101.0},
+    {"station": "K1+200", "name": "K1+200", "elevation": 105.0},
+    {"station": "K1+500", "name": "1.5km标", "elevation": 106.0},
+    {"station": "K2+000", "name": "2km标", "elevation": 104.5},
+    {"station": "K2+500", "name": "2.5km标", "elevation": 103.0},
+    {"station": "K3+000", "name": "3km标/终点", "elevation": 102.5}
+  ]
+}

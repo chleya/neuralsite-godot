@@ -1,0 +1,26 @@
+﻿id,work_area_id,item_name,item_code,category,unit,planned_quantity,actual_quantity,notes
+,wa_lhhb700,种植土,702-1-2,greening,m3,13645.8,,starter_from_design=351-import-v1; target_quantity=13645.8
+,wa_lhhb700,喷播草籽，15-20克/m2,703-1-1,greening,m2,1409.0,,starter_from_design=351-import-v1; target_quantity=1409.0
+,wa_lhhb700,果岭草，满铺,703-4-1,greening,m2,2517.0,,starter_from_design=351-import-v1; target_quantity=2517.0
+,wa_lhhb700,"香樟，Φ10.1-12cm，H501-550cm,P301-350cm",704-1-1,greening,棵,388.0,,starter_from_design=351-import-v1; target_quantity=388.0
+,wa_lhhb700,"金桂，d15.1-16cm，H401-450cm,P351-400cm",704-1-2,greening,棵,82.0,,starter_from_design=351-import-v1; target_quantity=82.0
+,wa_lhhb700,银杏，Φ16.1-18cm，H601-650cm以上，P301-351cm,704-1-3,greening,棵,123.0,,starter_from_design=351-import-v1; target_quantity=123.0
+,wa_lhhb700,紫薇，d8.1-9cm，H301-350cm，P251-300cm,704-1-4,greening,棵,559.0,,starter_from_design=351-import-v1; target_quantity=559.0
+,wa_lhhb700,"红叶石楠柱，H180-200cm,P81-100cm",704-1-5,greening,棵,80.0,,starter_from_design=351-import-v1; target_quantity=80.0
+,wa_lhhb700,"金森女贞锥，H81-90cm,P51-60cm",704-2-1,greening,棵,100.0,,starter_from_design=351-import-v1; target_quantity=100.0
+,wa_lhhb700,"夹竹桃，H201-250cm,P141-160cm",704-2-3,greening,棵,114.0,,starter_from_design=351-import-v1; target_quantity=114.0
+,wa_lhhb700,树状月季，d5.1-6,704-2-4,greening,棵,69.0,,starter_from_design=351-import-v1; target_quantity=69.0
+,wa_lhhb700,"四季桂绿篱，H101-150cm,P60-80cm，4株/m2",704-3-1,greening,m2,800.0,,starter_from_design=351-import-v1; target_quantity=800.0
+,wa_lhhb700,"八角金盘，H51-55cm,P41-45cm，25株/m2",704-3-2,greening,m2,5313.0,,starter_from_design=351-import-v1; target_quantity=5313.0
+,wa_lhhb700,"红叶石楠，H41-45cm,P41-45cm，36株/m2",704-3-3,greening,m2,529.0,,starter_from_design=351-import-v1; target_quantity=529.0
+,wa_lhhb700,"毛鹃，H31-40cm,P31-40cm，36株/m2",704-3-4,greening,m2,2094.0,,starter_from_design=351-import-v1; target_quantity=2094.0
+,wa_lhhb700,"茶梅，H41-45cm,P31-40cm，36株/m2",704-3-5,greening,m2,941.0,,starter_from_design=351-import-v1; target_quantity=941.0
+,wa_lhhb700,"翠芦莉，H41-45cm,P31-40cm，36株/m2",704-3-6,greening,m2,1018.0,,starter_from_design=351-import-v1; target_quantity=1018.0
+,wa_lhhb700,"金森女贞，H41-45cm,P41-45cm，36丛/m2",704-3-7,greening,m2,2075.0,,starter_from_design=351-import-v1; target_quantity=2075.0
+,wa_lhhb700,品种月季，H41-45，P31-40cm，4株/m2,704-3-8,greening,m2,307.0,,starter_from_design=351-import-v1; target_quantity=307.0
+,wa_lhhb700,云南黄馨，H46-50，P31-40cm，36株/m2,704-3-9,greening,m2,258.0,,starter_from_design=351-import-v1; target_quantity=258.0
+,wa_lhhb700,矮麦冬，3-5芽/丛，49丛/m2,704-3-10,greening,m2,1409.0,,starter_from_design=351-import-v1; target_quantity=1409.0
+,wa_lhhb700,清苗,704-12,greening,m2,14768.0,,starter_from_design=351-import-v1; target_quantity=14768.0
+,wa_lhhb700,路基段,706-1,greening,m,304.0,,starter_from_design=351-import-v1; target_quantity=304.0
+,wa_lhhb700,桥梁段,706-2,greening,m,1046.0,,starter_from_design=351-import-v1; target_quantity=1046.0
+,wa_lhhb700,沉淀池,707-1,greening,座,15.0,,starter_from_design=351-import-v1; target_quantity=15.0

@@ -1,0 +1,4 @@
+id,work_area_id,name,design_type,coord_system,station_start,station_end,bbox_min_x,bbox_min_y,bbox_min_z,bbox_max_x,bbox_max_y,bbox_max_z,design_ref,elevation_target,design_version,notes
+dso_002,wa_bridge_001,Pier Design Zone,zone,local,,,115,30,0,136,47,25,design://pier_zone_v2,18.8,V2,Updated bridge pier design zone
+,wa_004,Pile Cap Design Zone,zone,local,,,146,52,0,170,76,14,design://pile_cap_zone_v1,9.6,V1,Pile cap design area
+,wa_004,Pier Body Design Zone,zone,local,,,148,54,6,168,74,28,design://pier_body_zone_v1,23.4,V1,Pier body design area

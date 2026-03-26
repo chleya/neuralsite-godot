@@ -1,6 +1,37 @@
 class_name ProjectConfig
 extends Node
 
+const API_CONFIG = {
+	"base_url": "http://localhost:8000",
+	"api_version": "/api/v1",
+	"timeout_seconds": 10.0,
+	"max_retries": 3,
+	"retry_delay": 1.0,
+}
+
+const GODOT_ENDPOINTS = {
+	"health": "/health",
+	"entities": "/entities",
+	"entities_single": "/entities/%s",
+	"entities_types": "/entities/types",
+	"entities_stats": "/entities/stats/summary",
+	"entities_at_location": "/entities/at-location",
+	"states": "/states",
+	"state_history": "/states/entity/%s/history",
+	"space_station_to_coord": "/space/station-to-coord",
+	"space_coord_to_station": "/space/coord-to-station",
+	"space_range_to_coords": "/space/range-to-coords",
+	"space_route_info": "/space/route-info",
+	"space_nearby": "/space/nearby",
+	"space_cross_section": "/space/cross-section/%s",
+	"space_validate_station": "/space/validate-station",
+	"site_assistant_work_areas": "/site-assistant/work-areas",
+	"site_assistant_tasks": "/site-assistant/tasks",
+	"site_assistant_issues": "/site-assistant/issues",
+	"site_assistant_reports": "/site-assistant/reports",
+	"site_assistant_quantities": "/site-assistant/quantities",
+}
+
 const SCENE_CONFIG = {
 	"terrain_size": Vector2(400, 400),
 	"terrain_resolution": 64,
@@ -20,6 +51,13 @@ const TIME_CONFIG = {
 	"simulation_days": 365,
 	"day_duration_minutes": 3.0,
 	"default_time_scale": 1.0,
+}
+
+const ASSISTANT_STATUS = {
+	"not_started": "Not Started",
+	"in_progress": "In Progress",
+	"blocked": "Blocked",
+	"done": "Done",
 }
 
 const COLORS = {

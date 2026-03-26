@@ -168,6 +168,64 @@ func set_centerline(points: PackedVector3Array) -> void:
 	_update_visual()
 	_update_mesh_data()
 
+func set_station_range(start: String, end: String) -> void:
+	var space_service = get_node_or_null("/root/Main/SpaceService") as SpaceService
+	if not space_service:
+		space_service = get_tree().root.get_node_or_null("Main/SpaceService") as SpaceService
+
+	if space_service:
+		start_station = space_service.parse_station(start)
+		end_station = space_service.parse_station(end)
+	else:
+		start_station = _parse_station_simple(start)
+		end_station = _parse_station_simple(end)
+
+	var lateral = 0.0
+	var elevation = 0.0
+
+	var start_coord = Vector3.ZERO
+	var end_coord = Vector3.ZERO
+
+	if space_service:
+		start_coord = space_service.station_to_coord3d(start, lateral, elevation)
+		end_coord = space_service.station_to_coord3d(end, lateral, elevation)
+
+	var length = abs(end_station - start_station) / 1000.0
+	var steps = max(2, int(length / 10))
+
+	var points = PackedVector3Array()
+	for i in range(steps + 1):
+		var t = float(i) / steps
+		var x = lerp(start_coord.x, end_coord.x, t)
+		var y = lerp(start_coord.y, end_coord.y, t)
+		var z = lerp(start_coord.z, end_coord.z, t)
+		points.append(Vector3(x, y, z))
+
+	set_centerline(points)
+
+func _parse_station_simple(station: String) -> float:
+	var pattern_full = r'^K(\d+)\+(\d+)\.(\d+)$'
+	var pattern_simple = r'^K(\d+)\+(\d+)$'
+
+	var regex = RegEx.new()
+	regex.compile(pattern_full)
+	var match = regex.search(station)
+
+	if match:
+		var km = match.group(1).to_int()
+		var m = match.group(2).to_int()
+		var mm = match.group(3).to_int()
+		return km * 1000000 + m * 1000 + mm
+
+	regex.compile(pattern_simple)
+	match = regex.search(station)
+	if match:
+		var km = match.group(1).to_int()
+		var m = match.group(2).to_int()
+		return km * 1000000 + m * 1000
+
+	return 0.0
+
 # ── 建模数据 ──
 func _update_mesh_data() -> void:
 	if centerline_points.size() < 2:

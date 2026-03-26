@@ -1,0 +1,726 @@
+﻿id,work_area_id,item_name,item_code,category,unit,target_quantity,design_version,notes
+,wa_paving_ch300,厚150mm,302-1-3,paving,m2,9254.0,351-import-v1,source_file=300章路面.xlsx; sheet=300章; source_column=数量; row=5
+,wa_paving_ch300,厚400mm,302-8-7,paving,m2,1583.5,351-import-v1,source_file=300章路面.xlsx; sheet=300章; source_column=数量; row=7
+,wa_paving_ch300,厚200mm,303-1-5,paving,m2,381.4,351-import-v1,source_file=300章路面.xlsx; sheet=300章; source_column=数量; row=10
+,wa_paving_ch300,厚340mm,303-1-8,paving,m2,66702.0,351-import-v1,source_file=300章路面.xlsx; sheet=300章; source_column=数量; row=11
+,wa_paving_ch300,厚200mm,304-1-5,paving,m2,76243.378,351-import-v1,source_file=300章路面.xlsx; sheet=300章; source_column=数量; row=13
+,wa_paving_ch300,黏层,305-2,paving,m2,183716.544,351-import-v1,source_file=300章路面.xlsx; sheet=300章; source_column=数量; row=15
+,wa_paving_ch300,下封层,305-3-6,paving,m2,70396.378,351-import-v1,source_file=300章路面.xlsx; sheet=300章; source_column=数量; row=17
+,wa_paving_ch300,防水黏结层,305-5-5,paving,m2,56929.42,351-import-v1,source_file=300章路面.xlsx; sheet=300章; source_column=数量; row=18
+,wa_paving_ch300,抛丸,305-6-2,paving,m2,55449.78,351-import-v1,source_file=300章路面.xlsx; sheet=300章; source_column=数量; row=20
+,wa_paving_ch300,厚80mm,306-1-3-4,paving,m2,58489.94,351-import-v1,source_file=300章路面.xlsx; sheet=300章; source_column=数量; row=26
+,wa_paving_ch300,厚60mm,306-2-2-3,paving,m2,120392.24,351-import-v1,source_file=300章路面.xlsx; sheet=300章; source_column=数量; row=29
+,wa_paving_ch300,厚140mm,306-2-2-5,paving,m2,5048.0,351-import-v1,source_file=300章路面.xlsx; sheet=300章; source_column=数量; row=30
+,wa_paving_ch300,厚40mm,306-3-1-2,paving,m2,125033.83,351-import-v1,source_file=300章路面.xlsx; sheet=300章; source_column=数量; row=33
+,wa_paving_ch300,C30混凝土,307-1-1,paving,m3,649.08,351-import-v1,source_file=300章路面.xlsx; sheet=300章; source_column=数量; row=36
+,wa_paving_ch300,C35混凝土,307-1-2,paving,m3,255.0,351-import-v1,source_file=300章路面.xlsx; sheet=300章; source_column=数量; row=37
+,wa_paving_ch300,C25混凝土,307-1-4,paving,m3,4800.0,351-import-v1,source_file=300章路面.xlsx; sheet=300章; source_column=数量; row=38
+,wa_paving_ch300,带肋钢筋,307-2-2,paving,kg,1627.1,351-import-v1,source_file=300章路面.xlsx; sheet=300章; source_column=数量; row=40
+,wa_paving_ch300,路肩培土,309-1,paving,m3,3100.7,351-import-v1,source_file=300章路面.xlsx; sheet=300章; source_column=数量; row=42
+,wa_paving_ch300,C30混凝土,309-4-2-3,paving,m,2925.0,351-import-v1,source_file=300章路面.xlsx; sheet=300章; source_column=数量; row=45
+,wa_paving_ch300,D300mm,310-1-1-2,paving,m,198.0,351-import-v1,source_file=300章路面.xlsx; sheet=300章; source_column=数量; row=49
+,wa_paving_ch300,D110mm,310-1-2-4,paving,m,368.0,351-import-v1,source_file=300章路面.xlsx; sheet=300章; source_column=数量; row=51
+,wa_paving_ch300,D300Ⅱ级钢筋砼雨水管,310-2-2-1,paving,m,174.0,351-import-v1,source_file=300章路面.xlsx; sheet=300章; source_column=数量; row=54
+,wa_paving_ch300,D600Ⅱ级钢筋砼雨水管,310-2-2-2,paving,m,466.52,351-import-v1,source_file=300章路面.xlsx; sheet=300章; source_column=数量; row=55
+,wa_paving_ch300,D800Ⅱ级钢筋砼雨水管,310-2-2-3,paving,m,100.01,351-import-v1,source_file=300章路面.xlsx; sheet=300章; source_column=数量; row=56
+,wa_paving_ch300,球墨铸铁给水管（DN200),310-2-3-2,paving,m,100.0,351-import-v1,source_file=300章路面.xlsx; sheet=300章; source_column=数量; row=58
+,wa_paving_ch300,中央分隔带渗沟,310-3,paving,m,1905.0,351-import-v1,source_file=300章路面.xlsx; sheet=300章; source_column=数量; row=59
+,wa_paving_ch300,集水井,310-4,paving,座,10.0,351-import-v1,source_file=300章路面.xlsx; sheet=300章; source_column=数量; row=60
+,wa_paving_ch300,矩形钢筋砼（内空1.1×1.1m）,310-5-1,paving,座,15.0,351-import-v1,source_file=300章路面.xlsx; sheet=300章; source_column=数量; row=62
+,wa_paving_ch300,矩形钢筋砼（内空1.25×1.25m）,310-5-2,paving,座,4.0,351-import-v1,source_file=300章路面.xlsx; sheet=300章; source_column=数量; row=63
+,wa_paving_ch300,砖砌单篦雨水口,310-10-1,paving,座,32.0,351-import-v1,source_file=300章路面.xlsx; sheet=300章; source_column=数量; row=65
+,wa_paving_ch300,砂砾（碎石）透水层,310-13-1,paving,m2,650.8,351-import-v1,source_file=300章路面.xlsx; sheet=300章; source_column=数量; row=67
+,wa_paving_ch300,透水土工布,310-13-2,paving,m2,5620.0,351-import-v1,source_file=300章路面.xlsx; sheet=300章; source_column=数量; row=68
+,wa_paving_ch300,防渗土工布,310-13-5,paving,m2,5676.4,351-import-v1,source_file=300章路面.xlsx; sheet=300章; source_column=数量; row=69
+,wa_paving_ch300,流水槽,310-15,paving,m,788.0,351-import-v1,source_file=300章路面.xlsx; sheet=300章; source_column=数量; row=70
+,wa_paving_ch300,急流槽,310-16,paving,m,24.7,351-import-v1,source_file=300章路面.xlsx; sheet=300章; source_column=数量; row=71
+,wa_traffic_safety_ch600,Gr-B-2E,602-6-7,traffic_safety,m,2196.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=5
+,wa_traffic_safety_ch600,Gr-A-4E,602-6-13,traffic_safety,m,673.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=6
+,wa_traffic_safety_ch600,Gr-SB-2E,602-6-19,traffic_safety,m,4556.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=7
+,wa_traffic_safety_ch600,Gr-SBm-1B1,602-6-20,traffic_safety,m,460.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=8
+,wa_traffic_safety_ch600,A级护栏与砼护栏搭接段（含3m翼墙）,602-6-21,traffic_safety,m,14.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=9
+,wa_traffic_safety_ch600,SB级护栏与砼护栏搭接段（含3m翼墙）,602-6-22,traffic_safety,m,350.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=10
+,wa_traffic_safety_ch600,SB级护栏隧道入口过渡段（含6m翼墙）,602-6-23,traffic_safety,m,126.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=11
+,wa_traffic_safety_ch600,A级护栏上游端部,602-6-24,traffic_safety,m,60.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=12
+,wa_traffic_safety_ch600,B级护栏上游端部,602-6-25,traffic_safety,m,84.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=13
+,wa_traffic_safety_ch600,SB级护栏上游端部,602-6-26,traffic_safety,m,156.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=14
+,wa_traffic_safety_ch600,TA级防撞垫,602-6-27,traffic_safety,个,1.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=15
+,wa_traffic_safety_ch600,Gr-SBm-2E,602-7-13,traffic_safety,m,624.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=17
+,wa_traffic_safety_ch600,易开型活动护栏,602-7-15,traffic_safety,m,80.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=18
+,wa_traffic_safety_ch600,D-I端头,602-8-5,traffic_safety,个,34.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=20
+,wa_traffic_safety_ch600,A型端头,602-8-6,traffic_safety,个,47.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=21
+,wa_traffic_safety_ch600,B型端头,602-8-7,traffic_safety,个,3.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=22
+,wa_traffic_safety_ch600,Φ89，停800mm,604-1-1,traffic_safety,套,2.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=25
+,wa_traffic_safety_ch600,Φ89，Δ900mm+○800mm,604-1-2,traffic_safety,套,2.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=26
+,wa_traffic_safety_ch600,Φ89，○1000mm,604-1-3,traffic_safety,套,6.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=27
+,wa_traffic_safety_ch600,Φ89，1200mmX600mm,604-1-4,traffic_safety,套,1.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=28
+,wa_traffic_safety_ch600,Φ89，Δ1100mm,604-1-5,traffic_safety,套,1.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=29
+,wa_traffic_safety_ch600,Φ89，Δ900mm+Δ900mm,604-1-6,traffic_safety,套,4.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=30
+,wa_traffic_safety_ch600,Φ89，线型诱导标600mmx800mm,604-1-7,traffic_safety,套,16.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=31
+,wa_traffic_safety_ch600,Φ89，线型诱导标600mmx800mmx2,604-1-8,traffic_safety,套,16.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=32
+,wa_traffic_safety_ch600,Φ114，○1000+○1000mm,604-1-9,traffic_safety,套,7.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=33
+,wa_traffic_safety_ch600,Φ114，○1000+1200mX800mm,604-1-10,traffic_safety,套,2.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=34
+,wa_traffic_safety_ch600,Φ114，1200mX1500mm,604-1-11,traffic_safety,套,1.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=35
+,wa_traffic_safety_ch600,4000mmX2400mm+3000mmX2300mmX3,604-4-1,traffic_safety,套,2.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=37
+,wa_traffic_safety_ch600,○1000mmx3,604-4-2,traffic_safety,套,1.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=38
+,wa_traffic_safety_ch600,3000mmX2300mmX3,604-4-3,traffic_safety,套,1.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=39
+,wa_traffic_safety_ch600,Φ168，○1000mm,604-5-1,traffic_safety,套,2.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=41
+,wa_traffic_safety_ch600,Φ168，○1000mm+○1000mm,604-5-2,traffic_safety,套,4.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=42
+,wa_traffic_safety_ch600,Φ219，3000mmX1800mm,604-5-3,traffic_safety,套,13.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=43
+,wa_traffic_safety_ch600,Φ273，4000mmX1800mm,604-5-4,traffic_safety,套,1.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=44
+,wa_traffic_safety_ch600,Φ325，4000mmX2400mm,604-5-5,traffic_safety,套,8.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=45
+,wa_traffic_safety_ch600,Φ377，5000mmX3000mm,604-5-6,traffic_safety,套,6.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=46
+,wa_traffic_safety_ch600,Φ273，3000mmX2000mmX2,604-6-1,traffic_safety,套,1.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=48
+,wa_traffic_safety_ch600,530mmX340mm,604-7-1,traffic_safety,套,7.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=50
+,wa_traffic_safety_ch600,1400mmX700mmX2,604-7-2,traffic_safety,套,3.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=51
+,wa_traffic_safety_ch600,里程碑,604-8-1,traffic_safety,个,2.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=53
+,wa_traffic_safety_ch600,里程牌,604-8-2,traffic_safety,个,4.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=54
+,wa_traffic_safety_ch600,公路界碑,604-9,traffic_safety,个,25.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=55
+,wa_traffic_safety_ch600,百米桩,604-10-1,traffic_safety,个,30.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=57
+,wa_traffic_safety_ch600,百米牌,604-10-2,traffic_safety,个,28.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=58
+,wa_traffic_safety_ch600,防撞桶,604-11,traffic_safety,个,30.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=59
+,wa_traffic_safety_ch600,道路反光镜,604-13,traffic_safety,个,1.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=60
+,wa_traffic_safety_ch600,水马,604-14,traffic_safety,m,500.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=61
+,wa_traffic_safety_ch600,普通型,605-1-1,traffic_safety,m2,1464.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=64
+,wa_traffic_safety_ch600,震颤标线,605-1-3,traffic_safety,m2,1550.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=65
+,wa_traffic_safety_ch600,热熔雨夜标线,605-1-4,traffic_safety,m2,1550.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=66
+,wa_traffic_safety_ch600,人行横道线及预告标识,605-1-5,traffic_safety,m2,643.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=67
+,wa_traffic_safety_ch600,纵向振动减速标线,605-1-6,traffic_safety,m2,342.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=68
+,wa_traffic_safety_ch600,彩色防滑涂料标线,605-1-7,traffic_safety,m2,3375.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=69
+,wa_traffic_safety_ch600,渠化标线,605-1-8,traffic_safety,m2,199.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=70
+,wa_traffic_safety_ch600,导向箭头,605-1-9,traffic_safety,m2,138.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=71
+,wa_traffic_safety_ch600,停止线,605-1-10,traffic_safety,m2,44.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=72
+,wa_traffic_safety_ch600,让行标线,605-1-11,traffic_safety,m2,10.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=73
+,wa_traffic_safety_ch600,De-Rbw/y-E,605-7-1-1,traffic_safety,根,69.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=76
+,wa_traffic_safety_ch600,De-Rbw/y-At1,605-7-2-1,traffic_safety,个,362.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=78
+,wa_traffic_safety_ch600,De-Rbw/y-At2,605-7-2-2,traffic_safety,个,80.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=79
+,wa_traffic_safety_ch600,De-Rbw/y-At3,605-7-2-3,traffic_safety,个,256.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=80
+,wa_traffic_safety_ch600,LDS线型轮廓标,605-7-2-4,traffic_safety,个,177.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=81
+,wa_traffic_safety_ch600,反光轮廓带,605-7-6-1,traffic_safety,只,1260.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=83
+,wa_traffic_safety_ch600,道口标柱,605-7-9,traffic_safety,个,28.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=84
+,wa_traffic_safety_ch600,立面标记,605-8-1,traffic_safety,㎡,12.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=86
+,wa_traffic_safety_ch600,橡胶减速带,605-10-1,traffic_safety,m,30.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=88
+,wa_traffic_safety_ch600,防眩板,606-1,traffic_safety,块,482.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=90
+,wa_traffic_safety_ch600,洞口电光蓄能自发光标识,607-2-10,traffic_safety,只,120.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=93
+,wa_traffic_safety_ch600,蓄能自发光突起路标,607-2-11,traffic_safety,只,1550.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=94
+,wa_traffic_safety_ch600,十字路口信号灯（含电子警察）（K7+530下新线交叉口）,609-1-1,traffic_safety,路口,1.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=96
+,wa_traffic_safety_ch600,机动车信号灯杆部件（L＝9m）,1,traffic_safety,套,2.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=97
+,wa_traffic_safety_ch600,机动车信号灯杆部件（L＝6m）,2,traffic_safety,套,2.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=98
+,wa_traffic_safety_ch600,路口信号灯控制主机及机柜,4,traffic_safety,套,1.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=99
+,wa_traffic_safety_ch600,满屏信号灯盘,6,traffic_safety,套,4.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=100
+,wa_traffic_safety_ch600,箭头信号灯盘,7,traffic_safety,套,4.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=101
+,wa_traffic_safety_ch600,人行横道灯盘,8,traffic_safety,套,12.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=102
+,wa_traffic_safety_ch600,柱式人行横道灯杆部件,9,traffic_safety,套,12.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=103
+,wa_traffic_safety_ch600,电缆线,10,traffic_safety,m,800.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=104
+,wa_traffic_safety_ch600,电源线,11,traffic_safety,m,300.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=105
+,wa_traffic_safety_ch600,避雷接地,12,traffic_safety,处,17.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=106
+,wa_traffic_safety_ch600,接地线,13,traffic_safety,m,300.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=107
+,wa_traffic_safety_ch600,2Φ114钢管预埋,14,traffic_safety,m,160.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=108
+,wa_traffic_safety_ch600,窨井,15,traffic_safety,个,17.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=110
+,wa_traffic_safety_ch600,安装辅材,16,traffic_safety,批,1.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=111
+,wa_traffic_safety_ch600,安装调试,17,traffic_safety,路口,1.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=112
+,wa_traffic_safety_ch600,T字路口信号灯（含电子警察）（K7+796南下线交叉口）,609-1-2,traffic_safety,路口,1.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=133
+,wa_traffic_safety_ch600,机动车信号灯杆部件（L＝9m）,1,traffic_safety,套,2.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=134
+,wa_traffic_safety_ch600,机动车信号灯杆部件（L＝6m）,2,traffic_safety,套,1.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=135
+,wa_traffic_safety_ch600,路口信号灯控制主机及机柜,3,traffic_safety,套,1.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=136
+,wa_traffic_safety_ch600,路口自适应软件,4,traffic_safety,套,1.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=137
+,wa_traffic_safety_ch600,满屏信号灯盘,5,traffic_safety,套,3.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=138
+,wa_traffic_safety_ch600,人行横道灯盘,6,traffic_safety,套,12.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=139
+,wa_traffic_safety_ch600,柱式人行横道灯杆部件,7,traffic_safety,套,12.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=140
+,wa_traffic_safety_ch600,电缆线,8,traffic_safety,m,500.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=141
+,wa_traffic_safety_ch600,电源线,9,traffic_safety,m,300.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=142
+,wa_traffic_safety_ch600,避雷接地,10,traffic_safety,处,16.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=143
+,wa_traffic_safety_ch600,接地线,11,traffic_safety,m,300.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=144
+,wa_traffic_safety_ch600,2Φ114钢管预埋,12,traffic_safety,m,110.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=145
+,wa_traffic_safety_ch600,2Φ110PE管预埋,13,traffic_safety,m,120.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=146
+,wa_traffic_safety_ch600,窨井,14,traffic_safety,个,13.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=147
+,wa_traffic_safety_ch600,安装辅材,15,traffic_safety,批,1.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=148
+,wa_traffic_safety_ch600,安装调试,16,traffic_safety,路口,1.0,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=149
+,wa_traffic_safety_ch600,电子档案,609-2,traffic_safety,km,4.2,351-import-v1,source_file=600章交通安全设施.xlsm; sheet=600章; source_column=数量; row=170
+,wa_qiqitang_bridge_r,光圆钢筋,403-1-1,bridge,kg,14540.2,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=5
+,wa_qiqitang_bridge_r,带肋钢筋,403-1-2,bridge,kg,162349.80000000008,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=6
+,wa_qiqitang_bridge_r,光圆钢筋,403-2-1,bridge,kg,8597.9,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=8
+,wa_qiqitang_bridge_r,带肋钢筋,403-2-2,bridge,kg,185419.51101600006,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=9
+,wa_qiqitang_bridge_r,冷轧带肋钢筋焊接网 (台身防裂钢筋网）,403-2-3,bridge,kg,0.0,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=10
+,wa_qiqitang_bridge_r,光圆钢筋,403-3-1,bridge,kg,89254.20000000001,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=12
+,wa_qiqitang_bridge_r,带肋钢筋,403-3-2,bridge,kg,386827.0,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=13
+,wa_qiqitang_bridge_r,D10冷轧钢筋焊接网,403-3-3-2,bridge,kg,44424.0,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=15
+,wa_qiqitang_bridge_r,光圆钢筋,403-4-1,bridge,kg,13300.8,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=17
+,wa_qiqitang_bridge_r,带肋钢筋,403-4-2,bridge,kg,61457.17,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=18
+,wa_qiqitang_bridge_r,基础挖方及回填,404-1,bridge,m3,279.0,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=20
+,wa_qiqitang_bridge_r,桩径1.2m,405-3-4,bridge,m,0.0,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=23
+,wa_qiqitang_bridge_r,桩径1.3m,405-3-5,bridge,m,0.0,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=24
+,wa_qiqitang_bridge_r,桩径1.5m,405-3-7,bridge,m,262.5,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=25
+,wa_qiqitang_bridge_r,桩径1.8m,405-3-10,bridge,m,561.0,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=26
+,wa_qiqitang_bridge_r,声测管,405-4,bridge,m,3085.5,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=27
+,wa_qiqitang_bridge_r,C30混凝土,410-1-4,bridge,m3,230.64999999999998,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=30
+,wa_qiqitang_bridge_r,C30混凝土,410-2-1-2,bridge,m3,0.0,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=33
+,wa_qiqitang_bridge_r,C35混凝土,410-2-1-3,bridge,m3,675.334212550856,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=34
+,wa_qiqitang_bridge_r,C25混凝土（镇墩）,410-2-1-1,bridge,m3,0.0,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=36
+,wa_qiqitang_bridge_r,C35混凝土,410-2-2-3,bridge,m3,0.0,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=37
+,wa_qiqitang_bridge_r,C50混凝土(盖梁挡块）,410-2-3-3,bridge,m3,0.0,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=39
+,wa_qiqitang_bridge_r,C35混凝土（台帽、挡块、挡土板）,410-2-3-5,bridge,m3,8.0,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=40
+,wa_qiqitang_bridge_r,C35混凝土（耳背墙）,410-2-4-3,bridge,m3,76.38,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=41
+,wa_qiqitang_bridge_r,C50混凝土,410-2-5-3,bridge,m3,0.0,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=43
+,wa_qiqitang_bridge_r,C35混凝土,410-2-5-5,bridge,m3,475.43,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=44
+,wa_qiqitang_bridge_r,C35混凝土(柱系梁）,410-2-6-3,bridge,m3,84.0,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=46
+,wa_qiqitang_bridge_r,C35混凝土,410-2-7-5,bridge,m3,8.54,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=48
+,wa_qiqitang_bridge_r,C50混凝土,410-5-5,bridge,m3,357.82,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=50
+,wa_qiqitang_bridge_r,C35混凝土,410-6-5,bridge,m3,312.86,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=52
+,wa_qiqitang_bridge_r,C50混凝土（护栏背包砼加劲肋）,410-6-8,bridge,m3,1.2,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=53
+,wa_qiqitang_bridge_r,后张法预应力钢绞线,411-5,bridge,kg,68256.79999999999,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=55
+,wa_qiqitang_bridge_r,C50混凝土（预制部分）,411-8-3-3,bridge,m3,1731.9,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=58
+,wa_qiqitang_bridge_r,C50混凝土,411-4-8-3,bridge,m3,0.0,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=60
+,wa_qiqitang_bridge_r,M7.5浆砌片石,413-1-1,bridge,m3,39.5,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=63
+,wa_qiqitang_bridge_r,锥坡衡重式挡墙填料(透水性材料）,413-1-2,bridge,m3,2939.0,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=64
+,wa_qiqitang_bridge_r,六角空心块,413-4-1,bridge,m2,545.0,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=66
+,wa_qiqitang_bridge_r,预埋钢材,414-1,bridge,kg,3643.2200000000003,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=68
+,wa_qiqitang_bridge_r,水泥混凝土桥面调平层（C50）,415-1,bridge,m3,360.0,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=70
+,wa_qiqitang_bridge_r,GBZJ 250×300×52mm,416-1-1,bridge,个,0.0,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=73
+,wa_qiqitang_bridge_r,GBZJ 250×250×41mm,416-1-2,bridge,个,0.0,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=74
+,wa_qiqitang_bridge_r,GPZ(2019)1.5 SX,416-2-1,bridge,个,20.0,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=76
+,wa_qiqitang_bridge_r,GPZ(2019)1.5 DX,416-2-2,bridge,个,8.0,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=77
+,wa_qiqitang_bridge_r,GPZ(2019)2.5 SX,416-2-3,bridge,个,20.0,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=78
+,wa_qiqitang_bridge_r,GPZ(2019)2.5 DX,416-2-4,bridge,个,18.0,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=79
+,wa_qiqitang_bridge_r,GPZ(2019)2.5 GD,416-2-5,bridge,个,4.0,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=80
+,wa_qiqitang_bridge_r,GPZ(2019)2.0 SX,416-2-6,bridge,个,0.0,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=81
+,wa_qiqitang_bridge_r,GPZ(2019)2.0 DX,416-2-7,bridge,个,0.0,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=82
+,wa_qiqitang_bridge_r,GPZ(2019)3.5 SX,416-2-8,bridge,个,0.0,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=83
+,wa_qiqitang_bridge_r,GPZ(2019)3.5 DX,416-2-9,bridge,个,0.0,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=84
+,wa_qiqitang_bridge_r,GPZ(2019)3.5 GD,416-2-10,bridge,个,0.0,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=85
+,wa_qiqitang_bridge_r,40型,417-5-1,bridge,m,0.0,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=88
+,wa_qiqitang_bridge_r,60型,417-5-2,bridge,m,0.0,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=89
+,wa_qiqitang_bridge_r,80型,417-5-3,bridge,m,32.0,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=90
+,wa_qiqitang_bridge_r,160型,417-5-5,bridge,m,16.0,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=91
+,wa_qiqitang_bridge_r,DN160,418-1-1,bridge,m,240.0,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=94
+,wa_qiqitang_bridge_r,DN200,418-1-2,bridge,m,160.0,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=95
+,wa_qiqitang_bridge_r,桥面边部碎石盲沟,418-2,bridge,m3,21.599999999999998,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=96
+,wa_qiqitang_bridge_r,泄水管,418-3,bridge,套,49.0,351-import-v1,source_file=七秩塘桥\七秩塘桥右幅.xls; sheet=工程量清单; source_column=数量; row=97
+,wa_qiqitang_bridge_l,光圆钢筋,403-1-1,bridge,kg,13305.7,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=5
+,wa_qiqitang_bridge_l,带肋钢筋,403-1-2,bridge,kg,150385.70000000007,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=6
+,wa_qiqitang_bridge_l,光圆钢筋,403-2-1,bridge,kg,8882.600000000002,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=8
+,wa_qiqitang_bridge_l,带肋钢筋,403-2-2,bridge,kg,187611.61101600004,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=9
+,wa_qiqitang_bridge_l,冷轧带肋钢筋焊接网 (台身防裂钢筋网）,403-2-3,bridge,kg,0.0,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=10
+,wa_qiqitang_bridge_l,光圆钢筋,403-3-1,bridge,kg,89281.8,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=12
+,wa_qiqitang_bridge_l,带肋钢筋,403-3-2,bridge,kg,386827.0,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=13
+,wa_qiqitang_bridge_l,D10冷轧钢筋焊接网,403-3-3-2,bridge,kg,46200.96,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=15
+,wa_qiqitang_bridge_l,光圆钢筋,403-4-1,bridge,kg,13300.8,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=17
+,wa_qiqitang_bridge_l,带肋钢筋,403-4-2,bridge,kg,60591.28,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=18
+,wa_qiqitang_bridge_l,基础挖方及回填,404-1,bridge,m3,310.0,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=20
+,wa_qiqitang_bridge_l,桩径1.2m,405-3-4,bridge,m,0.0,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=23
+,wa_qiqitang_bridge_l,桩径1.3m,405-3-5,bridge,m,0.0,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=24
+,wa_qiqitang_bridge_l,桩径1.5m,405-3-7,bridge,m,238.5,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=25
+,wa_qiqitang_bridge_l,桩径1.8m,405-3-10,bridge,m,499.5,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=26
+,wa_qiqitang_bridge_l,声测管,405-4,bridge,m,2767.5,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=27
+,wa_qiqitang_bridge_l,C30混凝土,410-1-4,bridge,m3,273.02,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=30
+,wa_qiqitang_bridge_l,C30混凝土,410-2-1-2,bridge,m3,0.0,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=33
+,wa_qiqitang_bridge_l,C35混凝土,410-2-1-3,bridge,m3,698.7802636998422,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=34
+,wa_qiqitang_bridge_l,C25混凝土（镇墩）,410-2-1-1,bridge,m3,0.0,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=36
+,wa_qiqitang_bridge_l,C35混凝土,410-2-2-3,bridge,m3,0.0,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=37
+,wa_qiqitang_bridge_l,C50混凝土(盖梁挡块）,410-2-3-3,bridge,m3,0.0,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=39
+,wa_qiqitang_bridge_l,C35混凝土（台帽、挡块、挡土板）,410-2-3-5,bridge,m3,8.0,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=40
+,wa_qiqitang_bridge_l,C35混凝土（耳背墙）,410-2-4-3,bridge,m3,76.38,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=41
+,wa_qiqitang_bridge_l,C50混凝土,410-2-5-3,bridge,m3,0.0,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=43
+,wa_qiqitang_bridge_l,C35混凝土,410-2-5-5,bridge,m3,475.43,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=44
+,wa_qiqitang_bridge_l,C35混凝土(柱系梁）,410-2-6-3,bridge,m3,84.0,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=46
+,wa_qiqitang_bridge_l,C35混凝土,410-2-7-5,bridge,m3,8.54,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=48
+,wa_qiqitang_bridge_l,C50混凝土,410-5-5,bridge,m3,357.82,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=50
+,wa_qiqitang_bridge_l,C35混凝土,410-6-5,bridge,m3,310.86,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=52
+,wa_qiqitang_bridge_l,C50混凝土（护栏背包砼加劲肋）,410-6-8,bridge,m3,0.6,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=53
+,wa_qiqitang_bridge_l,后张法预应力钢绞线,411-5,bridge,kg,68256.79999999999,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=55
+,wa_qiqitang_bridge_l,C50混凝土（预制部分）,411-8-3-3,bridge,m3,1731.9,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=58
+,wa_qiqitang_bridge_l,C50混凝土,411-4-8-3,bridge,m3,0.0,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=60
+,wa_qiqitang_bridge_l,M7.5浆砌片石,413-1-1,bridge,m3,29.8,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=63
+,wa_qiqitang_bridge_l,衡重式路堤墙墙后填料,413-1-2,bridge,m3,578.0,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=64
+,wa_qiqitang_bridge_l,六角空心块,413-4-1,bridge,m2,991.5,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=66
+,wa_qiqitang_bridge_l,锥坡挡墙,413-4-2,bridge,m3,144.9,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=67
+,wa_qiqitang_bridge_l,预埋钢材,414-1,bridge,kg,3643.2200000000003,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=69
+,wa_qiqitang_bridge_l,水泥混凝土桥面调平层（C50）,415-1,bridge,m3,360.0,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=71
+,wa_qiqitang_bridge_l,GBZJ 250×300×52mm,416-1-1,bridge,个,0.0,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=74
+,wa_qiqitang_bridge_l,GBZJ 250×250×41mm,416-1-2,bridge,个,0.0,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=75
+,wa_qiqitang_bridge_l,GPZ(2019)1.5 SX,416-2-1,bridge,个,20.0,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=77
+,wa_qiqitang_bridge_l,GPZ(2019)1.5 DX,416-2-2,bridge,个,8.0,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=78
+,wa_qiqitang_bridge_l,GPZ(2019)2.5 SX,416-2-3,bridge,个,20.0,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=79
+,wa_qiqitang_bridge_l,GPZ(2019)2.5 DX,416-2-4,bridge,个,18.0,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=80
+,wa_qiqitang_bridge_l,GPZ(2019)2.5 GD,416-2-5,bridge,个,4.0,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=81
+,wa_qiqitang_bridge_l,GPZ(2019)2.0 SX,416-2-6,bridge,个,0.0,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=82
+,wa_qiqitang_bridge_l,GPZ(2019)2.0 DX,416-2-7,bridge,个,0.0,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=83
+,wa_qiqitang_bridge_l,GPZ(2019)3.5 SX,416-2-8,bridge,个,0.0,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=84
+,wa_qiqitang_bridge_l,GPZ(2019)3.5 DX,416-2-9,bridge,个,0.0,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=85
+,wa_qiqitang_bridge_l,GPZ(2019)3.5 GD,416-2-10,bridge,个,0.0,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=86
+,wa_qiqitang_bridge_l,40型,417-5-1,bridge,m,0.0,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=89
+,wa_qiqitang_bridge_l,60型,417-5-2,bridge,m,0.0,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=90
+,wa_qiqitang_bridge_l,80型,417-5-3,bridge,m,32.0,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=91
+,wa_qiqitang_bridge_l,160型,417-5-5,bridge,m,16.0,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=92
+,wa_qiqitang_bridge_l,DN160,418-1-1,bridge,m,240.0,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=95
+,wa_qiqitang_bridge_l,DN200,418-1-2,bridge,m,160.0,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=96
+,wa_qiqitang_bridge_l,桥面边部碎石盲沟,418-2,bridge,m3,21.599999999999998,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=97
+,wa_qiqitang_bridge_l,泄水管,418-3,bridge,套,49.0,351-import-v1,source_file=七秩塘桥\七秩塘桥左幅.xls; sheet=工程量清单; source_column=数量; row=98
+,wa_gailu_bridge,光圆钢筋,403-1-1,bridge,kg,843.4000000000001,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=5
+,wa_gailu_bridge,带肋钢筋,403-1-2,bridge,kg,6979.4,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=6
+,wa_gailu_bridge,光圆钢筋,403-2-1,bridge,kg,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=8
+,wa_gailu_bridge,带肋钢筋,403-2-2,bridge,kg,7503.379416,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=9
+,wa_gailu_bridge,冷轧带肋钢筋焊接网 (台身防裂钢筋网）,403-2-3,bridge,kg,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=10
+,wa_gailu_bridge,光圆钢筋,403-3-1,bridge,kg,2077.5,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=12
+,wa_gailu_bridge,带肋钢筋,403-3-2,bridge,kg,8065.9,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=13
+,wa_gailu_bridge,D10冷轧钢筋焊接网,403-3-3-2,bridge,kg,1303.1039999999998,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=15
+,wa_gailu_bridge,光圆钢筋,403-4-1,bridge,kg,1008.0800000000002,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=17
+,wa_gailu_bridge,带肋钢筋,403-4-2,bridge,kg,4678.64,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=18
+,wa_gailu_bridge,基础挖方及回填,404-1,bridge,m3,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=20
+,wa_gailu_bridge,桩径1.2m,405-3-4,bridge,m,48.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=23
+,wa_gailu_bridge,桩径1.3m,405-3-5,bridge,m,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=24
+,wa_gailu_bridge,桩径1.5m,405-3-7,bridge,m,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=25
+,wa_gailu_bridge,桩径1.8m,405-3-10,bridge,m,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=26
+,wa_gailu_bridge,声测管,405-4,bridge,m,150.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=27
+,wa_gailu_bridge,C30混凝土,410-1-4,bridge,m3,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=30
+,wa_gailu_bridge,C30混凝土,410-2-1-2,bridge,m3,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=33
+,wa_gailu_bridge,C35混凝土,410-2-1-3,bridge,m3,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=34
+,wa_gailu_bridge,C25混凝土（镇墩）,410-2-1-1,bridge,m3,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=36
+,wa_gailu_bridge,C35混凝土,410-2-2-3,bridge,m3,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=37
+,wa_gailu_bridge,C50混凝土(盖梁挡块）,410-2-3-3,bridge,m3,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=39
+,wa_gailu_bridge,C35混凝土（台帽、挡块、挡土板）,410-2-3-5,bridge,m3,1.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=40
+,wa_gailu_bridge,C35混凝土（耳背墙）,410-2-4-3,bridge,m3,15.16,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=41
+,wa_gailu_bridge,C50混凝土,410-2-5-3,bridge,m3,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=43
+,wa_gailu_bridge,C35混凝土,410-2-5-5,bridge,m3,29.56,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=44
+,wa_gailu_bridge,C35混凝土(柱系梁）,410-2-6-3,bridge,m3,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=46
+,wa_gailu_bridge,C35混凝土,410-2-7-5,bridge,m3,0.56,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=48
+,wa_gailu_bridge,C50混凝土,410-5-5,bridge,m3,3.47,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=50
+,wa_gailu_bridge,C35混凝土,410-6-5,bridge,m3,28.16,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=52
+,wa_gailu_bridge,C50混凝土（护栏背包砼加劲肋）,410-6-8,bridge,m3,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=53
+,wa_gailu_bridge,后张法预应力钢绞线,411-5,bridge,kg,1549.5,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=55
+,wa_gailu_bridge,C50混凝土（预制部分）,411-8-3-3,bridge,m3,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=58
+,wa_gailu_bridge,C50混凝土,411-4-8-3,bridge,m3,41.720000000000006,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=60
+,wa_gailu_bridge,M7.5浆砌片石,413-1-1,bridge,m3,9.8,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=63
+,wa_gailu_bridge,六角空心块,413-4-1,bridge,m2,79.8,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=65
+,wa_gailu_bridge,预埋钢材,414-1,bridge,kg,477.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=67
+,wa_gailu_bridge,水泥混凝土桥面调平层（C50）,415-1,bridge,m3,9.600000000000001,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=69
+,wa_gailu_bridge,GBZJ 250×300×52mm,416-1-1,bridge,个,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=72
+,wa_gailu_bridge,GBZJ 250×250×41mm,416-1-2,bridge,个,10.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=73
+,wa_gailu_bridge,GPZ(2019)1.5 SX,416-2-1,bridge,个,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=75
+,wa_gailu_bridge,GPZ(2019)1.5 DX,416-2-2,bridge,个,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=76
+,wa_gailu_bridge,GPZ(2019)2.5 SX,416-2-3,bridge,个,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=77
+,wa_gailu_bridge,GPZ(2019)2.5 DX,416-2-4,bridge,个,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=78
+,wa_gailu_bridge,GPZ(2019)2.5 GD,416-2-5,bridge,个,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=79
+,wa_gailu_bridge,GPZ(2019)2.0 SX,416-2-6,bridge,个,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=80
+,wa_gailu_bridge,GPZ(2019)2.0 DX,416-2-7,bridge,个,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=81
+,wa_gailu_bridge,GPZ(2019)3.5 SX,416-2-8,bridge,个,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=82
+,wa_gailu_bridge,GPZ(2019)3.5 DX,416-2-9,bridge,个,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=83
+,wa_gailu_bridge,GPZ(2019)3.5 GD,416-2-10,bridge,个,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=84
+,wa_gailu_bridge,40型,417-5-1,bridge,m,14.2,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=87
+,wa_gailu_bridge,60型,417-5-2,bridge,m,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=88
+,wa_gailu_bridge,80型,417-5-3,bridge,m,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=89
+,wa_gailu_bridge,160型,417-5-5,bridge,m,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=90
+,wa_gailu_bridge,DN160,418-1-1,bridge,m,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=93
+,wa_gailu_bridge,DN200,418-1-2,bridge,m,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=94
+,wa_gailu_bridge,桥面边部碎石盲沟,418-2,bridge,m3,0.3,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=95
+,wa_gailu_bridge,泄水管,418-3,bridge,套,14.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=96
+,wa_gailu_bridge,1-Φ0.8,419-1-2,bridge,m,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=99
+,wa_gailu_bridge,开挖（含回填）,420-1,bridge,m3,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=112
+,wa_gailu_bridge,光圆钢筋,420-2,bridge,kg,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=115
+,wa_gailu_bridge,带肋钢筋,420-3,bridge,kg,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=117
+,wa_gailu_bridge,C40混凝土,420-5-1,bridge,m3,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=122
+,wa_gailu_bridge,C30混凝土,420-6-1,bridge,m3,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=124
+,wa_gailu_bridge,C25混凝土（帽石）,420-6-2,bridge,m3,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=125
+,wa_gailu_bridge,C30混凝土（含基础）,420-7-1,bridge,m3,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=127
+,wa_gailu_bridge,C25片石混凝土,420-12-1,bridge,m3,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=130
+,wa_gailu_bridge,20cm抗折4.0Mpa 砼路面,420-14-1,bridge,m2,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=132
+,wa_gailu_bridge,C50混凝土（明涵铺装）,420-14-2,bridge,m3,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=133
+,wa_gailu_bridge,10cm沥青砼,420-15-1,bridge,m3,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=136
+,wa_gailu_bridge,防水层,420-15-2,bridge,m2,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=137
+,wa_gailu_bridge,砂砾垫层,420-18-1,bridge,m3,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=141
+,wa_gailu_bridge,C30现浇砼边沟,420-20-1,bridge,m3,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=143
+,wa_gailu_bridge,C30预制砼边沟盖板,420-20-2,bridge,m3,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=144
+,wa_gailu_bridge,盖板钢筋HPB300,420-20-3,bridge,kg,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=145
+,wa_gailu_bridge,盖板钢筋HRB400,420-20-4,bridge,kg,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=146
+,wa_gailu_bridge,C50护栏基础,420-20-5,bridge,m3,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=147
+,wa_gailu_bridge,DN1000钢管（Q235B镇静钢）,424-1,bridge,m,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=150
+,wa_gailu_bridge,套筒式伸缩节,424-2,bridge,套,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=155
+,wa_gailu_bridge,限高标志,424-3,bridge,套,0.0,351-import-v1,source_file=改路桥\改路桥.xls; sheet=工程量清单; source_column=数量; row=156
+,wa_hengludian_bridge_r,光圆钢筋,403-1-1,bridge,kg,10366.600000000002,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=5
+,wa_hengludian_bridge_r,带肋钢筋,403-1-2,bridge,kg,135058.79999999996,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=6
+,wa_hengludian_bridge_r,光圆钢筋,403-2-1,bridge,kg,4374.8,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=8
+,wa_hengludian_bridge_r,带肋钢筋,403-2-2,bridge,kg,159342.722584,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=9
+,wa_hengludian_bridge_r,冷轧带肋钢筋焊接网 (台身防裂钢筋网）,403-2-3,bridge,kg,0.0,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=10
+,wa_hengludian_bridge_r,光圆钢筋,403-3-1,bridge,kg,104813.1993725,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=12
+,wa_hengludian_bridge_r,带肋钢筋,403-3-2,bridge,kg,465384.1830859998,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=13
+,wa_hengludian_bridge_r,D10冷轧钢筋焊接网,403-3-3-2,bridge,kg,53518.33320000001,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=15
+,wa_hengludian_bridge_r,光圆钢筋,403-4-1,bridge,kg,13300.8,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=17
+,wa_hengludian_bridge_r,带肋钢筋,403-4-2,bridge,kg,63778.26,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=18
+,wa_hengludian_bridge_r,基础挖方及回填,404-1,bridge,m3,1779.2,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=20
+,wa_hengludian_bridge_r,桩径1.2m,405-3-4,bridge,m,0.0,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=23
+,wa_hengludian_bridge_r,桩径1.3m,405-3-5,bridge,m,0.0,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=24
+,wa_hengludian_bridge_r,桩径1.5m,405-3-7,bridge,m,612.4000000000002,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=25
+,wa_hengludian_bridge_r,桩径1.8m,405-3-10,bridge,m,0.0,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=26
+,wa_hengludian_bridge_r,声测管,405-4,bridge,m,1889.7000000000003,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=27
+,wa_hengludian_bridge_r,C30混凝土,410-1-4,bridge,m3,354.84000000000003,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=30
+,wa_hengludian_bridge_r,C30混凝土,410-2-1-2,bridge,m3,0.0,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=33
+,wa_hengludian_bridge_r,C35混凝土,410-2-1-3,bridge,m3,251.06524209752993,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=34
+,wa_hengludian_bridge_r,C25混凝土（镇墩）,410-2-1-1,bridge,m3,0.0,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=36
+,wa_hengludian_bridge_r,C35混凝土,410-2-2-3,bridge,m3,0.0,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=37
+,wa_hengludian_bridge_r,C50混凝土(盖梁挡块）,410-2-3-3,bridge,m3,0.0,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=39
+,wa_hengludian_bridge_r,C35混凝土（台帽、挡块、挡土板）,410-2-3-5,bridge,m3,7.02,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=40
+,wa_hengludian_bridge_r,C35混凝土（耳背墙）,410-2-4-3,bridge,m3,75.56,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=41
+,wa_hengludian_bridge_r,C50混凝土,410-2-5-3,bridge,m3,0.0,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=43
+,wa_hengludian_bridge_r,C35混凝土,410-2-5-5,bridge,m3,514.32,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=44
+,wa_hengludian_bridge_r,C35混凝土(柱系梁）,410-2-6-3,bridge,m3,0.0,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=46
+,wa_hengludian_bridge_r,C35混凝土,410-2-7-5,bridge,m3,10.369999999999997,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=48
+,wa_hengludian_bridge_r,C50混凝土,410-5-5,bridge,m3,367.85,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=50
+,wa_hengludian_bridge_r,C35混凝土,410-6-5,bridge,m3,346.36,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=52
+,wa_hengludian_bridge_r,C50混凝土（护栏背包砼加劲肋）,410-6-8,bridge,m3,0.6,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=53
+,wa_hengludian_bridge_r,后张法预应力钢绞线,411-5,bridge,kg,82247.997896,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=55
+,wa_hengludian_bridge_r,C50混凝土（预制部分）,411-8-3-3,bridge,m3,2103.56,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=58
+,wa_hengludian_bridge_r,C50混凝土,411-4-8-3,bridge,m3,0.0,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=60
+,wa_hengludian_bridge_r,M7.5浆砌片石,413-1-1,bridge,m3,0.0,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=63
+,wa_hengludian_bridge_r,衡重式路堤墙墙后填料,413-1-2,bridge,m3,578.0,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=64
+,wa_hengludian_bridge_r,级配碎石换填,413-1-3,bridge,m3,855.8,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=65
+,wa_hengludian_bridge_r,六角空心块,413-4-1,bridge,m2,1387.5,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=67
+,wa_hengludian_bridge_r,锥坡挡墙（C20片石砼）,413-4-2,bridge,m3,1812.0,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=68
+,wa_hengludian_bridge_r,预埋钢材,414-1,bridge,kg,4423.91,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=70
+,wa_hengludian_bridge_r,金属防抛网,414-2,bridge,m,90.0,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=71
+,wa_hengludian_bridge_r,水泥混凝土桥面调平层（C50）,415-1,bridge,m3,419.298,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=73
+,wa_hengludian_bridge_r,GBZJ 250×300×52mm,416-1-1,bridge,个,0.0,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=76
+,wa_hengludian_bridge_r,GBZJ 250×250×41mm,416-1-2,bridge,个,0.0,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=77
+,wa_hengludian_bridge_r,GPZ(2019)1.5 SX,416-2-1,bridge,个,26.0,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=79
+,wa_hengludian_bridge_r,GPZ(2019)1.5 DX,416-2-2,bridge,个,8.0,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=80
+,wa_hengludian_bridge_r,GPZ(2019)2.5 SX,416-2-3,bridge,个,26.0,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=81
+,wa_hengludian_bridge_r,GPZ(2019)2.5 DX,416-2-4,bridge,个,21.0,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=82
+,wa_hengludian_bridge_r,GPZ(2019)2.5 GD,416-2-5,bridge,个,4.0,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=83
+,wa_hengludian_bridge_r,GPZ(2019)2.0 SX,416-2-6,bridge,个,0.0,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=84
+,wa_hengludian_bridge_r,GPZ(2019)2.0 DX,416-2-7,bridge,个,0.0,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=85
+,wa_hengludian_bridge_r,GPZ(2019)3.5 SX,416-2-8,bridge,个,0.0,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=86
+,wa_hengludian_bridge_r,GPZ(2019)3.5 DX,416-2-9,bridge,个,0.0,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=87
+,wa_hengludian_bridge_r,GPZ(2019)3.5 GD,416-2-10,bridge,个,0.0,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=88
+,wa_hengludian_bridge_r,40型,417-5-1,bridge,m,0.0,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=91
+,wa_hengludian_bridge_r,60型,417-5-2,bridge,m,0.0,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=92
+,wa_hengludian_bridge_r,80型,417-5-3,bridge,m,37.14,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=93
+,wa_hengludian_bridge_r,160型,417-5-5,bridge,m,18.57,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=94
+,wa_hengludian_bridge_r,DN160,418-1-1,bridge,m,391.6,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=97
+,wa_hengludian_bridge_r,DN200,418-1-2,bridge,m,0.0,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=98
+,wa_hengludian_bridge_r,桥面边部碎石盲沟,418-2,bridge,m3,21.599999999999998,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=99
+,wa_hengludian_bridge_r,泄水管,418-3,bridge,套,48.0,351-import-v1,source_file=横路店大桥\横路店大桥右幅.xls; sheet=工程量清单; source_column=数量; row=100
+,wa_hengludian_bridge_l,光圆钢筋,403-1-1,bridge,kg,11175.300000000001,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=5
+,wa_hengludian_bridge_l,带肋钢筋,403-1-2,bridge,kg,147872.3,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=6
+,wa_hengludian_bridge_l,光圆钢筋,403-2-1,bridge,kg,4371.5999999999985,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=8
+,wa_hengludian_bridge_l,带肋钢筋,403-2-2,bridge,kg,169417.97583200003,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=9
+,wa_hengludian_bridge_l,冷轧带肋钢筋焊接网 (台身防裂钢筋网）,403-2-3,bridge,kg,0.0,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=10
+,wa_hengludian_bridge_l,光圆钢筋,403-3-1,bridge,kg,111800.21414799998,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=12
+,wa_hengludian_bridge_l,带肋钢筋,403-3-2,bridge,kg,487712.2361099999,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=13
+,wa_hengludian_bridge_l,D10冷轧钢筋焊接网,403-3-3-2,bridge,kg,57088.542,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=15
+,wa_hengludian_bridge_l,光圆钢筋,403-4-1,bridge,kg,13300.8,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=17
+,wa_hengludian_bridge_l,带肋钢筋,403-4-2,bridge,kg,63727.26000000001,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=18
+,wa_hengludian_bridge_l,基础挖方及回填,404-1,bridge,m3,1794.7,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=20
+,wa_hengludian_bridge_l,桩径1.2m,405-3-4,bridge,m,0.0,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=23
+,wa_hengludian_bridge_l,桩径1.3m,405-3-5,bridge,m,0.0,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=24
+,wa_hengludian_bridge_l,桩径1.5m,405-3-7,bridge,m,662.7000000000003,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=25
+,wa_hengludian_bridge_l,桩径1.8m,405-3-10,bridge,m,0.0,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=26
+,wa_hengludian_bridge_l,声测管,405-4,bridge,m,2043.6000000000001,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=27
+,wa_hengludian_bridge_l,C30混凝土,410-1-4,bridge,m3,395.22999999999996,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=30
+,wa_hengludian_bridge_l,C30混凝土,410-2-1-2,bridge,m3,0.0,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=33
+,wa_hengludian_bridge_l,C35混凝土,410-2-1-3,bridge,m3,250.96980051434196,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=34
+,wa_hengludian_bridge_l,C25混凝土（镇墩）,410-2-1-1,bridge,m3,0.0,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=36
+,wa_hengludian_bridge_l,C35混凝土,410-2-2-3,bridge,m3,0.0,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=37
+,wa_hengludian_bridge_l,C50混凝土(盖梁挡块）,410-2-3-3,bridge,m3,0.0,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=39
+,wa_hengludian_bridge_l,C35混凝土（台帽、挡块、挡土板）,410-2-3-5,bridge,m3,6.9399999999999995,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=40
+,wa_hengludian_bridge_l,C35混凝土（耳背墙）,410-2-4-3,bridge,m3,78.94999999999999,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=41
+,wa_hengludian_bridge_l,C50混凝土,410-2-5-3,bridge,m3,0.0,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=43
+,wa_hengludian_bridge_l,C35混凝土,410-2-5-5,bridge,m3,549.29,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=44
+,wa_hengludian_bridge_l,C35混凝土(柱系梁）,410-2-6-3,bridge,m3,0.0,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=46
+,wa_hengludian_bridge_l,C35混凝土,410-2-7-5,bridge,m3,10.979999999999997,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=48
+,wa_hengludian_bridge_l,C50混凝土,410-5-5,bridge,m3,400.41,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=50
+,wa_hengludian_bridge_l,C35混凝土,410-6-5,bridge,m3,351.44,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=52
+,wa_hengludian_bridge_l,C50混凝土（护栏背包砼加劲肋）,410-6-8,bridge,m3,0.0,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=53
+,wa_hengludian_bridge_l,后张法预应力钢绞线,411-5,bridge,kg,86911.920192,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=55
+,wa_hengludian_bridge_l,C50混凝土（预制部分）,411-8-3-3,bridge,m3,2227.22,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=58
+,wa_hengludian_bridge_l,C50混凝土,411-4-8-3,bridge,m3,0.0,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=60
+,wa_hengludian_bridge_l,M7.5浆砌片石,413-1-1,bridge,m3,0.0,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=63
+,wa_hengludian_bridge_l,级配碎石换填,413-1-3,bridge,m3,850.0,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=64
+,wa_hengludian_bridge_l,六角空心块,413-4-1,bridge,m2,1871.6,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=66
+,wa_hengludian_bridge_l,锥坡挡墙（C20片石砼）,413-4-2,bridge,m3,1856.8,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=67
+,wa_hengludian_bridge_l,预埋钢材,414-1,bridge,kg,4684.14,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=69
+,wa_hengludian_bridge_l,金属防抛网,414-2,bridge,m,90.0,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=70
+,wa_hengludian_bridge_l,水泥混凝土桥面调平层（C50）,415-1,bridge,m3,450.03000000000003,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=72
+,wa_hengludian_bridge_l,GBZJ 250×300×52mm,416-1-1,bridge,个,0.0,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=75
+,wa_hengludian_bridge_l,GBZJ 250×250×41mm,416-1-2,bridge,个,0.0,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=76
+,wa_hengludian_bridge_l,GPZ(2019)1.5 SX,416-2-1,bridge,个,28.0,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=78
+,wa_hengludian_bridge_l,GPZ(2019)1.5 DX,416-2-2,bridge,个,8.0,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=79
+,wa_hengludian_bridge_l,GPZ(2019)2.5 SX,416-2-3,bridge,个,28.0,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=80
+,wa_hengludian_bridge_l,GPZ(2019)2.5 DX,416-2-4,bridge,个,22.0,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=81
+,wa_hengludian_bridge_l,GPZ(2019)2.5 GD,416-2-5,bridge,个,4.0,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=82
+,wa_hengludian_bridge_l,GPZ(2019)2.0 SX,416-2-6,bridge,个,0.0,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=83
+,wa_hengludian_bridge_l,GPZ(2019)2.0 DX,416-2-7,bridge,个,0.0,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=84
+,wa_hengludian_bridge_l,GPZ(2019)3.5 SX,416-2-8,bridge,个,0.0,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=85
+,wa_hengludian_bridge_l,GPZ(2019)3.5 DX,416-2-9,bridge,个,0.0,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=86
+,wa_hengludian_bridge_l,GPZ(2019)3.5 GD,416-2-10,bridge,个,0.0,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=87
+,wa_hengludian_bridge_l,40型,417-5-1,bridge,m,0.0,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=90
+,wa_hengludian_bridge_l,60型,417-5-2,bridge,m,0.0,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=91
+,wa_hengludian_bridge_l,80型,417-5-3,bridge,m,39.135000000000005,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=92
+,wa_hengludian_bridge_l,160型,417-5-5,bridge,m,20.1,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=93
+,wa_hengludian_bridge_l,DN160,418-1-1,bridge,m,391.6,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=96
+,wa_hengludian_bridge_l,DN200,418-1-2,bridge,m,0.0,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=97
+,wa_hengludian_bridge_l,桥面边部碎石盲沟,418-2,bridge,m3,21.599999999999998,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=98
+,wa_hengludian_bridge_l,泄水管,418-3,bridge,套,48.0,351-import-v1,source_file=横路店大桥\横路店大桥左幅.xls; sheet=工程量清单; source_column=数量; row=99
+,wa_greening_ch700,种植土,702-1-2,greening,m3,13645.8,351-import-v1,source_file=第 700 章 绿化及环境保护工程.xlsm; sheet=700章; source_column=数量; row=5
+,wa_greening_ch700,喷播草籽，15-20克/m2,703-1-1,greening,m2,1409.0,351-import-v1,source_file=第 700 章 绿化及环境保护工程.xlsm; sheet=700章; source_column=数量; row=7
+,wa_greening_ch700,果岭草，满铺,703-4-1,greening,m2,2517.0,351-import-v1,source_file=第 700 章 绿化及环境保护工程.xlsm; sheet=700章; source_column=数量; row=9
+,wa_greening_ch700,"香樟，Φ10.1-12cm，H501-550cm,P301-350cm",704-1-1,greening,棵,388.0,351-import-v1,source_file=第 700 章 绿化及环境保护工程.xlsm; sheet=700章; source_column=数量; row=12
+,wa_greening_ch700,"金桂，d15.1-16cm，H401-450cm,P351-400cm",704-1-2,greening,棵,82.0,351-import-v1,source_file=第 700 章 绿化及环境保护工程.xlsm; sheet=700章; source_column=数量; row=13
+,wa_greening_ch700,银杏，Φ16.1-18cm，H601-650cm以上，P301-351cm,704-1-3,greening,棵,123.0,351-import-v1,source_file=第 700 章 绿化及环境保护工程.xlsm; sheet=700章; source_column=数量; row=14
+,wa_greening_ch700,紫薇，d8.1-9cm，H301-350cm，P251-300cm,704-1-4,greening,棵,559.0,351-import-v1,source_file=第 700 章 绿化及环境保护工程.xlsm; sheet=700章; source_column=数量; row=15
+,wa_greening_ch700,"红叶石楠柱，H180-200cm,P81-100cm",704-1-5,greening,棵,80.0,351-import-v1,source_file=第 700 章 绿化及环境保护工程.xlsm; sheet=700章; source_column=数量; row=16
+,wa_greening_ch700,"金森女贞锥，H81-90cm,P51-60cm",704-2-1,greening,棵,100.0,351-import-v1,source_file=第 700 章 绿化及环境保护工程.xlsm; sheet=700章; source_column=数量; row=18
+,wa_greening_ch700,"夹竹桃，H201-250cm,P141-160cm",704-2-3,greening,棵,114.0,351-import-v1,source_file=第 700 章 绿化及环境保护工程.xlsm; sheet=700章; source_column=数量; row=19
+,wa_greening_ch700,树状月季，d5.1-6,704-2-4,greening,棵,69.0,351-import-v1,source_file=第 700 章 绿化及环境保护工程.xlsm; sheet=700章; source_column=数量; row=20
+,wa_greening_ch700,"四季桂绿篱，H101-150cm,P60-80cm，4株/m2",704-3-1,greening,m2,800.0,351-import-v1,source_file=第 700 章 绿化及环境保护工程.xlsm; sheet=700章; source_column=数量; row=22
+,wa_greening_ch700,"八角金盘，H51-55cm,P41-45cm，25株/m2",704-3-2,greening,m2,5313.0,351-import-v1,source_file=第 700 章 绿化及环境保护工程.xlsm; sheet=700章; source_column=数量; row=23
+,wa_greening_ch700,"红叶石楠，H41-45cm,P41-45cm，36株/m2",704-3-3,greening,m2,529.0,351-import-v1,source_file=第 700 章 绿化及环境保护工程.xlsm; sheet=700章; source_column=数量; row=24
+,wa_greening_ch700,"毛鹃，H31-40cm,P31-40cm，36株/m2",704-3-4,greening,m2,2094.0,351-import-v1,source_file=第 700 章 绿化及环境保护工程.xlsm; sheet=700章; source_column=数量; row=25
+,wa_greening_ch700,"茶梅，H41-45cm,P31-40cm，36株/m2",704-3-5,greening,m2,941.0,351-import-v1,source_file=第 700 章 绿化及环境保护工程.xlsm; sheet=700章; source_column=数量; row=26
+,wa_greening_ch700,"翠芦莉，H41-45cm,P31-40cm，36株/m2",704-3-6,greening,m2,1018.0,351-import-v1,source_file=第 700 章 绿化及环境保护工程.xlsm; sheet=700章; source_column=数量; row=27
+,wa_greening_ch700,"金森女贞，H41-45cm,P41-45cm，36丛/m2",704-3-7,greening,m2,2075.0,351-import-v1,source_file=第 700 章 绿化及环境保护工程.xlsm; sheet=700章; source_column=数量; row=28
+,wa_greening_ch700,品种月季，H41-45，P31-40cm，4株/m2,704-3-8,greening,m2,307.0,351-import-v1,source_file=第 700 章 绿化及环境保护工程.xlsm; sheet=700章; source_column=数量; row=29
+,wa_greening_ch700,云南黄馨，H46-50，P31-40cm，36株/m2,704-3-9,greening,m2,258.0,351-import-v1,source_file=第 700 章 绿化及环境保护工程.xlsm; sheet=700章; source_column=数量; row=30
+,wa_greening_ch700,矮麦冬，3-5芽/丛，49丛/m2,704-3-10,greening,m2,1409.0,351-import-v1,source_file=第 700 章 绿化及环境保护工程.xlsm; sheet=700章; source_column=数量; row=31
+,wa_greening_ch700,清苗,704-12,greening,m2,14768.0,351-import-v1,source_file=第 700 章 绿化及环境保护工程.xlsm; sheet=700章; source_column=数量; row=32
+,wa_greening_ch700,路基段,706-1,greening,m,304.0,351-import-v1,source_file=第 700 章 绿化及环境保护工程.xlsm; sheet=700章; source_column=数量; row=34
+,wa_greening_ch700,桥梁段,706-2,greening,m,1046.0,351-import-v1,source_file=第 700 章 绿化及环境保护工程.xlsm; sheet=700章; source_column=数量; row=35
+,wa_greening_ch700,沉淀池,707-1,greening,座,15.0,351-import-v1,source_file=第 700 章 绿化及环境保护工程.xlsm; sheet=700章; source_column=数量; row=37
+,wa_selfsupport_steelpipe,光圆钢筋,403-1-1,bridge,kg,540.9000000000001,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=5
+,wa_selfsupport_steelpipe,带肋钢筋,403-1-2,bridge,kg,5558.4,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=6
+,wa_selfsupport_steelpipe,光圆钢筋,403-2-1,bridge,kg,422.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=8
+,wa_selfsupport_steelpipe,带肋钢筋,403-2-2,bridge,kg,3504.4000000000005,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=9
+,wa_selfsupport_steelpipe,冷轧带肋钢筋焊接网 (台身防裂钢筋网）,403-2-3,bridge,kg,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=10
+,wa_selfsupport_steelpipe,光圆钢筋,403-3-1,bridge,kg,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=12
+,wa_selfsupport_steelpipe,带肋钢筋,403-3-2,bridge,kg,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=13
+,wa_selfsupport_steelpipe,D10冷轧钢筋焊接网,403-3-3-2,bridge,kg,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=15
+,wa_selfsupport_steelpipe,光圆钢筋,403-4-1,bridge,kg,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=17
+,wa_selfsupport_steelpipe,带肋钢筋,403-4-2,bridge,kg,1493.72,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=18
+,wa_selfsupport_steelpipe,基础挖方及回填,404-1,bridge,m3,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=20
+,wa_selfsupport_steelpipe,桩径1.2m,405-3-4,bridge,m,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=23
+,wa_selfsupport_steelpipe,桩径1.3m,405-3-5,bridge,m,39.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=24
+,wa_selfsupport_steelpipe,桩径1.5m,405-3-7,bridge,m,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=25
+,wa_selfsupport_steelpipe,桩径1.8m,405-3-10,bridge,m,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=26
+,wa_selfsupport_steelpipe,声测管,405-4,bridge,m,121.5,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=27
+,wa_selfsupport_steelpipe,C30混凝土,410-1-4,bridge,m3,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=30
+,wa_selfsupport_steelpipe,C30混凝土,410-2-1-2,bridge,m3,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=33
+,wa_selfsupport_steelpipe,C35混凝土,410-2-1-3,bridge,m3,21.38,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=34
+,wa_selfsupport_steelpipe,C25混凝土（镇墩）,410-2-1-1,bridge,m3,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=36
+,wa_selfsupport_steelpipe,C35混凝土,410-2-2-3,bridge,m3,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=37
+,wa_selfsupport_steelpipe,C50混凝土(盖梁挡块）,410-2-3-3,bridge,m3,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=39
+,wa_selfsupport_steelpipe,C35混凝土（台帽、挡块、挡土板）,410-2-3-5,bridge,m3,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=40
+,wa_selfsupport_steelpipe,C35混凝土（耳背墙）,410-2-4-3,bridge,m3,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=41
+,wa_selfsupport_steelpipe,C50混凝土,410-2-5-3,bridge,m3,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=43
+,wa_selfsupport_steelpipe,C35混凝土,410-2-5-5,bridge,m3,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=44
+,wa_selfsupport_steelpipe,C35混凝土(柱系梁）,410-2-6-3,bridge,m3,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=46
+,wa_selfsupport_steelpipe,C35混凝土,410-2-7-5,bridge,m3,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=48
+,wa_selfsupport_steelpipe,C50混凝土,410-5-5,bridge,m3,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=50
+,wa_selfsupport_steelpipe,C35混凝土,410-6-5,bridge,m3,9.469999999999999,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=52
+,wa_selfsupport_steelpipe,C50混凝土（护栏背包砼加劲肋）,410-6-8,bridge,m3,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=53
+,wa_selfsupport_steelpipe,后张法预应力钢绞线,411-5,bridge,kg,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=55
+,wa_selfsupport_steelpipe,C50混凝土（预制部分）,411-8-3-3,bridge,m3,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=58
+,wa_selfsupport_steelpipe,C50混凝土,411-4-8-3,bridge,m3,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=60
+,wa_selfsupport_steelpipe,M7.5浆砌片石,413-1-1,bridge,m3,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=63
+,wa_selfsupport_steelpipe,六角空心块,413-4-1,bridge,m2,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=65
+,wa_selfsupport_steelpipe,预埋钢材,414-1,bridge,kg,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=67
+,wa_selfsupport_steelpipe,水泥混凝土桥面调平层（C50）,415-1,bridge,m3,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=69
+,wa_selfsupport_steelpipe,GBZJ 250×300×52mm,416-1-1,bridge,个,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=72
+,wa_selfsupport_steelpipe,GBZJ 250×250×41mm,416-1-2,bridge,个,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=73
+,wa_selfsupport_steelpipe,GPZ(2019)1.5 SX,416-2-1,bridge,个,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=75
+,wa_selfsupport_steelpipe,GPZ(2019)1.5 DX,416-2-2,bridge,个,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=76
+,wa_selfsupport_steelpipe,GPZ(2019)2.5 SX,416-2-3,bridge,个,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=77
+,wa_selfsupport_steelpipe,GPZ(2019)2.5 DX,416-2-4,bridge,个,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=78
+,wa_selfsupport_steelpipe,GPZ(2019)2.5 GD,416-2-5,bridge,个,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=79
+,wa_selfsupport_steelpipe,GPZ(2019)2.0 SX,416-2-6,bridge,个,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=80
+,wa_selfsupport_steelpipe,GPZ(2019)2.0 DX,416-2-7,bridge,个,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=81
+,wa_selfsupport_steelpipe,GPZ(2019)3.5 SX,416-2-8,bridge,个,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=82
+,wa_selfsupport_steelpipe,GPZ(2019)3.5 DX,416-2-9,bridge,个,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=83
+,wa_selfsupport_steelpipe,GPZ(2019)3.5 GD,416-2-10,bridge,个,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=84
+,wa_selfsupport_steelpipe,40型,417-5-1,bridge,m,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=87
+,wa_selfsupport_steelpipe,60型,417-5-2,bridge,m,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=88
+,wa_selfsupport_steelpipe,80型,417-5-3,bridge,m,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=89
+,wa_selfsupport_steelpipe,160型,417-5-5,bridge,m,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=90
+,wa_selfsupport_steelpipe,DN160,418-1-1,bridge,m,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=93
+,wa_selfsupport_steelpipe,DN200,418-1-2,bridge,m,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=94
+,wa_selfsupport_steelpipe,桥面边部碎石盲沟,418-2,bridge,m3,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=95
+,wa_selfsupport_steelpipe,泄水管,418-3,bridge,套,0.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=96
+,wa_selfsupport_steelpipe,DN1000钢管（Q235B镇静钢）,424-1,bridge,m,63.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=98
+,wa_selfsupport_steelpipe,套筒式伸缩节,424-2,bridge,套,1.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=103
+,wa_selfsupport_steelpipe,限高标志,424-3,bridge,套,1.0,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=104
+,wa_selfsupport_steelpipe,光圆钢筋（竖井盖板钢筋）,424-4,bridge,kg,12.33,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=105
+,wa_selfsupport_steelpipe,C30混凝土（竖井盖板C30混凝土）,424-5,bridge,kg,0.18,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=106
+,wa_selfsupport_steelpipe,C25混凝土（竖井井身镇墩，修复C25混凝土）,424-6,bridge,m3,30.26,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=107
+,wa_selfsupport_steelpipe,砂砾垫层,424-7,bridge,m3,32.32,351-import-v1,source_file=自承式平直形架空钢管\自承式平直形架空钢管.xls; sheet=工程量清单; source_column=数量; row=108
+,wa_mazhai_aux_a_bridge,光圆钢筋,403-1-1,bridge,kg,806.5,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=5
+,wa_mazhai_aux_a_bridge,带肋钢筋,403-1-2,bridge,kg,7892.499999999999,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=6
+,wa_mazhai_aux_a_bridge,光圆钢筋,403-2-1,bridge,kg,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=8
+,wa_mazhai_aux_a_bridge,带肋钢筋,403-2-2,bridge,kg,17014.598124,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=9
+,wa_mazhai_aux_a_bridge,冷轧带肋钢筋焊接网 (台身防裂钢筋网）,403-2-3,bridge,kg,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=10
+,wa_mazhai_aux_a_bridge,光圆钢筋,403-3-1,bridge,kg,3531.5,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=12
+,wa_mazhai_aux_a_bridge,带肋钢筋,403-3-2,bridge,kg,13528.5,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=13
+,wa_mazhai_aux_a_bridge,D10冷轧钢筋焊接网,403-3-3-2,bridge,kg,2369.2799999999997,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=15
+,wa_mazhai_aux_a_bridge,光圆钢筋,403-4-1,bridge,kg,1226.8000000000002,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=17
+,wa_mazhai_aux_a_bridge,带肋钢筋,403-4-2,bridge,kg,10398.1,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=18
+,wa_mazhai_aux_a_bridge,基础挖方及回填,404-1,bridge,m3,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=20
+,wa_mazhai_aux_a_bridge,桩径1.2m,405-3-4,bridge,m,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=23
+,wa_mazhai_aux_a_bridge,桩径1.3m,405-3-5,bridge,m,55.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=24
+,wa_mazhai_aux_a_bridge,桩径1.5m,405-3-7,bridge,m,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=25
+,wa_mazhai_aux_a_bridge,桩径1.8m,405-3-10,bridge,m,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=26
+,wa_mazhai_aux_a_bridge,声测管,405-4,bridge,m,171.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=27
+,wa_mazhai_aux_a_bridge,C30混凝土,410-1-4,bridge,m3,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=30
+,wa_mazhai_aux_a_bridge,C30混凝土,410-2-1-2,bridge,m3,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=33
+,wa_mazhai_aux_a_bridge,C35混凝土,410-2-1-3,bridge,m3,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=34
+,wa_mazhai_aux_a_bridge,C25混凝土（镇墩）,410-2-1-1,bridge,m3,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=36
+,wa_mazhai_aux_a_bridge,C35混凝土,410-2-2-3,bridge,m3,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=37
+,wa_mazhai_aux_a_bridge,C50混凝土(盖梁挡块）,410-2-3-3,bridge,m3,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=39
+,wa_mazhai_aux_a_bridge,C35混凝土（台帽、挡块、挡土板）,410-2-3-5,bridge,m3,1.44,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=40
+,wa_mazhai_aux_a_bridge,C35混凝土（耳背墙）,410-2-4-3,bridge,m3,32.7,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=41
+,wa_mazhai_aux_a_bridge,C50混凝土,410-2-5-3,bridge,m3,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=43
+,wa_mazhai_aux_a_bridge,C35混凝土,410-2-5-5,bridge,m3,47.52,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=44
+,wa_mazhai_aux_a_bridge,C35混凝土(柱系梁）,410-2-6-3,bridge,m3,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=46
+,wa_mazhai_aux_a_bridge,C35混凝土,410-2-7-5,bridge,m3,0.672,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=48
+,wa_mazhai_aux_a_bridge,C50混凝土,410-5-5,bridge,m3,13.78,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=50
+,wa_mazhai_aux_a_bridge,C35混凝土,410-6-5,bridge,m3,65.96000000000001,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=52
+,wa_mazhai_aux_a_bridge,C50混凝土（护栏背包砼加劲肋）,410-6-8,bridge,m3,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=53
+,wa_mazhai_aux_a_bridge,后张法预应力钢绞线,411-5,bridge,kg,2855.4,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=55
+,wa_mazhai_aux_a_bridge,C50混凝土（预制部分）,411-8-3-3,bridge,m3,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=58
+,wa_mazhai_aux_a_bridge,C50混凝土,411-4-8-3,bridge,m3,77.44,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=60
+,wa_mazhai_aux_a_bridge,M7.5浆砌片石,413-1-1,bridge,m3,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=63
+,wa_mazhai_aux_a_bridge,六角空心块,413-4-1,bridge,m2,120.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=65
+,wa_mazhai_aux_a_bridge,预埋钢材,414-1,bridge,kg,572.4000000000001,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=67
+,wa_mazhai_aux_a_bridge,水泥混凝土桥面调平层（C50）,415-1,bridge,m3,18.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=69
+,wa_mazhai_aux_a_bridge,GBZJ 250×300×52mm,416-1-1,bridge,个,12.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=72
+,wa_mazhai_aux_a_bridge,GBZJ 250×250×41mm,416-1-2,bridge,个,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=73
+,wa_mazhai_aux_a_bridge,GPZ(2019)1.5 SX,416-2-1,bridge,个,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=75
+,wa_mazhai_aux_a_bridge,GPZ(2019)1.5 DX,416-2-2,bridge,个,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=76
+,wa_mazhai_aux_a_bridge,GPZ(2019)2.5 SX,416-2-3,bridge,个,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=77
+,wa_mazhai_aux_a_bridge,GPZ(2019)2.5 DX,416-2-4,bridge,个,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=78
+,wa_mazhai_aux_a_bridge,GPZ(2019)2.5 GD,416-2-5,bridge,个,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=79
+,wa_mazhai_aux_a_bridge,GPZ(2019)2.0 SX,416-2-6,bridge,个,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=80
+,wa_mazhai_aux_a_bridge,GPZ(2019)2.0 DX,416-2-7,bridge,个,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=81
+,wa_mazhai_aux_a_bridge,GPZ(2019)3.5 SX,416-2-8,bridge,个,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=82
+,wa_mazhai_aux_a_bridge,GPZ(2019)3.5 DX,416-2-9,bridge,个,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=83
+,wa_mazhai_aux_a_bridge,GPZ(2019)3.5 GD,416-2-10,bridge,个,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=84
+,wa_mazhai_aux_a_bridge,40型,417-5-1,bridge,m,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=87
+,wa_mazhai_aux_a_bridge,60型,417-5-2,bridge,m,20.2,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=88
+,wa_mazhai_aux_a_bridge,80型,417-5-3,bridge,m,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=89
+,wa_mazhai_aux_a_bridge,160型,417-5-5,bridge,m,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=90
+,wa_mazhai_aux_a_bridge,DN160,418-1-1,bridge,m,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=93
+,wa_mazhai_aux_a_bridge,DN200,418-1-2,bridge,m,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=94
+,wa_mazhai_aux_a_bridge,桥面边部碎石盲沟,418-2,bridge,m3,3.5999999999999996,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=95
+,wa_mazhai_aux_a_bridge,泄水管,418-3,bridge,套,10.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通A辅道桥.xls; sheet=工程量清单; source_column=数量; row=96
+,wa_mazhai_aux_b_bridge,光圆钢筋,403-1-1,bridge,kg,898.9,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=5
+,wa_mazhai_aux_b_bridge,带肋钢筋,403-1-2,bridge,kg,8999.9,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=6
+,wa_mazhai_aux_b_bridge,光圆钢筋,403-2-1,bridge,kg,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=8
+,wa_mazhai_aux_b_bridge,带肋钢筋,403-2-2,bridge,kg,17014.598124,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=9
+,wa_mazhai_aux_b_bridge,冷轧带肋钢筋焊接网 (台身防裂钢筋网）,403-2-3,bridge,kg,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=10
+,wa_mazhai_aux_b_bridge,光圆钢筋,403-3-1,bridge,kg,3531.5,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=12
+,wa_mazhai_aux_b_bridge,带肋钢筋,403-3-2,bridge,kg,13528.5,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=13
+,wa_mazhai_aux_b_bridge,D10冷轧钢筋焊接网,403-3-3-2,bridge,kg,2369.2799999999997,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=15
+,wa_mazhai_aux_b_bridge,光圆钢筋,403-4-1,bridge,kg,1226.8000000000002,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=17
+,wa_mazhai_aux_b_bridge,带肋钢筋,403-4-2,bridge,kg,10398.1,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=18
+,wa_mazhai_aux_b_bridge,基础挖方及回填,404-1,bridge,m3,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=20
+,wa_mazhai_aux_b_bridge,桩径1.2m,405-3-4,bridge,m,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=23
+,wa_mazhai_aux_b_bridge,桩径1.3m,405-3-5,bridge,m,63.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=24
+,wa_mazhai_aux_b_bridge,桩径1.5m,405-3-7,bridge,m,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=25
+,wa_mazhai_aux_b_bridge,桩径1.8m,405-3-10,bridge,m,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=26
+,wa_mazhai_aux_b_bridge,声测管,405-4,bridge,m,195.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=27
+,wa_mazhai_aux_b_bridge,C30混凝土,410-1-4,bridge,m3,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=30
+,wa_mazhai_aux_b_bridge,C30混凝土,410-2-1-2,bridge,m3,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=33
+,wa_mazhai_aux_b_bridge,C35混凝土,410-2-1-3,bridge,m3,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=34
+,wa_mazhai_aux_b_bridge,C25混凝土（镇墩）,410-2-1-1,bridge,m3,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=36
+,wa_mazhai_aux_b_bridge,C35混凝土,410-2-2-3,bridge,m3,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=37
+,wa_mazhai_aux_b_bridge,C50混凝土(盖梁挡块）,410-2-3-3,bridge,m3,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=39
+,wa_mazhai_aux_b_bridge,C35混凝土（台帽、挡块、挡土板）,410-2-3-5,bridge,m3,1.44,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=40
+,wa_mazhai_aux_b_bridge,C35混凝土（耳背墙）,410-2-4-3,bridge,m3,32.7,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=41
+,wa_mazhai_aux_b_bridge,C50混凝土,410-2-5-3,bridge,m3,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=43
+,wa_mazhai_aux_b_bridge,C35混凝土,410-2-5-5,bridge,m3,47.52,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=44
+,wa_mazhai_aux_b_bridge,C35混凝土(柱系梁）,410-2-6-3,bridge,m3,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=46
+,wa_mazhai_aux_b_bridge,C35混凝土,410-2-7-5,bridge,m3,0.672,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=48
+,wa_mazhai_aux_b_bridge,C50混凝土,410-5-5,bridge,m3,13.78,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=50
+,wa_mazhai_aux_b_bridge,C35混凝土,410-6-5,bridge,m3,65.96000000000001,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=52
+,wa_mazhai_aux_b_bridge,C50混凝土（护栏背包砼加劲肋）,410-6-8,bridge,m3,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=53
+,wa_mazhai_aux_b_bridge,后张法预应力钢绞线,411-5,bridge,kg,2855.4,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=55
+,wa_mazhai_aux_b_bridge,C50混凝土（预制部分）,411-8-3-3,bridge,m3,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=58
+,wa_mazhai_aux_b_bridge,C50混凝土,411-4-8-3,bridge,m3,77.44,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=60
+,wa_mazhai_aux_b_bridge,M7.5浆砌片石,413-1-1,bridge,m3,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=63
+,wa_mazhai_aux_b_bridge,六角空心块,413-4-1,bridge,m2,80.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=65
+,wa_mazhai_aux_b_bridge,预埋钢材,414-1,bridge,kg,572.4000000000001,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=67
+,wa_mazhai_aux_b_bridge,水泥混凝土桥面调平层（C50）,415-1,bridge,m3,18.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=69
+,wa_mazhai_aux_b_bridge,GBZJ 250×300×52mm,416-1-1,bridge,个,12.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=72
+,wa_mazhai_aux_b_bridge,GBZJ 250×250×41mm,416-1-2,bridge,个,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=73
+,wa_mazhai_aux_b_bridge,GPZ(2019)1.5 SX,416-2-1,bridge,个,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=75
+,wa_mazhai_aux_b_bridge,GPZ(2019)1.5 DX,416-2-2,bridge,个,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=76
+,wa_mazhai_aux_b_bridge,GPZ(2019)2.5 SX,416-2-3,bridge,个,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=77
+,wa_mazhai_aux_b_bridge,GPZ(2019)2.5 DX,416-2-4,bridge,个,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=78
+,wa_mazhai_aux_b_bridge,GPZ(2019)2.5 GD,416-2-5,bridge,个,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=79
+,wa_mazhai_aux_b_bridge,GPZ(2019)2.0 SX,416-2-6,bridge,个,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=80
+,wa_mazhai_aux_b_bridge,GPZ(2019)2.0 DX,416-2-7,bridge,个,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=81
+,wa_mazhai_aux_b_bridge,GPZ(2019)3.5 SX,416-2-8,bridge,个,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=82
+,wa_mazhai_aux_b_bridge,GPZ(2019)3.5 DX,416-2-9,bridge,个,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=83
+,wa_mazhai_aux_b_bridge,GPZ(2019)3.5 GD,416-2-10,bridge,个,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=84
+,wa_mazhai_aux_b_bridge,40型,417-5-1,bridge,m,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=87
+,wa_mazhai_aux_b_bridge,60型,417-5-2,bridge,m,20.2,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=88
+,wa_mazhai_aux_b_bridge,80型,417-5-3,bridge,m,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=89
+,wa_mazhai_aux_b_bridge,160型,417-5-5,bridge,m,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=90
+,wa_mazhai_aux_b_bridge,DN160,418-1-1,bridge,m,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=93
+,wa_mazhai_aux_b_bridge,DN200,418-1-2,bridge,m,0.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=94
+,wa_mazhai_aux_b_bridge,桥面边部碎石盲沟,418-2,bridge,m3,3.5999999999999996,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=95
+,wa_mazhai_aux_b_bridge,泄水管,418-3,bridge,套,10.0,351-import-v1,source_file=马宅互通A、B辅道桥\马宅互通B辅道桥.xls; sheet=工程量清单; source_column=数量; row=96
+,wa_mazhai_bridge,光圆钢筋,403-1-1,bridge,kg,26186.599999999948,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=5
+,wa_mazhai_bridge,带肋钢筋,403-1-2,bridge,kg,519695.2000000004,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=6
+,wa_mazhai_bridge,光圆钢筋,403-2-1,bridge,kg,1632.5999999999997,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=8
+,wa_mazhai_bridge,带肋钢筋,403-2-2,bridge,kg,660736.6571492001,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=9
+,wa_mazhai_bridge,冷轧带肋钢筋焊接网 (台身防裂钢筋网）,403-2-3,bridge,kg,0.0,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=10
+,wa_mazhai_bridge,光圆钢筋,403-3-1,bridge,kg,303751.9408600002,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=12
+,wa_mazhai_bridge,带肋钢筋,403-3-2,bridge,kg,1280098.0852159993,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=13
+,wa_mazhai_bridge,D10冷轧钢筋焊接网,403-3-3-2,bridge,kg,151041.6,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=15
+,wa_mazhai_bridge,光圆钢筋,403-4-1,bridge,kg,39480.600000000006,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=17
+,wa_mazhai_bridge,带肋钢筋,403-4-2,bridge,kg,161073.96000000002,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=18
+,wa_mazhai_bridge,基础挖方及回填,404-1,bridge,m3,9714.0,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=20
+,wa_mazhai_bridge,桩径1.2m,405-3-4,bridge,m,0.0,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=23
+,wa_mazhai_bridge,桩径1.3m,405-3-5,bridge,m,0.0,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=24
+,wa_mazhai_bridge,桩径1.5m,405-3-7,bridge,m,1470.8000000000002,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=25
+,wa_mazhai_bridge,桩径1.8m,405-3-10,bridge,m,0.0,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=26
+,wa_mazhai_bridge,声测管,405-4,bridge,m,4625.400000000001,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=27
+,wa_mazhai_bridge,C30混凝土,410-1-4,bridge,m3,2852.45,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=30
+,wa_mazhai_bridge,C30混凝土,410-2-1-2,bridge,m3,0.0,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=33
+,wa_mazhai_bridge,C35混凝土,410-2-1-3,bridge,m3,1419.770874584486,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=34
+,wa_mazhai_bridge,C25混凝土（镇墩）,410-2-1-1,bridge,m3,0.0,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=36
+,wa_mazhai_bridge,C35混凝土,410-2-2-3,bridge,m3,799.1,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=37
+,wa_mazhai_bridge,C50混凝土(盖梁挡块）,410-2-3-3,bridge,m3,14.159999999999998,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=39
+,wa_mazhai_bridge,C35混凝土（台帽、挡块、挡土板）,410-2-3-5,bridge,m3,295.81999999999994,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=40
+,wa_mazhai_bridge,C35混凝土（耳背墙）,410-2-4-3,bridge,m3,0.0,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=41
+,wa_mazhai_bridge,C50混凝土,410-2-5-3,bridge,m3,3237.0000000000005,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=43
+,wa_mazhai_bridge,C35混凝土,410-2-5-5,bridge,m3,99.86,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=44
+,wa_mazhai_bridge,C35混凝土(柱系梁）,410-2-6-3,bridge,m3,0.0,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=46
+,wa_mazhai_bridge,C35混凝土,410-2-7-5,bridge,m3,27.327999999999992,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=48
+,wa_mazhai_bridge,C50混凝土,410-5-5,bridge,m3,1130.9400000000003,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=50
+,wa_mazhai_bridge,C35混凝土,410-6-5,bridge,m3,761.4799999999999,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=52
+,wa_mazhai_bridge,C50混凝土（护栏背包砼加劲肋）,410-6-8,bridge,m3,2.4,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=53
+,wa_mazhai_bridge,后张法预应力钢绞线,411-5,bridge,kg,334564.809848,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=55
+,wa_mazhai_bridge,C50混凝土（预制部分）,411-8-3-3,bridge,m3,6082.299999999999,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=58
+,wa_mazhai_bridge,C50混凝土,411-4-8-3,bridge,m3,0.0,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=60
+,wa_mazhai_bridge,M7.5浆砌片石,413-1-1,bridge,m3,99.0,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=63
+,wa_mazhai_bridge,级配碎石换填,413-1-3,bridge,m3,693.0,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=64
+,wa_mazhai_bridge,六角空心块,413-4-1,bridge,m2,0.0,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=66
+,wa_mazhai_bridge,预埋钢材,414-1,bridge,kg,15367.38,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=68
+,wa_mazhai_bridge,水泥混凝土桥面调平层（C50）,415-1,bridge,m3,1224.0,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=70
+,wa_mazhai_bridge,GBZJ 250×300×52mm,416-1-1,bridge,个,0.0,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=73
+,wa_mazhai_bridge,GBZJ 250×250×41mm,416-1-2,bridge,个,0.0,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=74
+,wa_mazhai_bridge,GPZ(2019)1.5 SX,416-2-1,bridge,个,60.0,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=76
+,wa_mazhai_bridge,GPZ(2019)1.5 DX,416-2-2,bridge,个,24.0,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=77
+,wa_mazhai_bridge,GPZ(2019)2.5 SX,416-2-3,bridge,个,30.0,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=78
+,wa_mazhai_bridge,GPZ(2019)2.5 DX,416-2-4,bridge,个,42.0,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=79
+,wa_mazhai_bridge,GPZ(2019)2.5 GD,416-2-5,bridge,个,12.0,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=80
+,wa_mazhai_bridge,GPZ(2019)2.0 SX,416-2-6,bridge,个,20.0,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=81
+,wa_mazhai_bridge,GPZ(2019)2.0 DX,416-2-7,bridge,个,8.0,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=82
+,wa_mazhai_bridge,GPZ(2019)3.5 SX,416-2-8,bridge,个,10.0,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=83
+,wa_mazhai_bridge,GPZ(2019)3.5 DX,416-2-9,bridge,个,14.0,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=84
+,wa_mazhai_bridge,GPZ(2019)3.5 GD,416-2-10,bridge,个,4.0,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=85
+,wa_mazhai_bridge,40型,417-5-1,bridge,m,0.0,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=88
+,wa_mazhai_bridge,60型,417-5-2,bridge,m,0.0,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=89
+,wa_mazhai_bridge,80型,417-5-3,bridge,m,32.1,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=90
+,wa_mazhai_bridge,160型,417-5-5,bridge,m,96.30000000000001,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=91
+,wa_mazhai_bridge,DN160,418-1-1,bridge,m,1170.0,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=94
+,wa_mazhai_bridge,DN200,418-1-2,bridge,m,0.0,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=95
+,wa_mazhai_bridge,桥面边部碎石盲沟,418-2,bridge,m3,70.2,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=96
+,wa_mazhai_bridge,泄水管,418-3,bridge,套,158.0,351-import-v1,source_file=马宅大桥\马宅大桥.xls; sheet=工程量清单; source_column=数量; row=97

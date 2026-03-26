@@ -1,0 +1,4 @@
+﻿id,work_area_id,resource_type,resource_name,quantity,unit,record_day,supplier,notes
+,wa_lhhb700,labor,施工班组,,person,,,starter_for=第 700 章 绿化及环境保护工程
+,wa_lhhb700,machine,主要机械,,set,,,starter_for=第 700 章 绿化及环境保护工程
+,wa_lhhb700,material,主要材料,,t,,,starter_for=第 700 章 绿化及环境保护工程

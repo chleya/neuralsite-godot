@@ -1,0 +1,66 @@
+﻿id,work_area_id,item_name,item_code,category,unit,planned_quantity,actual_quantity,notes
+,wa_zcsgg,光圆钢筋,403-1-1,bridge,kg,540.9000000000001,,starter_from_design=351-import-v1; target_quantity=540.9000000000001
+,wa_zcsgg,带肋钢筋,403-1-2,bridge,kg,5558.4,,starter_from_design=351-import-v1; target_quantity=5558.4
+,wa_zcsgg,光圆钢筋,403-2-1,bridge,kg,422.0,,starter_from_design=351-import-v1; target_quantity=422.0
+,wa_zcsgg,带肋钢筋,403-2-2,bridge,kg,3504.4000000000005,,starter_from_design=351-import-v1; target_quantity=3504.4000000000005
+,wa_zcsgg,冷轧带肋钢筋焊接网 (台身防裂钢筋网）,403-2-3,bridge,kg,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,光圆钢筋,403-3-1,bridge,kg,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,带肋钢筋,403-3-2,bridge,kg,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,D10冷轧钢筋焊接网,403-3-3-2,bridge,kg,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,光圆钢筋,403-4-1,bridge,kg,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,带肋钢筋,403-4-2,bridge,kg,1493.72,,starter_from_design=351-import-v1; target_quantity=1493.72
+,wa_zcsgg,基础挖方及回填,404-1,bridge,m3,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,桩径1.2m,405-3-4,bridge,m,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,桩径1.3m,405-3-5,bridge,m,39.0,,starter_from_design=351-import-v1; target_quantity=39.0
+,wa_zcsgg,桩径1.5m,405-3-7,bridge,m,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,桩径1.8m,405-3-10,bridge,m,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,声测管,405-4,bridge,m,121.5,,starter_from_design=351-import-v1; target_quantity=121.5
+,wa_zcsgg,C30混凝土,410-1-4,bridge,m3,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,C30混凝土,410-2-1-2,bridge,m3,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,C35混凝土,410-2-1-3,bridge,m3,21.38,,starter_from_design=351-import-v1; target_quantity=21.38
+,wa_zcsgg,C25混凝土（镇墩）,410-2-1-1,bridge,m3,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,C35混凝土,410-2-2-3,bridge,m3,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,C50混凝土(盖梁挡块）,410-2-3-3,bridge,m3,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,C35混凝土（台帽、挡块、挡土板）,410-2-3-5,bridge,m3,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,C35混凝土（耳背墙）,410-2-4-3,bridge,m3,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,C50混凝土,410-2-5-3,bridge,m3,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,C35混凝土,410-2-5-5,bridge,m3,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,C35混凝土(柱系梁）,410-2-6-3,bridge,m3,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,C35混凝土,410-2-7-5,bridge,m3,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,C50混凝土,410-5-5,bridge,m3,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,C35混凝土,410-6-5,bridge,m3,9.469999999999999,,starter_from_design=351-import-v1; target_quantity=9.469999999999999
+,wa_zcsgg,C50混凝土（护栏背包砼加劲肋）,410-6-8,bridge,m3,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,后张法预应力钢绞线,411-5,bridge,kg,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,C50混凝土（预制部分）,411-8-3-3,bridge,m3,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,C50混凝土,411-4-8-3,bridge,m3,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,M7.5浆砌片石,413-1-1,bridge,m3,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,六角空心块,413-4-1,bridge,m2,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,预埋钢材,414-1,bridge,kg,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,水泥混凝土桥面调平层（C50）,415-1,bridge,m3,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,GBZJ 250×300×52mm,416-1-1,bridge,个,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,GBZJ 250×250×41mm,416-1-2,bridge,个,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,GPZ(2019)1.5 SX,416-2-1,bridge,个,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,GPZ(2019)1.5 DX,416-2-2,bridge,个,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,GPZ(2019)2.5 SX,416-2-3,bridge,个,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,GPZ(2019)2.5 DX,416-2-4,bridge,个,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,GPZ(2019)2.5 GD,416-2-5,bridge,个,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,GPZ(2019)2.0 SX,416-2-6,bridge,个,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,GPZ(2019)2.0 DX,416-2-7,bridge,个,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,GPZ(2019)3.5 SX,416-2-8,bridge,个,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,GPZ(2019)3.5 DX,416-2-9,bridge,个,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,GPZ(2019)3.5 GD,416-2-10,bridge,个,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,40型,417-5-1,bridge,m,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,60型,417-5-2,bridge,m,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,80型,417-5-3,bridge,m,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,160型,417-5-5,bridge,m,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,DN160,418-1-1,bridge,m,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,DN200,418-1-2,bridge,m,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,桥面边部碎石盲沟,418-2,bridge,m3,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,泄水管,418-3,bridge,套,0.0,,starter_from_design=351-import-v1; target_quantity=0.0
+,wa_zcsgg,DN1000钢管（Q235B镇静钢）,424-1,bridge,m,63.0,,starter_from_design=351-import-v1; target_quantity=63.0
+,wa_zcsgg,套筒式伸缩节,424-2,bridge,套,1.0,,starter_from_design=351-import-v1; target_quantity=1.0
+,wa_zcsgg,限高标志,424-3,bridge,套,1.0,,starter_from_design=351-import-v1; target_quantity=1.0
+,wa_zcsgg,光圆钢筋（竖井盖板钢筋）,424-4,bridge,kg,12.33,,starter_from_design=351-import-v1; target_quantity=12.33
+,wa_zcsgg,C30混凝土（竖井盖板C30混凝土）,424-5,bridge,kg,0.18,,starter_from_design=351-import-v1; target_quantity=0.18
+,wa_zcsgg,C25混凝土（竖井井身镇墩，修复C25混凝土）,424-6,bridge,m3,30.26,,starter_from_design=351-import-v1; target_quantity=30.26
+,wa_zcsgg,砂砾垫层,424-7,bridge,m3,32.32,,starter_from_design=351-import-v1; target_quantity=32.32

@@ -1,0 +1,5 @@
+id,work_area_id,quantity_id,spatial_raw_object_id,terrain_raw_object_id,change_type,result_ref,record_day,notes
+tcs_001,wa_road_001,qty_001,sro_003,tro_001,fill,terrain-result://roadbed_fill_day1,1,Updated fill result after bulk import
+,wa_003,,sro_003,tro_001,leveling,terrain-result://wa003_leveling_day1,1,Initial leveling result for imported work area
+,wa_003,,sro_003,tro_001,fill,terrain-result://wa003_fill_day1,1,Imported fill zone result
+,wa_003,,sro_003,tro_001,paving,terrain-result://wa003_base_day2,2,Base course paving result

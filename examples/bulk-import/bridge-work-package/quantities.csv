@@ -1,0 +1,5 @@
+id,work_area_id,item_name,item_code,category,unit,planned_quantity,actual_quantity,notes
+qty_002,wa_bridge_001,Pier Rebar,PIER-RB,bridge,t,92,36,Updated actual bridge rebar quantity
+,wa_004,Pile Cap Concrete,PC-CON,bridge,m3,420,110,Imported actual concrete quantity
+,wa_004,Pier Reinforcement,PIER-RB2,bridge,t,68,14,Imported actual rebar quantity
+,wa_004,Pier Formwork,PIER-FW,bridge,m2,510,75,Imported actual formwork quantity

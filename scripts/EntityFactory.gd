@@ -1,6 +1,12 @@
 class_name EntityFactory
 extends Node
 
+const ROAD_ENTITY_SCRIPT = preload("res://scripts/RoadEntity.gd")
+const VEHICLE_ENTITY_SCRIPT = preload("res://scripts/VehicleEntity.gd")
+const BRIDGE_ENTITY_SCRIPT = preload("res://scripts/BridgeEntity.gd")
+const FENCE_SCRIPT = preload("res://scripts/ConstructionFence.gd")
+const SIGN_SCRIPT = preload("res://scripts/SafetySign.gd")
+
 var _entity_container: Node3D
 var _entities: Array[Node] = []
 
@@ -8,12 +14,11 @@ func _init(container: Node3D) -> void:
 	_entity_container = container
 
 func create_road(id: String, name: String, pos: Vector3, phase: String, progress: float) -> Node:
-	var road_script = load("res://scripts/RoadEntity.gd")
-	if not road_script:
+	if ROAD_ENTITY_SCRIPT == null:
 		print("[EntityFactory] RoadEntity.gd not found")
 		return null
 	
-	var road = road_script.new()
+	var road = ROAD_ENTITY_SCRIPT.new()
 	road.name = id
 	road.entity_id = id
 	road.entity_name = name
@@ -34,12 +39,11 @@ func create_road(id: String, name: String, pos: Vector3, phase: String, progress
 	return road
 
 func create_vehicle(id: String, name: String, pos: Vector3, bound_road: Node = null) -> Node:
-	var vehicle_script = load("res://scripts/VehicleEntity.gd")
-	if not vehicle_script:
+	if VEHICLE_ENTITY_SCRIPT == null:
 		print("[EntityFactory] VehicleEntity.gd not found")
 		return null
 	
-	var vehicle = vehicle_script.new()
+	var vehicle = VEHICLE_ENTITY_SCRIPT.new()
 	vehicle.name = id
 	vehicle.entity_id = id
 	vehicle.entity_name = name
@@ -55,12 +59,11 @@ func create_vehicle(id: String, name: String, pos: Vector3, bound_road: Node = n
 	return vehicle
 
 func create_bridge(id: String, name: String, pos: Vector3, progress: float = 0.0) -> Node:
-	var bridge_script = load("res://scripts/BridgeEntity.gd")
-	if not bridge_script:
+	if BRIDGE_ENTITY_SCRIPT == null:
 		print("[EntityFactory] BridgeEntity.gd not found")
 		return null
 	
-	var bridge = bridge_script.new()
+	var bridge = BRIDGE_ENTITY_SCRIPT.new()
 	bridge.name = id
 	bridge.entity_id = id
 	bridge.entity_name = name
@@ -76,12 +79,11 @@ func create_bridge(id: String, name: String, pos: Vector3, progress: float = 0.0
 	return bridge
 
 func create_fence(pos: Vector3, length: float = 20.0) -> Node:
-	var fence_script = load("res://scripts/ConstructionFence.gd")
-	if not fence_script:
+	if FENCE_SCRIPT == null:
 		print("[EntityFactory] ConstructionFence.gd not found")
 		return null
 	
-	var fence = fence_script.new()
+	var fence = FENCE_SCRIPT.new()
 	fence.name = "Fence_%d" % _entities.size()
 	fence.fence_length = length
 	fence.fence_color = ProjectConfig.SAFETY_CONFIG["fence_color"]
@@ -93,12 +95,11 @@ func create_fence(pos: Vector3, length: float = 20.0) -> Node:
 	return fence
 
 func create_sign(pos: Vector3, sign_type: int) -> Node:
-	var sign_script = load("res://scripts/SafetySign.gd")
-	if not sign_script:
+	if SIGN_SCRIPT == null:
 		print("[EntityFactory] SafetySign.gd not found")
 		return null
 	
-	var sign = sign_script.new()
+	var sign = SIGN_SCRIPT.new()
 	sign.name = "Sign_%d" % _entities.size()
 	sign.sign_type = sign_type
 	sign.position = pos

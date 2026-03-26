@@ -1,0 +1,13 @@
+﻿id,name,type,owner,planned_progress,actual_progress,description
+wa_paving_ch300,300章路面,road,,0.0,0.0,Imported from 351 quantity list: 300章路面.xlsx
+wa_traffic_safety_ch600,600章交通安全设施,general,,0.0,0.0,Imported from 351 quantity list: 600章交通安全设施.xlsm
+wa_qiqitang_bridge_r,七秩塘桥右幅,bridge,,0.0,0.0,Imported from 351 quantity list: 七秩塘桥\七秩塘桥右幅.xls
+wa_qiqitang_bridge_l,七秩塘桥左幅,bridge,,0.0,0.0,Imported from 351 quantity list: 七秩塘桥\七秩塘桥左幅.xls
+wa_gailu_bridge,改路桥,bridge,,0.0,0.0,Imported from 351 quantity list: 改路桥\改路桥.xls
+wa_hengludian_bridge_r,横路店大桥右幅,bridge,,0.0,0.0,Imported from 351 quantity list: 横路店大桥\横路店大桥右幅.xls
+wa_hengludian_bridge_l,横路店大桥左幅,bridge,,0.0,0.0,Imported from 351 quantity list: 横路店大桥\横路店大桥左幅.xls
+wa_greening_ch700,第 700 章 绿化及环境保护工程,general,,0.0,0.0,Imported from 351 quantity list: 第 700 章 绿化及环境保护工程.xlsm
+wa_selfsupport_steelpipe,自承式平直形架空钢管,bridge,,0.0,0.0,Imported from 351 quantity list: 自承式平直形架空钢管\自承式平直形架空钢管.xls
+wa_mazhai_aux_a_bridge,马宅互通A辅道桥,bridge,,0.0,0.0,Imported from 351 quantity list: 马宅互通A、B辅道桥\马宅互通A辅道桥.xls
+wa_mazhai_aux_b_bridge,马宅互通B辅道桥,bridge,,0.0,0.0,Imported from 351 quantity list: 马宅互通A、B辅道桥\马宅互通B辅道桥.xls
+wa_mazhai_bridge,马宅大桥,bridge,,0.0,0.0,Imported from 351 quantity list: 马宅大桥\马宅大桥.xls

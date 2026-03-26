@@ -1,12 +1,12 @@
 # MockAPIClient.gd
-# 模拟后端API客户端 - v2版本
+# 模拟后端API客户端 - 支持Godot API v1
 # 用于开发和测试，实际部署时替换为真实的APIClient
 extends Node
 
 # ── 配置 ──
 @export_group("API设置", "api_")
 @export var use_mock_data: bool = true  # true=模拟数据, false=真实API
-@export var api_base_url: String = "http://localhost:8000/api/v2"
+@export var api_base_url: String = "http://localhost:8000/api/v1"
 @export var mock_latency_ms: int = 100
 
 # ── 信号 ──
@@ -14,68 +14,41 @@ signal stations_loaded(stations: Array)
 signal state_updated(data: Dictionary)
 signal events_loaded(events: Array)
 signal stats_updated(data: Dictionary)
+signal entities_loaded(entities: Array)
+signal states_loaded(states: Array)
+signal tags_loaded(entity_id: String, tags: Array)
 signal error_occurred(message: String)
+signal connection_status_changed(connected: bool)
 
-# ── 模拟数据 ──
-var _mock_stations: Array = []
-var _mock_events: Array = []
-var _mock_stats: Dictionary = {}
-
-func _ready() -> void:
-	if use_mock_data:
-		_generate_mock_data()
-		print("[MockAPIClient v2] Initialized with mock data")
-		print("[MockAPIClient v2] API URL would be: ", api_base_url)
+var _is_connected: bool = false
+var _mock_entities: Array = []
+var _mock_states: Array = []
 
 # ── 模拟数据生成 ──
 func _generate_mock_data() -> void:
-	# 15个桩号
-	var statuses = ["completed", "completed", "completed", "completed", "completed",
-	                "pavement", "pavement", "earthwork", "earthwork", "earthwork",
-	                "clearing", "clearing", "planning", "planning", "planning"]
-	var progresses = [1.0, 1.0, 1.0, 1.0, 1.0,
-	                 0.85, 0.75, 0.55, 0.45, 0.35,
-	                 0.20, 0.10, 0.0, 0.0, 0.0]
-	
-	_mock_stations = []
-	for i in range(15):
-		var station = {
-			"id": "station_%03d" % (i+1),
-			"name": "K%d+000" % i,
-			"station": float(i * 1000),
-			"easting": 500000 + i * 100,
-			"northing": 4000000 + i * 50,
-			"elevation": 50 + i * 2,
-			"status": statuses[i],
-			"progress": progresses[i],
-			"project_id": "proj_001"
-		}
-		_mock_stations.append(station)
-	
-	# 30个事件
-	var event_types = ["phase_start", "phase_complete", "quality_check", "safety_inspection", "milestone"]
-	_mock_events = []
-	for i in range(30):
-		var event = {
-			"id": "event_%03d" % (i+1),
-			"event_type": event_types[i % event_types.size()],
-			"station_id": "station_%03d" % ((i % 15) + 1),
-			"description": "事件 %d" % (i+1),
-			"timestamp": "2026-03-09T10:00:00"
-		}
-		_mock_events.append(event)
-	
-	# 统计
-	_mock_stats = {
-		"project_id": "proj_001",
-		"total_stations": 15,
-		"completed_stations": 5,
-		"in_progress_stations": 10,
-		"avg_progress": 43.3,
-		"total_events": 30,
-		"open_issues": 3,
-		"photos_count": 8
-	}
+	_mock_entities = [
+		{
+			"id": "road_001",
+			"entity_type": "roadbed",
+			"name": "K1+000 - K2+000 道路",
+			"start_station": "K1+000.000",
+			"end_station": "K2+000.000",
+			"lateral_offset": 0.0,
+			"progress": 0.45,
+			"construction_phase": "earthwork",
+		},
+		{
+			"id": "bridge_001",
+			"entity_type": "bridge",
+			"name": "K1+500 桥梁",
+			"start_station": "K1+500.000",
+			"end_station": "K1+540.000",
+			"lateral_offset": 0.0,
+			"progress": 0.75,
+			"construction_phase": "pavement",
+		},
+	]
+	_mock_states = []
 
 # ── API 方法 (与v2路由对应) ──
 
@@ -199,6 +172,135 @@ func get_station_stats() -> Dictionary:
 		}
 	return {}
 
+# ── Godot API v1 兼容方法 ──
+
+func get_godot_entities() -> Array:
+	if use_mock_data:
+		await _simulate_latency()
+		entities_loaded.emit(_mock_entities)
+		_is_connected = true
+		return _mock_entities
+	else:
+		return await _fetch_entities_from_api()
+
+func get_godot_states() -> Array:
+	if use_mock_data:
+		await _simulate_latency()
+		states_loaded.emit(_mock_states)
+		_is_connected = true
+		return _mock_states
+	else:
+		return await _fetch_states_from_api()
+
+# ── 真实API调用 ──
+
+func _fetch_entities_from_api() -> Array:
+	var http = HTTPRequest.new()
+	add_child(http)
+	
+	var url = api_base_url + "/entities"
+	var err = http.request(url)
+	if err != OK:
+		http.queue_free()
+		_is_connected = false
+		error_occurred.emit("Failed to fetch entities: " + str(err))
+		return []
+	
+	var response = await http.request_completed
+	http.queue_free()
+	
+	var response_code = response[1]
+	var body = response[3].get_string_from_utf8()
+	
+	if response_code >= 200 and response_code < 300:
+		_is_connected = true
+		connection_status_changed.emit(true)
+		var json = JSON.new()
+		var parse_result = json.parse(body)
+		if parse_result == OK:
+			var data = json.get_data()
+			if data is Array:
+				entities_loaded.emit(data)
+				return data
+			elif data is Dictionary and data.has("entities"):
+				entities_loaded.emit(data["entities"])
+				return data["entities"]
+	else:
+		_is_connected = false
+		connection_status_changed.emit(false)
+		error_occurred.emit("API error: " + str(response_code))
+	
+	return []
+
+func _fetch_states_from_api() -> Array:
+	return []  # 后端暂无独立states端点
+
+# ── 辅助方法 ──
+
+func get_entity_state(entity_id: String) -> Dictionary:
+	if use_mock_data:
+		await _simulate_latency()
+		for state in _mock_states:
+			if state.get("entity_id") == entity_id:
+				return state
+	return {}
+
+func get_entity_state_history(entity_id: String) -> Array:
+	if use_mock_data:
+		await _simulate_latency()
+		return []
+	else:
+		return []  # 后端暂无历史状态API
+
+func get_entity_semantic_tags(entity_id: String) -> Array:
+	if use_mock_data:
+		await _simulate_latency()
+		return []
+	return []
+
+func apply_semantic_tag(entity_id: String, tag_data: Dictionary) -> Dictionary:
+	if use_mock_data:
+		await _simulate_latency()
+		return {"success": true}
+	return {"error": "Mock mode"}
+
+func get_entities_at_location(station: int, range_half: int = 100) -> Array:
+	if use_mock_data:
+		await _simulate_latency()
+		return _mock_entities
+	else:
+		var entities = await _fetch_entities_from_api()
+		return entities  # 后续可按station过滤
+
+func get_realtime_state(station: int = 0) -> Dictionary:
+	if use_mock_data:
+		await _simulate_latency()
+		return {}
+	else:
+		return {}
+
+func get_project_statistics() -> Dictionary:
+	if use_mock_data:
+		await _simulate_latency()
+		return {
+			"total_entities": _mock_entities.size(),
+			"avg_progress": 0.5,
+		}
+	else:
+		var entities = await _fetch_entities_from_api()
+		if entities.size() > 0:
+			var total_progress = 0.0
+			for e in entities:
+				total_progress += e.get("progress", 0.0)
+			return {
+				"total_entities": entities.size(),
+				"avg_progress": total_progress / entities.size(),
+			}
+		return {"total_entities": 0, "avg_progress": 0.0}
+
+func is_connected() -> bool:
+	return _is_connected
+
 # ── 辅助方法 ──
 func _simulate_latency() -> void:
 	if mock_latency_ms > 0:
@@ -206,7 +308,6 @@ func _simulate_latency() -> void:
 
 # ── 调试 ──
 func print_data() -> void:
-	print("=== MockAPIClient v2 ===")
-	print("Stations: ", _mock_stations.size())
-	print("Events: ", _mock_events.size())
-	print("Stats: ", _mock_stats)
+	print("=== MockAPIClient ===")
+	print("Entities: ", _mock_entities.size())
+	print("States: ", _mock_states.size())

@@ -1,8 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://main_scene"]
+[gd_scene load_steps=3 format=3 uid="uid://cr756ik585lvs"]
 
 [ext_resource type="Script" path="res://scripts/Main.gd" id="1_main"]
-[ext_resource type="Script" path="res://scripts/RoadData.gd" id="2_road"]
-[ext_resource type="Script" path="res://scripts/RoadSegment.gd" id="3_segment"]
 
 [sub_resource type="Environment" id="Environment_1"]
 background_mode = 1
@@ -10,10 +8,10 @@ background_color = Color(0.5, 0.6, 0.8, 1)
 ambient_light_source = 2
 ambient_light_color = Color(0.4, 0.45, 0.5, 1)
 ambient_light_energy = 0.5
+tonemap_mode = 2
 fog_enabled = true
 fog_light_color = Color(0.6, 0.65, 0.7, 1)
 fog_density = 0.001
-tonemap_mode = 2
 
 [node name="Main" type="Node3D"]
 script = ExtResource("1_main")
@@ -52,9 +50,7 @@ offset_right = 250.0
 offset_bottom = -50.0
 grow_horizontal = 2
 grow_vertical = 0
-min_value = 0.0
 max_value = 365.0
-value = 0.0
 
 [node name="DayLabel" type="Label" parent="CanvasLayer/UI"]
 layout_mode = 1
@@ -120,7 +116,6 @@ text = "System: Ready"
 
 [node name="EntityInfoLabel" type="Label" parent="CanvasLayer/UI"]
 layout_mode = 1
-anchors_preset = 0
 offset_left = 20.0
 offset_top = 150.0
 offset_right = 250.0
@@ -148,5 +143,5 @@ text = "SPACE:旋转 | 1-5:创建实体 | T:时间轴 | L:LOD | E:导出 | TAB:�
 
 [node name="Ground" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
-size = Vector3(200, 1, 200)
 visible = false
+size = Vector3(200, 1, 200)

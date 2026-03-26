@@ -1,0 +1,7 @@
+id,work_area_id,resource_type,resource_name,quantity,unit,record_day,supplier,notes
+,wa_005,labor,Drainage Crew,10,person,1,Zheng Team,Drainage trench labor
+,wa_005,machine,Excavator,2,set,1,Machine Group,Drainage excavation machine
+,wa_005,material,Ready Mix,40,m3,2,Plant E,Ditch lining material
+,wa_006,labor,Abutment Crew,12,person,1,Qian Team,Abutment labor
+,wa_006,machine,Truck Crane,1,set,2,Machine Group,Support lifting
+,wa_006,material,Rebar,8,t,1,Steel Supplier,Platform reinforcement delivery

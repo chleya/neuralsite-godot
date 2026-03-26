@@ -1,0 +1,120 @@
+[
+  {
+    "file": "200章路基.xls",
+    "status": "skipped",
+    "reason": "No quantifiable rows found"
+  },
+  {
+    "file": "300章路面.xlsx",
+    "work_area_id": "w351_002",
+    "work_area_name": "300章路面",
+    "sheet": "300章",
+    "quantity_column": "数量",
+    "row_count": 35,
+    "status": "ok"
+  },
+  {
+    "file": "400章涵洞.xlsx",
+    "status": "skipped",
+    "reason": "No quantifiable rows found"
+  },
+  {
+    "file": "600章交通安全设施.xlsm",
+    "work_area_id": "w351_004",
+    "work_area_name": "600章交通安全设施",
+    "sheet": "600章",
+    "quantity_column": "数量",
+    "row_count": 103,
+    "status": "ok"
+  },
+  {
+    "file": "七秩塘桥\\七秩塘桥右幅.xls",
+    "work_area_id": "w351_005",
+    "work_area_name": "七秩塘桥右幅",
+    "sheet": "工程量清单",
+    "quantity_column": "数量",
+    "row_count": 59,
+    "status": "ok"
+  },
+  {
+    "file": "七秩塘桥\\七秩塘桥左幅.xls",
+    "work_area_id": "w351_006",
+    "work_area_name": "七秩塘桥左幅",
+    "sheet": "工程量清单",
+    "quantity_column": "数量",
+    "row_count": 60,
+    "status": "ok"
+  },
+  {
+    "file": "改路桥\\改路桥.xls",
+    "work_area_id": "w351_007",
+    "work_area_name": "改路桥",
+    "sheet": "工程量清单",
+    "quantity_column": "数量",
+    "row_count": 80,
+    "status": "ok"
+  },
+  {
+    "file": "横路店大桥\\横路店大桥右幅.xls",
+    "work_area_id": "w351_008",
+    "work_area_name": "横路店大桥右幅",
+    "sheet": "工程量清单",
+    "quantity_column": "数量",
+    "row_count": 62,
+    "status": "ok"
+  },
+  {
+    "file": "横路店大桥\\横路店大桥左幅.xls",
+    "work_area_id": "w351_009",
+    "work_area_name": "横路店大桥左幅",
+    "sheet": "工程量清单",
+    "quantity_column": "数量",
+    "row_count": 61,
+    "status": "ok"
+  },
+  {
+    "file": "第 700 章 绿化及环境保护工程.xlsm",
+    "work_area_id": "w351_010",
+    "work_area_name": "第 700 章 绿化及环境保护工程",
+    "sheet": "700章",
+    "quantity_column": "数量",
+    "row_count": 25,
+    "status": "ok"
+  },
+  {
+    "file": "自承式平直形架空钢管\\自承式平直形架空钢管.xls",
+    "work_area_id": "w351_011",
+    "work_area_name": "自承式平直形架空钢管",
+    "sheet": "工程量清单",
+    "quantity_column": "数量",
+    "row_count": 65,
+    "status": "ok"
+  },
+  {
+    "file": "马宅互通A、B辅道桥\\马宅互通A辅道桥.xls",
+    "work_area_id": "w351_012",
+    "work_area_name": "马宅互通A辅道桥",
+    "sheet": "工程量清单",
+    "quantity_column": "数量",
+    "row_count": 58,
+    "status": "ok"
+  },
+  {
+    "file": "马宅互通A、B辅道桥\\马宅互通B辅道桥.xls",
+    "work_area_id": "w351_013",
+    "work_area_name": "马宅互通B辅道桥",
+    "sheet": "工程量清单",
+    "quantity_column": "数量",
+    "row_count": 58,
+    "status": "ok"
+  },
+  {
+    "file": "马宅大桥\\马宅大桥.xls",
+    "work_area_id": "w351_014",
+    "work_area_name": "马宅大桥",
+    "sheet": "工程量清单",
+    "quantity_column": "数量",
+    "row_count": 59,
+    "status": "ok"
+  }
+]

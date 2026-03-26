@@ -46,21 +46,43 @@ NeuralSite-Godot/
 │   │   ├── Main.gd
 │   │   ├── EntityFactory.gd
 │   │   ├── ProjectConfig.gd
-│   │   └── UIManager.gd
+│   │   ├── UIManager.gd
+│   │   ├── InputHandler.gd
+│   │   └── EventBus.gd
 │   ├── Entities              # 实体系统
 │   │   ├── RoadEntity.gd
 │   │   ├── BridgeEntity.gd
 │   │   ├── VehicleEntity.gd
-│   │   └── SafetySign.gd
+│   │   ├── PileEntity.gd
+│   │   ├── PierEntity.gd
+│   │   ├── CapEntity.gd
+│   │   ├── SafetySign.gd
+│   │   └── ConstructionFence.gd
 │   ├── Systems               # 功能系统
 │   │   ├── TimelineManager.gd
+│   │   ├── UnifiedTimeline.gd
+│   │   ├── TerrainGenerator.gd
+│   │   ├── DayNightCycle.gd
 │   │   ├── WeatherSystem.gd
 │   │   ├── CollisionDetector.gd
+│   │   ├── PrecisionCollisionSystem.gd
+│   │   ├── ConstructionAnimator.gd
+│   │   ├── ExcavatorAttachment.gd
+│   │   ├── ConstructionEffects.gd
 │   │   ├── ProgressPredictor.gd
-│   │   └── ReportGenerator.gd
+│   │   ├── ReportGenerator.gd
+│   │   └── PerformanceMonitor.gd
+│   ├── Backend Integration   # 后端集成 (NEW)
+│   │   ├── APIClient.gd
+│   │   ├── BackendService.gd
+│   │   ├── SemanticTagVisualizer.gd
+│   │   └── TimeTravelQuery.gd
 │   └── Communication         # 通信系统
-│       ├── APIClient.gd
-│       └── WebSocketClient.gd
+│       ├── WebSocketClient.gd
+│       ├── GodotImporter.gd
+│       └── GodotExporter.gd
+├── zhixian/                  # 后端服务 (外部)
+│   └── neuralsite-backend/   # FastAPI 后端
 ├── docs/
 │   └── PROJECT_PLAN.md       # 项目规划
 └── project.godot
@@ -85,6 +107,9 @@ NeuralSite-Godot/
 | 报表生成 | ✅ | HTML/CSV/JSON |
 | 数据导入导出 | ✅ | GeoJSON |
 | WebSocket | ✅ | 实时同步 |
+| **后端API集成** | ✅ | FastAPI后端对接 (NEW) |
+| **语义标签可视化** | ✅ | 质量/安全3D标签 (NEW) |
+| **时间旅行查询** | ✅ | 历史状态回溯 (NEW) |
 
 ### 施工阶段
 
@@ -121,6 +146,8 @@ NeuralSite-Godot/
 | `E` | 导出数据 |
 | `ESC` | 取消选择 |
 | `1-5` | 创建测试实体 |
+| `F3` | 同步后端数据 (NEW) |
+| `F4` | 显示/隐藏语义标签 (NEW) |
 | 点击实体 | 查看详细信息 |
 
 ## 🔧 配置
@@ -133,6 +160,27 @@ NeuralSite-Godot/
 @export var use_mock_api: bool = false  # 改为true使用模拟数据
 @export var backend_url: String = "http://localhost:8000"
 ```
+
+### 后端API集成
+
+NeuralSite-Godot 可以连接到 `zhixian/neuralsite-backend` FastAPI后端：
+
+| 端点 | 功能 |
+|------|------|
+| `GET /api/v1/data/godot/entities` | 获取Godot渲染数据 |
+| `GET /api/v1/data/godot/states` | 获取状态数据 |
+| `GET /api/v1/realtime` | 实时查询 |
+| `GET /api/v1/states/entity/{id}/history` | 历史状态(时间旅行) |
+| `GET /api/v1/semantic/tags/entity/{id}` | 语义标签 |
+
+启动后端服务：
+
+```bash
+cd zhixian/neuralsite-backend
+uvicorn main:app --reload --port 8000
+```
+
+然后在 Godot 中按 `F3` 同步后端数据。
 
 ### 天气系统
 
@@ -204,6 +252,7 @@ MIT License
 
 | 版本 | 日期 | 说明 |
 |------|------|------|
+| v3.1 | 2026-03-19 | 后端API集成、语义标签可视化、时间旅行查询 |
 | v3.0 | 2026-03-19 | M1-M4 完成，功能完整 |
 | v2.0 | 2026-03-09 | 精简重构版 |
 | v1.0 | 2026-03-01 | 项目初始化 |

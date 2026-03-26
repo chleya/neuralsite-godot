@@ -1,0 +1,5 @@
+id,work_area_id,item_name,item_code,category,unit,target_quantity,design_version,notes
+,wa_005,Drainage Ditch Excavation,DD-EX,earthwork,m3,980,V1,Drainage excavation design target
+,wa_005,Ditch Concrete Lining,DD-CON,structure,m3,210,V1,Ditch lining concrete target
+,wa_006,Abutment Concrete,AB-CON,bridge,m3,360,V1,Abutment concrete target
+,wa_006,Bearing Platform Rebar,AB-RB,bridge,t,32,V1,Bearing platform reinforcement target

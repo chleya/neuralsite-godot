@@ -1,0 +1,3 @@
+id,work_area_id,name,design_type,coord_system,station_start,station_end,bbox_min_x,bbox_min_y,bbox_min_z,bbox_max_x,bbox_max_y,bbox_max_z,design_ref,elevation_target,design_version,notes
+,wa_005,Drainage Design Range,alignment,station,2800,3200,,,,,,,design://drainage_alignment_v1,33.6,V1,Drainage work area alignment
+,wa_006,Abutment Support Zone,zone,local,,,176,62,0,198,88,18,design://abutment_zone_v1,17.2,V1,Abutment support design zone

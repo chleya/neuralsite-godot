@@ -1,0 +1,4 @@
+id,work_area_id,resource_type,resource_name,quantity,unit,record_day,supplier,notes
+rl_001,wa_road_001,labor,Roadbed Crew,22,person,0,Chen Team,Updated crew count by import
+,wa_road_001,machine,Paver,2,set,1,Road Team,New paving machine input
+,wa_road_001,material,Asphalt Mix,180,t,1,Plant A,Imported material delivery

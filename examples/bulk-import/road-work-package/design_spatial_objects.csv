@@ -1,0 +1,5 @@
+id,work_area_id,name,design_type,coord_system,station_start,station_end,bbox_min_x,bbox_min_y,bbox_min_z,bbox_max_x,bbox_max_y,bbox_max_z,design_ref,elevation_target,design_version,notes
+dso_001,wa_road_001,Roadbed Design Alignment,alignment,station,1000,1580,,,,,,,design://roadbed_alignment_v2,,V2,Adjusted design alignment extent
+,wa_003,Subgrade Design Range,alignment,station,2300,2800,,,,,,,design://subgrade_alignment_v1,34.8,V1,Imported work area design alignment
+,wa_003,Base Course Surface,surface,station,2320,2790,,,,,,,design://base_surface_v1,35.4,V1,Design surface for base course
+,wa_003,Asphalt Surface Zone,surface,station,2340,2780,,,,,,,design://asphalt_surface_v1,35.8,V1,Design surface for asphalt paving

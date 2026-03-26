@@ -1,0 +1,5 @@
+id,work_area_id,item_name,item_code,category,unit,planned_quantity,actual_quantity,notes
+qty_001,wa_road_001,Roadbed Fill,RB-FILL,earthwork,m3,1280,760,Updated actual quantity after new shift
+,wa_003,Subgrade Improvement,SG-IMP,earthwork,m3,2450,420,Imported actual quantity for subgrade improvement
+,wa_003,Base Course,BASE-001,paving,m2,5200,600,Imported actual quantity for base course
+,wa_003,Asphalt Surface,ASP-003,paving,m2,5100,0,Surface layer not started yet

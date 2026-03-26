@@ -1,0 +1,8 @@
+id,work_area_id,resource_type,resource_name,quantity,unit,record_day,supplier,notes
+rl_003,wa_bridge_001,material,Rebar,16,t,0,Steel Supplier,Updated delivered bridge rebar
+,wa_004,labor,Bridge Crew A,14,person,1,Bridge Team,Imported bridge labor
+,wa_004,labor,Rebar Crew,9,person,1,Rebar Team,Imported rebar crew
+,wa_004,machine,Truck Crane,1,set,1,Machine Group,Main lifting equipment
+,wa_004,machine,Concrete Pump,1,set,2,Machine Group,Concrete placement support
+,wa_004,material,Concrete C40,160,m3,2,Plant D,Concrete delivery for pile cap
+,wa_004,material,Formwork Panel,240,m2,1,Formwork Supplier,Imported formwork material

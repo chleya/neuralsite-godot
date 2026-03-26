@@ -1,0 +1,1028 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>工地助手</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="hero-panel">
+      <p class="eyebrow">NeuralSite / 工地助手</p>
+      <h1>工地助手</h1>
+      <p class="hero-copy">
+        面向小型施工项目的轻量化现场管理前端，用来串联工作面、任务、问题、日报和日常协调。
+      </p>
+
+      <div class="hero-stats" id="summary-cards"></div>
+
+      <section class="panel validation-panel">
+        <div class="panel-header">
+          <h2>验证控制台</h2>
+          <button class="ghost-button" id="clear-log-button" type="button">清空日志</button>
+        </div>
+        <div class="validation-actions">
+          <button id="demo-task-button" type="button">示例任务</button>
+          <button id="demo-issue-button" type="button">示例问题</button>
+          <button id="demo-report-button" type="button">示例日报</button>
+          <button id="advance-day-button" type="button">推进一天</button>
+        </div>
+        <pre class="log-output" id="log-output">等待操作...</pre>
+      </section>
+    </aside>
+
+    <main class="workspace">
+      <section class="panel topbar-panel">
+        <div class="panel-header">
+          <div>
+            <p class="eyebrow">总览</p>
+            <h2>项目概览</h2>
+          </div>
+          <div class="topbar-meta">
+            <div class="source-badge" id="source-badge">LOCAL</div>
+            <div class="day-badge" id="day-badge">Day 0</div>
+          </div>
+        </div>
+
+        <div class="status-grid">
+          <div class="status-block">
+            <span>下一条任务</span>
+            <strong id="next-task-text">无</strong>
+          </div>
+          <div class="status-block">
+            <span>下一条问题</span>
+            <strong id="next-issue-text">无</strong>
+          </div>
+          <div class="status-block">
+            <span>今日日报</span>
+            <strong id="today-report-text">0</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel form-panel import-panel">
+        <div class="panel-header">
+          <h2>批量导入工作台</h2>
+          <p class="panel-subtitle">先在 Excel 里整理数据，再保存为 CSV UTF-8 导入；也支持把表格单元格直接复制到下面。</p>
+        </div>
+
+        <div class="import-grid">
+          <label>
+            <span>导入对象</span>
+            <select id="import-dataset">
+              <option value="work_areas">工作面</option>
+              <option value="quantities">实际工程量</option>
+              <option value="design_quantities">设计工程量</option>
+              <option value="resource_logs">人机料投入</option>
+              <option value="daily_reports">日报</option>
+              <option value="design_spatial_objects">设计空间</option>
+              <option value="terrain_change_sets">地形变更</option>
+            </select>
+          </label>
+
+          <label>
+            <span>CSV 文件</span>
+            <input id="import-file" type="file" accept=".csv,.txt,.tsv">
+          </label>
+        </div>
+
+        <label class="full-width">
+          <span>表格内容</span>
+          <textarea id="import-text" rows="8" placeholder="支持 Excel 复制粘贴，也支持把模板另存为 CSV 后导入。"></textarea>
+        </label>
+
+        <div class="form-actions form-actions-wide">
+          <button id="import-template-button" type="button">下载模板</button>
+          <button id="export-dataset-button" class="ghost-button" type="button">导出当前数据</button>
+          <button id="import-submit-button" type="button">开始导入</button>
+          <button id="import-refresh-button" class="ghost-button" type="button">导入后刷新</button>
+        </div>
+
+        <div class="import-help">
+          <p>规则：带 `id` 且命中现有记录时更新；无 `id` 或找不到时新建。</p>
+          <p>建议：Excel 优先保存为 “CSV UTF-8”，可以明显减少乱码问题。</p>
+        </div>
+
+        <pre id="import-result" class="log-output">等待导入操作...</pre>
+      </section>
+
+      <section class="panel form-panel">
+        <div class="panel-header">
+          <h2>快速录入</h2>
+          <p class="panel-subtitle">快速创建记录，并立刻刷新总览、本地缓存和操作日志。</p>
+        </div>
+
+        <form id="entry-form" class="entry-form">
+          <label>
+            <span>记录类型</span>
+            <select id="entry-type" name="entryType">
+              <option value="task">任务</option>
+              <option value="issue">问题</option>
+              <option value="report">日报</option>
+            </select>
+          </label>
+
+          <label>
+            <span>标题 / 摘要</span>
+            <input id="entry-title" name="title" type="text" placeholder="请输入标题">
+          </label>
+
+          <label>
+            <span>负责人 / 填报人</span>
+            <input id="entry-owner" name="owner" type="text" placeholder="请输入姓名">
+          </label>
+
+          <label>
+            <span>工作面</span>
+            <select id="entry-work-area" name="workAreaId"></select>
+          </label>
+
+          <label class="full-width">
+            <span>备注</span>
+            <textarea id="entry-notes" name="notes" rows="4" placeholder="请输入备注或说明"></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button type="submit">保存记录</button>
+            <button id="entry-load-selected" class="ghost-button" type="button">载入当前选中</button>
+            <button id="reset-storage-button" class="ghost-button" type="button">重置演示数据</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="panel form-panel">
+        <div class="panel-header">
+          <h2>地形变更结果</h2>
+          <p class="panel-subtitle">维护工作面在原始地形上形成的切方、填方、铺装或结构变更结果。</p>
+        </div>
+
+        <form id="terrain-change-form" class="entry-form">
+          <label>
+            <span>工作面</span>
+            <select id="terrain-change-work-area" name="workAreaId"></select>
+          </label>
+
+          <label>
+            <span>变更类型</span>
+            <select id="terrain-change-type" name="changeType">
+              <option value="cut">cut</option>
+              <option value="fill">fill</option>
+              <option value="leveling">leveling</option>
+              <option value="paving">paving</option>
+              <option value="structure">structure</option>
+            </select>
+          </label>
+
+          <label>
+            <span>关联工程量 ID</span>
+            <input id="terrain-change-quantity-id" name="quantityId" type="text" placeholder="如 qty_001">
+          </label>
+
+          <label>
+            <span>关联空间 ID</span>
+            <input id="terrain-change-spatial-id" name="spatialRawObjectId" type="text" placeholder="如 sro_003">
+          </label>
+
+          <label>
+            <span>关联地形 ID</span>
+            <input id="terrain-change-terrain-id" name="terrainRawObjectId" type="text" placeholder="如 tro_001">
+          </label>
+
+          <label>
+            <span>记录日</span>
+            <input id="terrain-change-day" name="recordDay" type="number" step="1" value="0">
+          </label>
+
+          <label class="full-width">
+            <span>结果引用</span>
+            <input id="terrain-change-result-ref" name="resultRef" type="text" placeholder="如 terrain-result://roadbed_fill_day1">
+          </label>
+
+          <label class="full-width">
+            <span>备注</span>
+            <textarea id="terrain-change-notes" name="notes" rows="3" placeholder="请输入地形变更描述"></textarea>
+          </label>
+
+          <div class="form-actions form-actions-wide">
+            <button type="submit">保存地形变更</button>
+            <button id="terrain-change-load-selected" class="ghost-button" type="button">载入当前选中</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="panel form-panel">
+        <div class="panel-header">
+          <h2>设计空间目标</h2>
+          <p class="panel-subtitle">按工作面维护设计线形、设计范围和设计空间对象，用于和当前空间对照。</p>
+        </div>
+
+        <form id="design-spatial-form" class="entry-form">
+          <label>
+            <span>工作面</span>
+            <select id="design-spatial-work-area" name="workAreaId"></select>
+          </label>
+
+          <label>
+            <span>名称</span>
+            <input id="design-spatial-name" name="name" type="text" placeholder="请输入设计空间名称">
+          </label>
+
+          <label>
+            <span>设计类型</span>
+            <select id="design-spatial-type" name="designType">
+              <option value="alignment">alignment</option>
+              <option value="surface">surface</option>
+              <option value="zone">zone</option>
+              <option value="reference">reference</option>
+            </select>
+          </label>
+
+          <label>
+            <span>坐标系</span>
+            <select id="design-spatial-coord-system" name="coordSystem">
+              <option value="station">station</option>
+              <option value="local">local</option>
+              <option value="world">world</option>
+            </select>
+          </label>
+
+          <label>
+            <span>桩号起点</span>
+            <input id="design-spatial-station-start" name="stationStart" type="number" step="0.01" placeholder="可选">
+          </label>
+
+          <label>
+            <span>桩号终点</span>
+            <input id="design-spatial-station-end" name="stationEnd" type="number" step="0.01" placeholder="可选">
+          </label>
+
+          <label>
+            <span>最小 X</span>
+            <input id="design-spatial-bbox-min-x" name="bboxMinX" type="number" step="0.01" placeholder="可选">
+          </label>
+
+          <label>
+            <span>最小 Y</span>
+            <input id="design-spatial-bbox-min-y" name="bboxMinY" type="number" step="0.01" placeholder="可选">
+          </label>
+
+          <label>
+            <span>最小 Z</span>
+            <input id="design-spatial-bbox-min-z" name="bboxMinZ" type="number" step="0.01" placeholder="可选">
+          </label>
+
+          <label>
+            <span>最大 X</span>
+            <input id="design-spatial-bbox-max-x" name="bboxMaxX" type="number" step="0.01" placeholder="可选">
+          </label>
+
+          <label>
+            <span>最大 Y</span>
+            <input id="design-spatial-bbox-max-y" name="bboxMaxY" type="number" step="0.01" placeholder="可选">
+          </label>
+
+          <label>
+            <span>最大 Z</span>
+            <input id="design-spatial-bbox-max-z" name="bboxMaxZ" type="number" step="0.01" placeholder="可选">
+          </label>
+
+          <label>
+            <span>目标高程</span>
+            <input id="design-spatial-elevation-target" name="elevationTarget" type="number" step="0.01" placeholder="可选">
+          </label>
+
+          <label>
+            <span>设计版本</span>
+            <input id="design-spatial-version" name="designVersion" type="text" placeholder="如 V1">
+          </label>
+
+          <label class="full-width">
+            <span>设计引用</span>
+            <input id="design-spatial-ref" name="designRef" type="text" placeholder="如 design://roadbed_alignment_v1">
+          </label>
+
+          <label class="full-width">
+            <span>备注</span>
+            <textarea id="design-spatial-notes" name="notes" rows="3" placeholder="请输入设计空间备注"></textarea>
+          </label>
+
+          <div class="form-actions form-actions-wide">
+            <button type="submit">保存设计空间</button>
+            <button id="design-spatial-load-selected" class="ghost-button" type="button">载入当前选中</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="panel form-panel">
+        <div class="panel-header">
+          <h2>原始地形</h2>
+          <p class="panel-subtitle">查看原始地形元数据、范围和外部引用，不与业务空间对象混用。</p>
+        </div>
+
+        <form id="terrain-form" class="entry-form">
+          <label>
+            <span>名称</span>
+            <input id="terrain-name" name="name" type="text" placeholder="请输入原始地形名称">
+          </label>
+
+          <label>
+            <span>地形类型</span>
+            <input id="terrain-type" name="terrainType" type="text" placeholder="如 site / yard / slope" value="site">
+          </label>
+
+          <label>
+            <span>坐标系</span>
+            <select id="terrain-coord-system" name="coordSystem">
+              <option value="local">local</option>
+              <option value="station">station</option>
+              <option value="world">world</option>
+            </select>
+          </label>
+
+          <label>
+            <span>最小 X</span>
+            <input id="terrain-bbox-min-x" name="bboxMinX" type="number" step="0.01" placeholder="可选">
+          </label>
+
+          <label>
+            <span>最小 Y</span>
+            <input id="terrain-bbox-min-y" name="bboxMinY" type="number" step="0.01" placeholder="可选">
+          </label>
+
+          <label>
+            <span>最小 Z</span>
+            <input id="terrain-bbox-min-z" name="bboxMinZ" type="number" step="0.01" placeholder="可选">
+          </label>
+
+          <label>
+            <span>最大 X</span>
+            <input id="terrain-bbox-max-x" name="bboxMaxX" type="number" step="0.01" placeholder="可选">
+          </label>
+
+          <label>
+            <span>最大 Y</span>
+            <input id="terrain-bbox-max-y" name="bboxMaxY" type="number" step="0.01" placeholder="可选">
+          </label>
+
+          <label>
+            <span>最大 Z</span>
+            <input id="terrain-bbox-max-z" name="bboxMaxZ" type="number" step="0.01" placeholder="可选">
+          </label>
+
+          <label class="full-width">
+            <span>Heightmap 引用</span>
+            <input id="terrain-heightmap-ref" name="heightmapRef" type="text" placeholder="如 terrain://site_heightmap_v1">
+          </label>
+
+          <label class="full-width">
+            <span>Mesh 引用</span>
+            <input id="terrain-mesh-ref" name="meshRef" type="text" placeholder="如 terrain://site_mesh_v1">
+          </label>
+
+          <label class="full-width">
+            <span>Texture 引用</span>
+            <input id="terrain-texture-ref" name="textureRef" type="text" placeholder="如 terrain://site_texture_v1">
+          </label>
+
+          <label>
+            <span>来源</span>
+            <input id="terrain-source" name="source" type="text" placeholder="如 import / manual" value="manual">
+          </label>
+
+          <label>
+            <span>分辨率</span>
+            <input id="terrain-resolution" name="resolution" type="text" placeholder="如 1m">
+          </label>
+
+          <label class="full-width">
+            <span>备注</span>
+            <textarea id="terrain-notes" name="notes" rows="3" placeholder="请输入原始地形备注"></textarea>
+          </label>
+
+          <div class="form-actions form-actions-wide">
+            <button type="submit">保存原始地形</button>
+            <button id="terrain-load-selected" class="ghost-button" type="button">载入当前选中</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="panel form-panel">
+        <div class="panel-header">
+          <h2>工作面管理</h2>
+          <p class="panel-subtitle">创建工作面，并更新当前选中工作面的进度信息。</p>
+        </div>
+
+        <form id="work-area-form" class="entry-form">
+          <label>
+            <span>名称</span>
+            <input id="work-area-name" name="name" type="text" placeholder="请输入工作面名称">
+          </label>
+
+          <label>
+            <span>类型</span>
+            <select id="work-area-type" name="type">
+              <option value="road">道路</option>
+              <option value="bridge">桥梁</option>
+              <option value="general">通用</option>
+            </select>
+          </label>
+
+          <label>
+            <span>工作面子类</span>
+            <input id="work-area-subtype" name="workAreaSubtype" type="text" placeholder="如 subgrade / paving / bridge_substructure">
+          </label>
+
+          <label>
+            <span>负责人</span>
+            <input id="work-area-owner" name="owner" type="text" placeholder="请输入负责人">
+          </label>
+
+          <label>
+            <span>计划进度</span>
+            <input id="work-area-planned" name="plannedProgress" type="number" min="0" max="100" step="1" value="0">
+          </label>
+
+          <label>
+            <span>实际进度</span>
+            <input id="work-area-actual" name="actualProgress" type="number" min="0" max="100" step="1" value="0">
+          </label>
+
+          <label class="full-width">
+            <span>说明</span>
+            <textarea id="work-area-description" name="description" rows="3" placeholder="请输入工作面说明"></textarea>
+          </label>
+
+          <div class="form-actions form-actions-wide">
+            <button type="submit">保存工作面</button>
+            <button id="work-area-load-selected" class="ghost-button" type="button">载入当前选中</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="panel form-panel">
+        <div class="panel-header">
+          <h2>工程量数据库</h2>
+          <p class="panel-subtitle">按工作面、单位和计划/实际值维护关键工程量。</p>
+        </div>
+
+        <form id="quantity-form" class="entry-form">
+          <label>
+            <span>工作面</span>
+            <select id="quantity-work-area" name="workAreaId"></select>
+          </label>
+
+          <label>
+            <span>项目名称</span>
+            <input id="quantity-item-name" name="itemName" type="text" placeholder="请输入工程量项目名称">
+          </label>
+
+          <label>
+            <span>项目编码</span>
+            <input id="quantity-item-code" name="itemCode" type="text" placeholder="可选编码">
+          </label>
+
+          <label>
+            <span>类别</span>
+            <input id="quantity-category" name="category" type="text" placeholder="如土方、桥梁、混凝土">
+          </label>
+
+          <label>
+            <span>单位</span>
+            <input id="quantity-unit" name="unit" type="text" placeholder="m3 / t / m" value="m3">
+          </label>
+
+          <label>
+            <span>计划量</span>
+            <input id="quantity-planned" name="plannedQuantity" type="number" step="0.01" value="0">
+          </label>
+
+          <label>
+            <span>完成量</span>
+            <input id="quantity-actual" name="actualQuantity" type="number" step="0.01" value="0">
+          </label>
+
+          <label class="full-width">
+            <span>备注</span>
+            <textarea id="quantity-notes" name="notes" rows="3" placeholder="请输入工程量备注"></textarea>
+          </label>
+
+          <div class="form-actions form-actions-wide">
+            <button type="submit">保存工程量</button>
+            <button id="quantity-load-selected" class="ghost-button" type="button">载入当前选中</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="panel form-panel">
+        <div class="panel-header">
+          <h2>设计工程量</h2>
+          <p class="panel-subtitle">维护设计目标工程量，用于和实际工程量做对比。</p>
+        </div>
+
+        <form id="design-quantity-form" class="entry-form">
+          <label>
+            <span>工作面</span>
+            <select id="design-quantity-work-area" name="workAreaId"></select>
+          </label>
+
+          <label>
+            <span>项目名称</span>
+            <input id="design-quantity-item-name" name="itemName" type="text" placeholder="请输入设计工程量名称">
+          </label>
+
+          <label>
+            <span>项目编码</span>
+            <input id="design-quantity-item-code" name="itemCode" type="text" placeholder="可选编码">
+          </label>
+
+          <label>
+            <span>类别</span>
+            <input id="design-quantity-category" name="category" type="text" placeholder="如土方、桥梁、混凝土">
+          </label>
+
+          <label>
+            <span>单位</span>
+            <input id="design-quantity-unit" name="unit" type="text" placeholder="m3 / t / m" value="m3">
+          </label>
+
+          <label>
+            <span>目标量</span>
+            <input id="design-quantity-target" name="targetQuantity" type="number" step="0.01" value="0">
+          </label>
+
+          <label>
+            <span>设计版本</span>
+            <input id="design-quantity-version" name="designVersion" type="text" placeholder="如 V1">
+          </label>
+
+          <label class="full-width">
+            <span>备注</span>
+            <textarea id="design-quantity-notes" name="notes" rows="3" placeholder="请输入设计工程量备注"></textarea>
+          </label>
+
+          <div class="form-actions form-actions-wide">
+            <button type="submit">保存设计量</button>
+            <button id="design-quantity-load-selected" class="ghost-button" type="button">载入当前选中</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="panel form-panel">
+        <div class="panel-header">
+          <h2>人机料投入</h2>
+          <p class="panel-subtitle">按工作面记录人工、机械、材料投入，用于解释进度和工程量变化。</p>
+        </div>
+
+        <form id="resource-log-form" class="entry-form">
+          <label>
+            <span>工作面</span>
+            <select id="resource-work-area" name="workAreaId"></select>
+          </label>
+
+          <label>
+            <span>投入类型</span>
+            <select id="resource-type" name="resourceType">
+              <option value="labor">labor</option>
+              <option value="machine">machine</option>
+              <option value="material">material</option>
+            </select>
+          </label>
+
+          <label>
+            <span>资源大类</span>
+            <select id="resource-category" name="resourceCategory">
+              <option value="labor">labor</option>
+              <option value="machine">machine</option>
+              <option value="material">material</option>
+            </select>
+          </label>
+
+          <label>
+            <span>资源子类</span>
+            <input id="resource-subtype" name="resourceSubtype" type="text" placeholder="如 rebar_worker / roller / asphalt_mix">
+          </label>
+
+          <label>
+            <span>名称</span>
+            <input id="resource-name" name="resourceName" type="text" placeholder="如班组、压路机、钢筋">
+          </label>
+
+          <label>
+            <span>数量</span>
+            <input id="resource-quantity" name="quantity" type="number" step="0.01" value="0">
+          </label>
+
+          <label>
+            <span>单位</span>
+            <input id="resource-unit" name="unit" type="text" placeholder="人 / 台 / t">
+          </label>
+
+          <label>
+            <span>记录日</span>
+            <input id="resource-day" name="recordDay" type="number" step="1" value="0">
+          </label>
+
+          <label>
+            <span>班组名称</span>
+            <input id="resource-team-name" name="teamName" type="text" placeholder="如 路面班组A、桥梁钢筋班">
+          </label>
+
+          <label>
+            <span>规格型号</span>
+            <input id="resource-specification" name="specification" type="text" placeholder="如 12t压路机 / HRB400 Φ25">
+          </label>
+
+          <label>
+            <span>来源类型</span>
+            <select id="resource-source-type" name="sourceType">
+              <option value="manual">manual</option>
+              <option value="daily_report">daily_report</option>
+              <option value="imported">imported</option>
+            </select>
+          </label>
+
+          <label>
+            <span>供应方/班组</span>
+            <input id="resource-supplier" name="supplier" type="text" placeholder="可选">
+          </label>
+
+          <label class="full-width">
+            <span>备注</span>
+            <textarea id="resource-notes" name="notes" rows="3" placeholder="请输入投入备注"></textarea>
+          </label>
+
+          <div class="form-actions form-actions-wide">
+            <button type="submit">保存投入</button>
+            <button id="resource-load-selected" class="ghost-button" type="button">载入当前选中</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="panel form-panel">
+        <div class="panel-header">
+          <h2>空间对象管理</h2>
+          <p class="panel-subtitle">维护原始空间对象，并把它绑定到工作面或工程量。</p>
+        </div>
+
+        <form id="spatial-raw-form" class="entry-form">
+          <label>
+            <span>空间名称</span>
+            <input id="spatial-name" type="text" placeholder="请输入空间对象名称">
+          </label>
+
+          <label>
+            <span>几何类型</span>
+            <select id="spatial-raw-type">
+              <option value="range">range</option>
+              <option value="bbox">bbox</option>
+              <option value="point">point</option>
+              <option value="line">line</option>
+              <option value="reference">reference</option>
+            </select>
+          </label>
+
+          <label>
+            <span>坐标系</span>
+            <select id="spatial-coord-system">
+              <option value="station">station</option>
+              <option value="local">local</option>
+              <option value="world">world</option>
+            </select>
+          </label>
+
+          <label>
+            <span>目标类型</span>
+            <select id="spatial-target-type">
+              <option value="work_area">work_area</option>
+              <option value="quantity">quantity</option>
+            </select>
+          </label>
+
+          <label>
+            <span>目标对象 ID</span>
+            <input id="spatial-target-id" type="text" placeholder="如 wa_road_001 / qty_001">
+          </label>
+
+          <label>
+            <span>绑定角色</span>
+            <select id="spatial-binding-role">
+              <option value="primary">primary</option>
+              <option value="coverage">coverage</option>
+              <option value="display">display</option>
+            </select>
+          </label>
+
+          <label>
+            <span>语义角色</span>
+            <input id="spatial-semantic-role" type="text" placeholder="如 main_alignment / fill_zone">
+          </label>
+
+          <label>
+            <span>桩号起点</span>
+            <input id="spatial-station-start" type="number" step="0.01" placeholder="可选">
+          </label>
+
+          <label>
+            <span>桩号终点</span>
+            <input id="spatial-station-end" type="number" step="0.01" placeholder="可选">
+          </label>
+
+          <label>
+            <span>中心点 X</span>
+            <input id="spatial-center-x" type="number" step="0.01" placeholder="可选">
+          </label>
+
+          <label>
+            <span>中心点 Y</span>
+            <input id="spatial-center-y" type="number" step="0.01" placeholder="可选">
+          </label>
+
+          <label>
+            <span>中心点 Z</span>
+            <input id="spatial-center-z" type="number" step="0.01" placeholder="可选">
+          </label>
+
+          <label class="full-width">
+            <span>几何引用</span>
+            <input id="spatial-geometry-ref" type="text" placeholder="如 godot://roadbed_range_line">
+          </label>
+
+          <label class="full-width">
+            <span>备注</span>
+            <textarea id="spatial-notes" rows="3" placeholder="请输入空间对象备注"></textarea>
+          </label>
+
+          <div class="form-actions form-actions-wide">
+            <button type="submit">保存空间对象</button>
+            <button id="spatial-load-selected" class="ghost-button" type="button">载入当前选中</button>
+            <button id="spatial-refresh-button" class="ghost-button" type="button">刷新空间列表</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="board-layout">
+        <section class="content-grid">
+          <section class="panel">
+            <div class="panel-header">
+              <h2>工作面</h2>
+              <p class="panel-subtitle">并排查看计划进度和实际进度。</p>
+            </div>
+            <div id="work-area-list" class="stack-list"></div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-header">
+              <div>
+                <h2>任务</h2>
+                <p class="panel-subtitle">筛选、查看并更新任务状态。</p>
+              </div>
+            </div>
+            <div class="filter-bar">
+              <select id="task-filter" class="compact-select">
+                <option value="all">全部状态</option>
+                <option value="planned">待开始</option>
+                <option value="in_progress">进行中</option>
+                <option value="blocked">已阻塞</option>
+                <option value="done">已完成</option>
+                <option value="overdue">已超期</option>
+              </select>
+              <select id="task-work-area-filter" class="compact-select">
+                <option value="all">全部工作面</option>
+              </select>
+              <input id="task-search" class="compact-input" type="search" placeholder="搜索任务标题或负责人">
+            </div>
+            <div id="task-list" class="stack-list"></div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-header">
+              <div>
+                <h2>问题</h2>
+                <p class="panel-subtitle">筛选、查看并推进问题闭环。</p>
+              </div>
+            </div>
+            <div class="filter-bar">
+              <select id="issue-filter" class="compact-select">
+                <option value="all">全部状态</option>
+                <option value="open">待处理</option>
+                <option value="in_progress">处理中</option>
+                <option value="waiting_review">待复核</option>
+                <option value="closed">已关闭</option>
+                <option value="overdue">已超期</option>
+              </select>
+              <select id="issue-severity-filter" class="compact-select">
+                <option value="all">全部级别</option>
+                <option value="low">低</option>
+                <option value="medium">中</option>
+                <option value="high">高</option>
+                <option value="critical">严重</option>
+              </select>
+              <select id="issue-work-area-filter" class="compact-select">
+                <option value="all">全部工作面</option>
+              </select>
+              <input id="issue-search" class="compact-input" type="search" placeholder="搜索问题标题或负责人">
+            </div>
+            <div id="issue-list" class="stack-list"></div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-header">
+              <div>
+                <h2>日报</h2>
+                <p class="panel-subtitle">查看当前日期或历史日期的日报。</p>
+              </div>
+            </div>
+            <div class="filter-bar">
+              <select id="report-day-filter" class="compact-select">
+                <option value="current">当前日</option>
+                <option value="all">全部日期</option>
+              </select>
+              <select id="report-work-area-filter" class="compact-select">
+                <option value="all">全部工作面</option>
+              </select>
+              <input id="report-search" class="compact-input" type="search" placeholder="搜索日报填报人或摘要">
+            </div>
+            <div id="report-list" class="stack-list"></div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-header">
+              <div>
+                <h2>工程量</h2>
+                <p class="panel-subtitle">按工作面跟踪计划量和完成量。</p>
+              </div>
+            </div>
+            <div class="filter-bar">
+              <select id="quantity-work-area-filter" class="compact-select">
+                <option value="all">全部工作面</option>
+              </select>
+              <select id="quantity-status-filter" class="compact-select">
+                <option value="all">全部状态</option>
+                <option value="not_started">未开始</option>
+                <option value="in_progress">进行中</option>
+                <option value="done">已完成</option>
+              </select>
+              <input id="quantity-search" class="compact-input" type="search" placeholder="搜索项目名称或编码">
+            </div>
+            <div id="quantity-summary" class="quantity-summary-grid"></div>
+            <div id="quantity-list" class="stack-list"></div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-header">
+              <div>
+                <h2>设计目标量</h2>
+                <p class="panel-subtitle">查看设计工程量，并与实际工程量建立对比。</p>
+              </div>
+            </div>
+            <div class="filter-bar">
+              <select id="design-quantity-work-area-filter" class="compact-select">
+                <option value="all">全部工作面</option>
+              </select>
+              <input id="design-quantity-search" class="compact-input" type="search" placeholder="搜索项目名称或编码">
+            </div>
+            <div id="design-quantity-list" class="stack-list"></div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-header">
+              <div>
+                <h2>人机料</h2>
+                <p class="panel-subtitle">查看工作面在当前阶段的人工、机械和材料投入。</p>
+              </div>
+            </div>
+            <div class="filter-bar">
+              <select id="resource-work-area-filter" class="compact-select">
+                <option value="all">全部工作面</option>
+              </select>
+              <select id="resource-type-filter" class="compact-select">
+                <option value="all">全部类型</option>
+                <option value="labor">labor</option>
+                <option value="machine">machine</option>
+                <option value="material">material</option>
+              </select>
+              <input id="resource-search" class="compact-input" type="search" placeholder="搜索名称、供应方或备注">
+            </div>
+            <div id="resource-list" class="stack-list"></div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-header">
+              <div>
+                <h2>设计空间</h2>
+                <p class="panel-subtitle">查看工作面的设计线形、设计范围和设计引用。</p>
+              </div>
+            </div>
+            <div class="filter-bar">
+              <select id="design-spatial-work-area-filter" class="compact-select">
+                <option value="all">全部工作面</option>
+              </select>
+              <select id="design-spatial-type-filter" class="compact-select">
+                <option value="all">全部类型</option>
+                <option value="alignment">alignment</option>
+                <option value="surface">surface</option>
+                <option value="zone">zone</option>
+                <option value="reference">reference</option>
+              </select>
+              <input id="design-spatial-search" class="compact-input" type="search" placeholder="搜索名称、设计引用或备注">
+            </div>
+            <div id="design-spatial-list" class="stack-list"></div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-header">
+              <div>
+                <h2>原始地形</h2>
+                <p class="panel-subtitle">查看原始地形元数据、范围和外部引用。</p>
+              </div>
+            </div>
+            <div class="filter-bar">
+              <select id="terrain-type-filter" class="compact-select">
+                <option value="all">全部地形类型</option>
+              </select>
+              <select id="terrain-coord-filter" class="compact-select">
+                <option value="all">全部坐标系</option>
+                <option value="local">local</option>
+                <option value="station">station</option>
+                <option value="world">world</option>
+              </select>
+              <input id="terrain-search" class="compact-input" type="search" placeholder="搜索名称、引用或备注">
+            </div>
+            <div id="terrain-list" class="stack-list"></div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-header">
+              <div>
+                <h2>地形变更</h2>
+                <p class="panel-subtitle">查看地形变更结果、关联工程量和结果引用。</p>
+              </div>
+            </div>
+            <div class="filter-bar">
+              <select id="terrain-change-work-area-filter" class="compact-select">
+                <option value="all">全部工作面</option>
+              </select>
+              <select id="terrain-change-type-filter" class="compact-select">
+                <option value="all">全部变更类型</option>
+                <option value="cut">cut</option>
+                <option value="fill">fill</option>
+                <option value="leveling">leveling</option>
+                <option value="paving">paving</option>
+                <option value="structure">structure</option>
+              </select>
+              <input id="terrain-change-search" class="compact-input" type="search" placeholder="搜索结果引用、ID 或备注">
+            </div>
+            <div id="terrain-change-list" class="stack-list"></div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-header">
+              <div>
+                <h2>空间对象</h2>
+                <p class="panel-subtitle">查看已建的空间对象和绑定关系。</p>
+              </div>
+            </div>
+            <div class="filter-bar">
+              <select id="spatial-type-filter" class="compact-select">
+                <option value="all">全部几何</option>
+                <option value="range">range</option>
+                <option value="bbox">bbox</option>
+                <option value="point">point</option>
+                <option value="line">line</option>
+                <option value="reference">reference</option>
+              </select>
+              <select id="spatial-target-filter" class="compact-select">
+                <option value="all">全部绑定类型</option>
+                <option value="work_area">work_area</option>
+                <option value="quantity">quantity</option>
+              </select>
+              <input id="spatial-search" class="compact-input" type="search" placeholder="搜索空间名称、ID 或绑定对象">
+            </div>
+            <div id="spatial-list" class="stack-list"></div>
+          </section>
+        </section>
+
+        <aside class="panel detail-panel">
+          <div class="panel-header">
+            <div>
+              <h2>详情面板</h2>
+              <p class="panel-subtitle">选择任意记录后在这里查看详细信息。</p>
+            </div>
+            <button id="clear-detail-button" class="ghost-button" type="button">清空</button>
+          </div>
+          <div id="detail-panel-content" class="detail-content">
+            <p class="empty-state">当前没有选中记录。</p>
+          </div>
+        </aside>
+      </section>
+    </main>
+  </div>
+
+  <script src="./config.js"></script>
+  <script src="./api.js"></script>
+  <script src="./app.js"></script>
+  <script src="./spatial.js"></script>
+  <script src="./import.js"></script>
+</body>
+</html>

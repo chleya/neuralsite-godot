@@ -1,0 +1,4 @@
+id,work_area_id,resource_type,resource_name,quantity,unit,record_day,supplier,notes
+,wa_lm300,labor,施工班组,46,person,12,路面一工区,day12_sample=mainline paving and drainage crew
+,wa_lm300,machine,主要机械,8,set,12,设备租赁组,day12_sample=摊铺机+压路机+装载机
+,wa_lm300,material,主要材料,1280,t,12,沥青拌合站,day12_sample=沥青混合料与碎石

@@ -70,7 +70,7 @@ var _deck_height: float = 0.5
 
 func _ready() -> void:
 	entity_type = "bridge"
-	category = EntityCategory.BRIDGE
+	category = EntityCategory.STRUCTURE
 	precision_level = PrecisionLevel.NORMAL  # 0.01m 构件级
 	
 	super._ready()

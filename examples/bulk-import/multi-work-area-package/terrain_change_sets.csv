@@ -1,0 +1,5 @@
+id,work_area_id,quantity_id,spatial_raw_object_id,terrain_raw_object_id,change_type,result_ref,record_day,notes
+,wa_005,,sro_003,tro_001,cut,terrain-result://wa005_drainage_cut_day1,1,Drainage trench excavation result
+,wa_005,,sro_003,tro_001,structure,terrain-result://wa005_lining_day2,2,Ditch lining structure result
+,wa_006,,sro_004,tro_002,cut,terrain-result://wa006_abutment_cut_day1,1,Abutment support excavation result
+,wa_006,,sro_004,tro_002,structure,terrain-result://wa006_abutment_body_day2,2,Abutment support structure result

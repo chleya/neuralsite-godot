@@ -1,0 +1,60 @@
+﻿id,work_area_id,item_name,item_code,category,unit,planned_quantity,actual_quantity,notes
+,wa_mzdq,光圆钢筋,403-1-1,bridge,kg,26186.599999999948,12569.568,starter_from_design=351-import-v1; target_quantity=26186.599999999948; sample_actual_day18=48%
+,wa_mzdq,带肋钢筋,403-1-2,bridge,kg,519695.2000000004,249453.696,starter_from_design=351-import-v1; target_quantity=519695.2000000004; sample_actual_day18=48%
+,wa_mzdq,光圆钢筋,403-2-1,bridge,kg,1632.5999999999997,718.344,starter_from_design=351-import-v1; target_quantity=1632.5999999999997; sample_actual_day18=44%
+,wa_mzdq,带肋钢筋,403-2-2,bridge,kg,660736.6571492001,290724.129,starter_from_design=351-import-v1; target_quantity=660736.6571492001; sample_actual_day18=44%
+,wa_mzdq,冷轧带肋钢筋焊接网 (台身防裂钢筋网）,403-2-3,bridge,kg,0.0,0,starter_from_design=351-import-v1; target_quantity=0.0; sample_actual_day18=44%
+,wa_mzdq,光圆钢筋,403-3-1,bridge,kg,303751.9408600002,109350.699,starter_from_design=351-import-v1; target_quantity=303751.9408600002; sample_actual_day18=36%
+,wa_mzdq,带肋钢筋,403-3-2,bridge,kg,1280098.0852159993,460835.311,starter_from_design=351-import-v1; target_quantity=1280098.0852159993; sample_actual_day18=36%
+,wa_mzdq,D10冷轧钢筋焊接网,403-3-3-2,bridge,kg,151041.6,54374.976,starter_from_design=351-import-v1; target_quantity=151041.6; sample_actual_day18=36%
+,wa_mzdq,光圆钢筋,403-4-1,bridge,kg,39480.600000000006,12633.792,starter_from_design=351-import-v1; target_quantity=39480.600000000006; sample_actual_day18=32%
+,wa_mzdq,带肋钢筋,403-4-2,bridge,kg,161073.96000000002,51543.667,starter_from_design=351-import-v1; target_quantity=161073.96000000002; sample_actual_day18=32%
+,wa_mzdq,基础挖方及回填,404-1,bridge,m3,9714.0,3885.6,starter_from_design=351-import-v1; target_quantity=9714.0; sample_actual_day18=40%
+,wa_mzdq,桩径1.2m,405-3-4,bridge,m,0.0,0,starter_from_design=351-import-v1; target_quantity=0.0; sample_actual_day18=28%
+,wa_mzdq,桩径1.3m,405-3-5,bridge,m,0.0,0,starter_from_design=351-import-v1; target_quantity=0.0; sample_actual_day18=28%
+,wa_mzdq,桩径1.5m,405-3-7,bridge,m,1470.8000000000002,411.824,starter_from_design=351-import-v1; target_quantity=1470.8000000000002; sample_actual_day18=28%
+,wa_mzdq,桩径1.8m,405-3-10,bridge,m,0.0,0,starter_from_design=351-import-v1; target_quantity=0.0; sample_actual_day18=28%
+,wa_mzdq,声测管,405-4,bridge,m,4625.400000000001,1387.62,starter_from_design=351-import-v1; target_quantity=4625.400000000001; sample_actual_day18=30%
+,wa_mzdq,C30混凝土,410-1-4,bridge,m3,2852.45,741.637,starter_from_design=351-import-v1; target_quantity=2852.45; sample_actual_day18=26%
+,wa_mzdq,C30混凝土,410-2-1-2,bridge,m3,0.0,0,starter_from_design=351-import-v1; target_quantity=0.0; sample_actual_day18=22%
+,wa_mzdq,C35混凝土,410-2-1-3,bridge,m3,1419.770874584486,312.35,starter_from_design=351-import-v1; target_quantity=1419.770874584486; sample_actual_day18=22%
+,wa_mzdq,C25混凝土（镇墩）,410-2-1-1,bridge,m3,0.0,0,starter_from_design=351-import-v1; target_quantity=0.0; sample_actual_day18=22%
+,wa_mzdq,C35混凝土,410-2-2-3,bridge,m3,799.1,175.802,starter_from_design=351-import-v1; target_quantity=799.1; sample_actual_day18=22%
+,wa_mzdq,C50混凝土(盖梁挡块）,410-2-3-3,bridge,m3,14.159999999999998,3.115,starter_from_design=351-import-v1; target_quantity=14.159999999999998; sample_actual_day18=22%
+,wa_mzdq,C35混凝土（台帽、挡块、挡土板）,410-2-3-5,bridge,m3,295.81999999999994,65.08,starter_from_design=351-import-v1; target_quantity=295.81999999999994; sample_actual_day18=22%
+,wa_mzdq,C35混凝土（耳背墙）,410-2-4-3,bridge,m3,0.0,0,starter_from_design=351-import-v1; target_quantity=0.0; sample_actual_day18=22%
+,wa_mzdq,C50混凝土,410-2-5-3,bridge,m3,3237.0000000000005,712.14,starter_from_design=351-import-v1; target_quantity=3237.0000000000005; sample_actual_day18=22%
+,wa_mzdq,C35混凝土,410-2-5-5,bridge,m3,99.86,21.969,starter_from_design=351-import-v1; target_quantity=99.86; sample_actual_day18=22%
+,wa_mzdq,C35混凝土(柱系梁）,410-2-6-3,bridge,m3,0.0,0,starter_from_design=351-import-v1; target_quantity=0.0; sample_actual_day18=22%
+,wa_mzdq,C35混凝土,410-2-7-5,bridge,m3,27.327999999999992,6.012,starter_from_design=351-import-v1; target_quantity=27.327999999999992; sample_actual_day18=22%
+,wa_mzdq,C50混凝土,410-5-5,bridge,m3,1130.9400000000003,203.569,starter_from_design=351-import-v1; target_quantity=1130.9400000000003; sample_actual_day18=18%
+,wa_mzdq,C35混凝土,410-6-5,bridge,m3,761.4799999999999,137.066,starter_from_design=351-import-v1; target_quantity=761.4799999999999; sample_actual_day18=18%
+,wa_mzdq,C50混凝土（护栏背包砼加劲肋）,410-6-8,bridge,m3,2.4,0.432,starter_from_design=351-import-v1; target_quantity=2.4; sample_actual_day18=18%
+,wa_mzdq,后张法预应力钢绞线,411-5,bridge,kg,334564.809848,53530.37,starter_from_design=351-import-v1; target_quantity=334564.809848; sample_actual_day18=16%
+,wa_mzdq,C50混凝土（预制部分）,411-8-3-3,bridge,m3,6082.299999999999,851.522,starter_from_design=351-import-v1; target_quantity=6082.299999999999; sample_actual_day18=14%
+,wa_mzdq,C50混凝土,411-4-8-3,bridge,m3,0.0,0,starter_from_design=351-import-v1; target_quantity=0.0; sample_actual_day18=15%
+,wa_mzdq,M7.5浆砌片石,413-1-1,bridge,m3,99.0,19.8,starter_from_design=351-import-v1; target_quantity=99.0; sample_actual_day18=20%
+,wa_mzdq,级配碎石换填,413-1-3,bridge,m3,693.0,138.6,starter_from_design=351-import-v1; target_quantity=693.0; sample_actual_day18=20%
+,wa_mzdq,六角空心块,413-4-1,bridge,m2,0.0,0,starter_from_design=351-import-v1; target_quantity=0.0; sample_actual_day18=18%
+,wa_mzdq,预埋钢材,414-1,bridge,kg,15367.38,1844.086,starter_from_design=351-import-v1; target_quantity=15367.38; sample_actual_day18=12%
+,wa_mzdq,水泥混凝土桥面调平层（C50）,415-1,bridge,m3,1224.0,122.4,starter_from_design=351-import-v1; target_quantity=1224.0; sample_actual_day18=10%
+,wa_mzdq,GBZJ 250×300×52mm,416-1-1,bridge,个,0.0,0,starter_from_design=351-import-v1; target_quantity=0.0; sample_actual_day18=8%
+,wa_mzdq,GBZJ 250×250×41mm,416-1-2,bridge,个,0.0,0,starter_from_design=351-import-v1; target_quantity=0.0; sample_actual_day18=8%
+,wa_mzdq,GPZ(2019)1.5 SX,416-2-1,bridge,个,60.0,4.8,starter_from_design=351-import-v1; target_quantity=60.0; sample_actual_day18=8%
+,wa_mzdq,GPZ(2019)1.5 DX,416-2-2,bridge,个,24.0,1.92,starter_from_design=351-import-v1; target_quantity=24.0; sample_actual_day18=8%
+,wa_mzdq,GPZ(2019)2.5 SX,416-2-3,bridge,个,30.0,2.4,starter_from_design=351-import-v1; target_quantity=30.0; sample_actual_day18=8%
+,wa_mzdq,GPZ(2019)2.5 DX,416-2-4,bridge,个,42.0,3.36,starter_from_design=351-import-v1; target_quantity=42.0; sample_actual_day18=8%
+,wa_mzdq,GPZ(2019)2.5 GD,416-2-5,bridge,个,12.0,0.96,starter_from_design=351-import-v1; target_quantity=12.0; sample_actual_day18=8%
+,wa_mzdq,GPZ(2019)2.0 SX,416-2-6,bridge,个,20.0,1.6,starter_from_design=351-import-v1; target_quantity=20.0; sample_actual_day18=8%
+,wa_mzdq,GPZ(2019)2.0 DX,416-2-7,bridge,个,8.0,0.64,starter_from_design=351-import-v1; target_quantity=8.0; sample_actual_day18=8%
+,wa_mzdq,GPZ(2019)3.5 SX,416-2-8,bridge,个,10.0,0.8,starter_from_design=351-import-v1; target_quantity=10.0; sample_actual_day18=8%
+,wa_mzdq,GPZ(2019)3.5 DX,416-2-9,bridge,个,14.0,1.12,starter_from_design=351-import-v1; target_quantity=14.0; sample_actual_day18=8%
+,wa_mzdq,GPZ(2019)3.5 GD,416-2-10,bridge,个,4.0,0.32,starter_from_design=351-import-v1; target_quantity=4.0; sample_actual_day18=8%
+,wa_mzdq,40型,417-5-1,bridge,m,0.0,0,starter_from_design=351-import-v1; target_quantity=0.0; sample_actual_day18=6%
+,wa_mzdq,60型,417-5-2,bridge,m,0.0,0,starter_from_design=351-import-v1; target_quantity=0.0; sample_actual_day18=6%
+,wa_mzdq,80型,417-5-3,bridge,m,32.1,1.926,starter_from_design=351-import-v1; target_quantity=32.1; sample_actual_day18=6%
+,wa_mzdq,160型,417-5-5,bridge,m,96.30000000000001,5.778,starter_from_design=351-import-v1; target_quantity=96.30000000000001; sample_actual_day18=6%
+,wa_mzdq,DN160,418-1-1,bridge,m,1170.0,58.5,starter_from_design=351-import-v1; target_quantity=1170.0; sample_actual_day18=5%
+,wa_mzdq,DN200,418-1-2,bridge,m,0.0,0,starter_from_design=351-import-v1; target_quantity=0.0; sample_actual_day18=5%
+,wa_mzdq,桥面边部碎石盲沟,418-2,bridge,m3,70.2,3.51,starter_from_design=351-import-v1; target_quantity=70.2; sample_actual_day18=5%
+,wa_mzdq,泄水管,418-3,bridge,套,158.0,7.9,starter_from_design=351-import-v1; target_quantity=158.0; sample_actual_day18=5%

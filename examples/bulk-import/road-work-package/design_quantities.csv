@@ -1,0 +1,5 @@
+id,work_area_id,item_name,item_code,category,unit,target_quantity,design_version,notes
+dq_001,wa_road_001,Roadbed Fill,RB-FILL,earthwork,m3,1280,V2,Adjusted design target for roadbed fill
+,wa_003,Subgrade Improvement,SG-IMP,earthwork,m3,2450,V1,New design target for imported work area
+,wa_003,Base Course,BASE-001,paving,m2,5200,V1,Base course design target
+,wa_003,Asphalt Surface,ASP-003,paving,m2,5100,V1,Surface layer design target

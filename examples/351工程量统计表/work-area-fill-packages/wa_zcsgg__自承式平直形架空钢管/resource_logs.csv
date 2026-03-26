@@ -1,0 +1,4 @@
+﻿id,work_area_id,resource_type,resource_name,quantity,unit,record_day,supplier,notes
+,wa_zcsgg,labor,施工班组,,person,,,starter_for=自承式平直形架空钢管
+,wa_zcsgg,machine,主要机械,,set,,,starter_for=自承式平直形架空钢管
+,wa_zcsgg,material,主要材料,,t,,,starter_for=自承式平直形架空钢管

@@ -1,0 +1,3 @@
+id,work_area_id,name,design_type,coord_system,station_start,station_end,bbox_min_x,bbox_min_y,bbox_min_z,bbox_max_x,bbox_max_y,bbox_max_z,design_ref,elevation_target,design_version,notes
+dso_001,wa_road_001,Roadbed Design Alignment,alignment,station,1000,1550,,,,,,,design://roadbed_alignment_v2,,V2,Updated design alignment by import
+,wa_road_001,Asphalt Design Surface,surface,station,1500,2000,,,,,,,design://asphalt_surface_v1,35.2,V1,New design surface

@@ -1,0 +1,19 @@
+{
+  "source_package": "F:\\NeuralSite-Godot\\examples\\351工程量统计表\\converted-import-package",
+  "renamed_package": "F:\\NeuralSite-Godot\\examples\\351工程量统计表\\renamed-import-package",
+  "mapping_count": 12,
+  "mapping": {
+    "w351_002": "wa_paving_ch300",
+    "w351_004": "wa_traffic_safety_ch600",
+    "w351_005": "wa_qiqitang_bridge_r",
+    "w351_006": "wa_qiqitang_bridge_l",
+    "w351_007": "wa_gailu_bridge",
+    "w351_008": "wa_hengludian_bridge_r",
+    "w351_009": "wa_hengludian_bridge_l",
+    "w351_010": "wa_greening_ch700",
+    "w351_011": "wa_selfsupport_steelpipe",
+    "w351_012": "wa_mazhai_aux_a_bridge",
+    "w351_013": "wa_mazhai_aux_b_bridge",
+    "w351_014": "wa_mazhai_bridge"
+  }
+}

@@ -1,0 +1,5 @@
+id,work_area_id,item_name,item_code,category,unit,planned_quantity,actual_quantity,notes
+,wa_005,Drainage Ditch Excavation,DD-EX,earthwork,m3,980,260,Imported drainage excavation actual quantity
+,wa_005,Ditch Concrete Lining,DD-CON,structure,m3,210,35,Imported lining actual quantity
+,wa_006,Abutment Concrete,AB-CON,bridge,m3,360,84,Imported abutment concrete actual quantity
+,wa_006,Bearing Platform Rebar,AB-RB,bridge,t,32,6,Imported platform rebar actual quantity

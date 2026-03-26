@@ -1,0 +1,3 @@
+id,work_area_id,quantity_id,spatial_raw_object_id,terrain_raw_object_id,change_type,result_ref,record_day,notes
+tcs_001,wa_road_001,qty_001,sro_003,tro_001,fill,terrain-result://roadbed_fill_day1,1,Updated fill result by import
+,wa_road_001,qty_001,sro_003,tro_001,paving,terrain-result://asphalt_day1,1,New asphalt terrain change

@@ -1,0 +1,5 @@
+id,work_area_id,quantity_id,spatial_raw_object_id,terrain_raw_object_id,change_type,result_ref,record_day,notes
+tcs_002,wa_bridge_001,qty_002,sro_004,tro_002,structure,terrain-result://pier_rebar_day1,1,Updated bridge structure change
+,wa_004,,sro_004,tro_002,cut,terrain-result://wa004_excavation_day1,1,Foundation excavation result
+,wa_004,,sro_004,tro_002,structure,terrain-result://wa004_pilecap_day2,2,Pile cap structure result
+,wa_004,,sro_004,tro_002,structure,terrain-result://wa004_pierbody_day3,3,Pier body structure result

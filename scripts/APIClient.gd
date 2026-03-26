@@ -1,18 +1,20 @@
 # APIClient.gd
 # HTTP通信客户端 - 与NeuralSite后端API交互
-# 支持: 自动重试、超时、错误追踪
+# 支持: 自动重试、超时、错误追踪、正确的后端端点
 extends Node
 
-var base_url: String = "http://localhost:8000"
-var api_version: String = "/api/v1"
+var base_url: String = ProjectConfig.API_CONFIG.base_url
+var api_version: String = ProjectConfig.API_CONFIG.api_version
 
 @export_group("连接设置", "http_")
-@export var timeout_seconds: float = 10.0
-@export var max_retries: int = 3
-@export var retry_delay: float = 1.0
+@export var timeout_seconds: float = ProjectConfig.API_CONFIG.timeout_seconds
+@export var max_retries: int = ProjectConfig.API_CONFIG.max_retries
+@export var retry_delay: float = ProjectConfig.API_CONFIG.retry_delay
 
 signal state_updated(data: Dictionary)
-signal station_loaded(stations: Array)
+signal entities_loaded(entities: Array)
+signal states_loaded(states: Array)
+signal tags_loaded(entity_id: String, tags: Array)
 signal error_occurred(message: String)
 signal connection_status_changed(connected: bool)
 
@@ -26,7 +28,7 @@ func _ready() -> void:
 	_test_connection()
 
 func _test_connection() -> void:
-	var result = await get_spacetime_state(0)
+	var result = await get_godot_entities()
 	if result.size() > 0 or _last_error.is_empty():
 		_is_connected = true
 		connection_status_changed.emit(true)
@@ -34,40 +36,114 @@ func _test_connection() -> void:
 		_is_connected = false
 		connection_status_changed.emit(false)
 
-func get_spacetime_state(station: int) -> Dictionary:
-	var url = "%s%s/spacetime/query?station=%d" % [base_url, api_version, station]
+func get_godot_entities() -> Array:
+	var url = "%s%s%s" % [base_url, api_version, ProjectConfig.GODOT_ENDPOINTS.entities]
+	var result = await _http_get_with_retry(url)
+	if result is Array:
+		entities_loaded.emit(result)
+		_is_connected = true
+		return result
+	elif result is Dictionary and result.has("entities"):
+		entities_loaded.emit(result["entities"])
+		_is_connected = true
+		return result["entities"]
+	_is_connected = false
+	return []
+
+func get_godot_states() -> Array:
+	var url = "%s%s%s" % [base_url, api_version, ProjectConfig.GODOT_ENDPOINTS.states]
+	var result = await _http_get_with_retry(url)
+	if result is Array:
+		states_loaded.emit(result)
+		_is_connected = true
+		return result
+	elif result is Dictionary and result.has("states"):
+		states_loaded.emit(result["states"])
+		_is_connected = true
+		return result["states"]
+	_is_connected = false
+	return []
+
+func get_realtime_state(station: int = 0) -> Dictionary:
+	var url = "%s%s%s?station=%d" % [base_url, api_version, ProjectConfig.GODOT_ENDPOINTS.realtime, station]
 	var result = await _http_get_with_retry(url)
 	if result.size() > 0:
 		state_updated.emit(result)
 		return result
 	return {}
 
-func get_stations() -> Array:
-	var url = "%s%s/spatial/stations" % [base_url, api_version]
+func get_entity_realtime(entity_id: String) -> Dictionary:
+	var url = "%s%s%s" % [base_url, api_version, ProjectConfig.GODOT_ENDPOINTS.entity_realtime % entity_id]
+	return await _http_get_with_retry(url)
+
+func simulate_entity_state(entity_id: String, target_time: String) -> Dictionary:
+	var url = "%s%s%s?target_time=%s" % [base_url, api_version, ProjectConfig.GODOT_ENDPOINTS.simulation % entity_id, target_time]
+	return await _http_get_with_retry(url)
+
+func get_entity_state_history(entity_id: String) -> Array:
+	var url = "%s%s%s" % [base_url, api_version, ProjectConfig.GODOT_ENDPOINTS.state_history % entity_id]
 	var result = await _http_get_with_retry(url)
 	if result is Array:
-		station_loaded.emit(result)
-		_is_connected = true
 		return result
-	elif result.size() > 0:
-		_is_connected = true
-		return []
-	_is_connected = false
+	elif result is Dictionary and result.has("history"):
+		return result["history"]
 	return []
 
-func add_event(event_type: String, station_start: int, station_end: int, params: Dictionary) -> Dictionary:
-	var url = "%s%s/spacetime/events" % [base_url, api_version]
+func get_entity_semantic_tags(entity_id: String) -> Array:
+	var url = "%s%s%s" % [base_url, api_version, ProjectConfig.GODOT_ENDPOINTS.semantic_tags % entity_id]
+	var result = await _http_get_with_retry(url)
+	if result is Array:
+		tags_loaded.emit(entity_id, result)
+		return result
+	elif result is Dictionary and result.has("tags"):
+		tags_loaded.emit(entity_id, result["tags"])
+		return result["tags"]
+	return []
+
+func apply_semantic_tag(entity_id: String, tag_data: Dictionary) -> Dictionary:
+	var url = "%s%s%s" % [base_url, api_version, ProjectConfig.GODOT_ENDPOINTS.semantic_apply]
 	var body = {
-		"event_type": event_type,
-		"station_start": station_start,
-		"station_end": station_end,
-		"params": params
+		"entity_id": entity_id,
+		"tag_id": tag_data.get("tag_id", ""),
+		"category": tag_data.get("category", "custom"),
+		"name": tag_data.get("name", ""),
+		"value": tag_data.get("value", ""),
 	}
 	return await _http_post_with_retry(url, body)
 
-func get_evolution_state() -> Dictionary:
-	var url = "%s%s/spacetime/evolution" % [base_url, api_version]
-	return await _http_get_with_retry(url)
+func get_entities_at_location(station: int, range_half: int = 100) -> Array:
+	var url = "%s%s%s?station=%d&range_half=%d" % [base_url, api_version, ProjectConfig.GODOT_ENDPOINTS.entities_at_location, station, range_half]
+	var result = await _http_get_with_retry(url)
+	if result is Array:
+		return result
+	elif result is Dictionary and result.has("entities"):
+		return result["entities"]
+	return []
+
+func get_space_nearby(station: int, distance: float = 50.0) -> Array:
+	var url = "%s%s%s?station=%d&distance=%.1f" % [base_url, api_version, ProjectConfig.GODOT_ENDPOINTS.space_nearby, station, distance]
+	var result = await _http_get_with_retry(url)
+	if result is Array:
+		return result
+	elif result is Dictionary and result.has("stations"):
+		return result["stations"]
+	return []
+
+func get_events(station: int = 0, event_type: String = "") -> Array:
+	var url = "%s%s%s" % [base_url, api_version, ProjectConfig.GODOT_ENDPOINTS.events]
+	var params = []
+	if station > 0:
+		params.append("station=%d" % station)
+	if not event_type.is_empty():
+		params.append("event_type=%s" % event_type)
+	if params.size() > 0:
+		url += "?" + "".join(params)
+	var result = await _http_get_with_retry(url)
+	if result is Array:
+		return result
+	elif result is Dictionary and result.has("events"):
+		return result["events"]
+	return []
 
 func sync_entity_state(entity_id: String, state_data: Dictionary) -> Dictionary:
 	var url = "%s%s/entities/%s/state" % [base_url, api_version, entity_id]
@@ -77,10 +153,9 @@ func get_entity_state(entity_id: String) -> Dictionary:
 	var url = "%s%s/entities/%s/state" % [base_url, api_version, entity_id]
 	return await _http_get_with_retry(url)
 
-func upload_photo(image_path: String) -> Dictionary:
-	var url = "%s%s/photos/upload" % [base_url, api_version]
-	var result = {}
-	return result
+func get_project_statistics() -> Dictionary:
+	var url = "%s%s%s" % [base_url, api_version, ProjectConfig.GODOT_ENDPOINTS.statistics]
+	return await _http_get_with_retry(url)
 
 func _http_get_with_retry(url: String) -> Dictionary:
 	var attempt = 0
@@ -91,7 +166,7 @@ func _http_get_with_retry(url: String) -> Dictionary:
 		_request_count += 1
 		
 		var result = await _http_get(url)
-		if result.size() > 0:
+		if result.size() > 0 or (result is Dictionary and result.has("error") == false):
 			return result
 		
 		last_err = _last_error
@@ -113,7 +188,7 @@ func _http_post_with_retry(url: String, body: Dictionary) -> Dictionary:
 		_request_count += 1
 		
 		var result = await _http_post(url, body)
-		if result.size() > 0 or "error" not in result:
+		if result.size() > 0 or (result is Dictionary and result.has("error") == false):
 			return result
 		
 		last_err = _last_error if not _last_error.is_empty() else "Unknown error"

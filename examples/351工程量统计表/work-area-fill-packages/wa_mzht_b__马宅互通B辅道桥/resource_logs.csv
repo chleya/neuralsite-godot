@@ -1,0 +1,4 @@
+﻿id,work_area_id,resource_type,resource_name,quantity,unit,record_day,supplier,notes
+,wa_mzht_b,labor,施工班组,,person,,,starter_for=马宅互通B辅道桥
+,wa_mzht_b,machine,主要机械,,set,,,starter_for=马宅互通B辅道桥
+,wa_mzht_b,material,主要材料,,t,,,starter_for=马宅互通B辅道桥

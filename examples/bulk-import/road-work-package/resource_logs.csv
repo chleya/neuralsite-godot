@@ -1,0 +1,8 @@
+id,work_area_id,resource_type,resource_name,quantity,unit,record_day,supplier,notes
+rl_001,wa_road_001,labor,Roadbed Crew,24,person,0,Chen Team,Updated current crew allocation
+,wa_003,labor,Subgrade Crew A,16,person,1,Sun Team,Imported labor input
+,wa_003,labor,Paving Crew B,12,person,1,Zhou Team,Imported paving labor
+,wa_003,machine,Grader,1,set,1,Machine Group,Imported machine allocation
+,wa_003,machine,Roller,2,set,1,Machine Group,Compaction support
+,wa_003,material,Crushed Stone,340,t,1,Plant B,Base course material arrival
+,wa_003,material,Bitumen Mix,120,t,2,Plant C,Surface paving material delivery
